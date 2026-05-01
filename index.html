@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" translate="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JapanBridge | Japan Business Consulting – Anything About Japan</title>
+  <meta name="description" content="Japan business consulting for foreign companies. Market research, real estate, product sourcing, and anything Japan-related. Free 30-min Zoom consultation." />
+  <meta name="keywords" content="Japan market entry consulting, Japan business consulting, Japan market research, doing business in Japan, Japan expansion, Japan real estate, Japan product sourcing, free Japan consultation" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google" content="notranslate" />
+  <link rel="canonical" href="https://japanbridge.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JapanBridge | Anything About Japan — Free 30-min Zoom Consultation" />
+  <meta property="og:description" content="Foreign companies: we handle anything Japan-related. Market research, real estate, product sourcing, and more. Free first consultation online." />
+  <meta property="og:url" content="https://japanbridge.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JapanBridge | Japan Business Consulting" />
+  <meta name="twitter:description" content="Anything Japan-related for your business. Free 30-min Zoom consultation available." />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "JapanBridge",
+    "description": "Japan business consulting — market research, real estate, product sourcing, and anything Japan-related for foreign companies.",
+    "email": "tom@iwamae.com",
+    "url": "https://japanbridge.com",
+    "areaServed": "JP",
+    "serviceType": ["Market Research", "Real Estate Consulting", "Product Sourcing", "Business Consulting", "SEO", "General Japan Consulting"],
+    "offers": { "@type": "Offer", "description": "Free 30-minute online consultation via Zoom" }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0f2240;
+      --navy2:      #1a3358;
+      --gold:       #c9972b;
+      --gold-light: #e8b84b;
+      --white:      #ffffff;
+      --off-white:  #f5f7fa;
+      --gray:       #6b7280;
+      --dark:       #1f2937;
+      --border:     #e5e7eb;
+      --radius:     12px;
+      --shadow:     0 4px 24px rgba(15,34,64,0.10);
+      --font:       'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.65; font-size: 16px; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+    h1 { font-size: clamp(1.9rem, 4.5vw, 3.4rem); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
+    h3 { font-size: 1.15rem; }
+
+    .section-label {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; display: block;
+    }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 96px 0; }
+    .section--alt { background: var(--off-white); }
+    .text-center { text-align: center; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 30px; border-radius: 8px; font-weight: 600;
+      font-size: 0.95rem; cursor: pointer; border: none;
+      transition: all 0.2s ease; white-space: nowrap;
+    }
+    .btn--primary { background: var(--gold); color: var(--white); }
+    .btn--primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn--outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.55); }
+    .btn--outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+    /* ── Language toggle ── */
+    .lang-toggle {
+      display: flex; align-items: center; gap: 0;
+      background: var(--off-white); border: 1.5px solid var(--border);
+      border-radius: 8px; overflow: hidden; flex-shrink: 0;
+    }
+    .lang-btn {
+      padding: 7px 13px; font-size: 0.8rem; font-weight: 700;
+      cursor: pointer; border: none; background: transparent;
+      color: var(--gray); transition: all 0.18s; letter-spacing: 0.03em;
+    }
+    .lang-btn.active { background: var(--navy); color: var(--white); }
+
+    /* ── Navigation ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); transition: box-shadow 0.2s;
+    }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.1rem; color: var(--navy); flex-shrink: 0; }
+    .nav-logo-icon {
+      width: 36px; height: 36px; background: var(--navy); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 1rem; font-weight: 900;
+    }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--gray); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-right { display: flex; align-items: center; gap: 10px; }
+    .nav-cta-btn {
+      background: var(--gold); color: var(--white); border: none;
+      padding: 9px 20px; border-radius: 7px; font-weight: 700;
+      font-size: 0.86rem; cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    }
+    .nav-cta-btn:hover { background: var(--gold-light); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+
+    /* ── Mobile Menu ── */
+    .mobile-menu {
+      display: none; position: fixed; top: 68px; left: 0; right: 0;
+      background: var(--white); border-bottom: 1px solid var(--border);
+      padding: 20px 24px; z-index: 99; flex-direction: column; gap: 4px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 1rem; font-weight: 500; color: var(--dark); padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .mobile-menu a:last-child { border-bottom: none; color: var(--gold); font-weight: 700; }
+
+    /* ── Hero ── */
+    .hero {
+      background:
+        linear-gradient(to right, rgba(5,16,32,0.78) 0%, rgba(5,16,32,0.55) 60%, rgba(5,16,32,0.38) 100%),
+        url('deltaworks-mountains-5686361.jpg') center 30% / cover no-repeat;
+      min-height: 100vh; display: flex; align-items: center;
+      padding-top: 68px; position: relative; overflow: hidden;
+    }
+    .hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 60%, rgba(5,16,32,0.55) 100%);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 720px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(201,151,43,0.15); border: 1px solid rgba(201,151,43,0.3);
+      color: var(--gold-light); font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.08em; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+    }
+    .hero h1 { color: var(--white); margin-bottom: 20px; }
+    .hero h1 span { color: var(--gold-light); }
+    .hero-sub { font-size: 1.08rem; color: rgba(255,255,255,0.72); margin-bottom: 16px; max-width: 580px; line-height: 1.75; }
+
+    /* Free consultation pill in hero */
+    .hero-zoom-pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 100px; padding: 10px 20px; margin-bottom: 36px;
+    }
+    .hero-zoom-dot {
+      width: 8px; height: 8px; background: #4ade80; border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(74,222,128,0.25); flex-shrink: 0;
+    }
+    .hero-zoom-text { font-size: 0.88rem; color: rgba(255,255,255,0.85); font-weight: 500; }
+    .hero-zoom-text strong { color: var(--white); }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 56px; }
+    .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .hero-stat-number { font-size: 1.9rem; font-weight: 800; color: var(--white); }
+    .hero-stat-number span { color: var(--gold-light); }
+    .hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 2px; }
+
+    /* ── Clients Bar ── */
+    .clients-bar { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 26px 0; }
+    .clients-bar-inner { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .clients-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+    .clients-logos { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .client-logo-pill {
+      background: var(--white); border: 1px solid var(--border); border-radius: 8px;
+      padding: 7px 16px; font-size: 0.8rem; font-weight: 700; color: #9ca3af;
+    }
+
+    /* ── USP banner ── */
+    .usp-banner {
+      background:
+        linear-gradient(rgba(5,16,32,0.82) 0%, rgba(5,16,32,0.82) 100%),
+        url('fumrin-building-4402415.jpg') center / cover no-repeat;
+      background-attachment: fixed;
+      padding: 72px 0;
+    }
+    .usp-inner { text-align: center; }
+    .usp-headline { font-size: clamp(1.4rem, 3vw, 2rem); color: var(--white); font-weight: 800; margin-bottom: 12px; }
+    .usp-headline span { color: var(--gold-light); }
+    .usp-sub { color: rgba(255,255,255,0.65); font-size: 1rem; max-width: 600px; margin: 0 auto 28px; line-height: 1.7; }
+    .usp-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .usp-tag {
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.8); border-radius: 100px;
+      padding: 7px 18px; font-size: 0.85rem; font-weight: 500;
+    }
+
+    /* ── Services ── */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-top: 52px; }
+    .service-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 34px 30px;
+      transition: all 0.25s ease; position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      opacity: 0; transition: opacity 0.25s;
+    }
+    .service-card:hover { border-color: transparent; box-shadow: var(--shadow); transform: translateY(-4px); }
+    .service-card:hover::before { opacity: 1; }
+    .service-icon {
+      width: 50px; height: 50px; background: var(--off-white); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.35rem; margin-bottom: 18px; transition: background 0.25s;
+    }
+    .service-card:hover .service-icon { background: rgba(201,151,43,0.1); }
+    .service-card h3 { color: var(--navy); margin-bottom: 10px; }
+    .service-card p { color: var(--gray); font-size: 0.92rem; line-height: 1.7; }
+    .service-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.86rem; font-weight: 600; color: var(--gold); }
+    .service-link:hover { color: var(--gold-light); }
+
+    /* ── Zoom CTA strip ── */
+    .zoom-strip { background: linear-gradient(90deg, #16a34a 0%, #15803d 100%); padding: 28px 0; }
+    .zoom-strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .zoom-strip-text { color: var(--white); }
+    .zoom-strip-text strong { font-size: 1.15rem; display: block; margin-bottom: 4px; }
+    .zoom-strip-text span { font-size: 0.88rem; opacity: 0.85; }
+    .zoom-strip-btn {
+      background: var(--white); color: #15803d; border: none; border-radius: 8px;
+      padding: 12px 26px; font-weight: 800; font-size: 0.95rem; cursor: pointer;
+      transition: all 0.2s; white-space: nowrap; flex-shrink: 0;
+    }
+    .zoom-strip-btn:hover { background: #f0fdf4; transform: translateY(-1px); }
+
+    /* ── Why Japan ── */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .why-image-placeholder {
+      aspect-ratio: 4/3; border-radius: 20px;
+      position: relative; overflow: hidden;
+    }
+    .why-image-placeholder img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.6s ease;
+    }
+    .why-image-placeholder:hover img { transform: scale(1.04); }
+    .why-floating-card {
+      position: absolute; bottom: -20px; right: -20px; background: var(--white);
+      border-radius: 16px; padding: 18px 22px; box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+    }
+    .why-floating-number { font-size: 1.7rem; font-weight: 800; color: var(--navy); }
+    .why-floating-number span { color: var(--gold); }
+    .why-floating-label { font-size: 0.78rem; color: var(--gray); margin-top: 2px; }
+    .why-content h2 { margin-bottom: 18px; }
+    .why-content p { color: var(--gray); margin-bottom: 22px; line-height: 1.75; }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 13px; }
+    .why-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; }
+    .why-check {
+      width: 22px; height: 22px; background: var(--gold); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+    .why-check svg { width: 12px; height: 12px; }
+
+    /* ── Process ── */
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; margin-top: 52px; position: relative; }
+    .process-steps::before {
+      content: ''; position: absolute; top: 40px;
+      left: calc(100% / 10); right: calc(100% / 10);
+      height: 2px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); z-index: 0;
+    }
+    .process-step { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+    .step-number {
+      width: 80px; height: 80px; background: var(--white); border: 3px solid var(--gold);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; font-weight: 800; color: var(--navy); margin: 0 auto 22px;
+    }
+    .process-step h3 { color: var(--navy); margin-bottom: 10px; }
+    .process-step p { color: var(--gray); font-size: 0.88rem; line-height: 1.7; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 760px; margin: 52px auto 0; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      width: 100%; background: none; border: none; padding: 22px 0;
+      text-align: left; font-size: 0.98rem; font-weight: 600; color: var(--navy);
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .faq-toggle {
+      width: 28px; height: 28px; border-radius: 50%; background: var(--off-white);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      font-size: 1.1rem; color: var(--gold); transition: transform 0.3s;
+    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; color: var(--gray); font-size: 0.93rem; line-height: 1.75; }
+    .faq-answer.open { max-height: 300px; padding-bottom: 22px; }
+    .faq-item.active .faq-toggle { transform: rotate(45deg); }
+
+    /* ── Contact ── */
+    .contact-section {
+      background:
+        linear-gradient(rgba(5,16,32,0.80) 0%, rgba(5,16,32,0.88) 100%),
+        url('devinedsel-japancontest-9175030.jpg') center / cover no-repeat;
+      background-attachment: fixed;
+      padding: 100px 0;
+    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .contact-info h2 { color: var(--white); margin-bottom: 14px; }
+    .contact-info p { color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 32px; }
+    .contact-methods { display: flex; flex-direction: column; gap: 16px; }
+    .contact-method { display: flex; align-items: center; gap: 14px; }
+    .contact-method-icon {
+      width: 44px; height: 44px; background: rgba(255,255,255,0.08);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+    .contact-method-label { font-size: 0.76rem; color: rgba(255,255,255,0.48); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+    .contact-method-value { font-size: 0.93rem; color: var(--white); font-weight: 500; }
+    .contact-method-value a { color: var(--gold-light); }
+    .contact-method-value a:hover { text-decoration: underline; }
+
+    /* Zoom highlight box */
+    .zoom-highlight {
+      margin-top: 28px; padding: 20px 22px;
+      background: rgba(74,222,128,0.1); border: 1px solid rgba(74,222,128,0.3);
+      border-radius: 12px;
+    }
+    .zoom-highlight-title { color: #4ade80; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .zoom-highlight-dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 0 3px rgba(74,222,128,0.25); flex-shrink: 0; }
+    .zoom-highlight p { color: rgba(255,255,255,0.7); font-size: 0.88rem; line-height: 1.65; }
+
+    .contact-response-time {
+      margin-top: 16px; padding: 14px 18px;
+      background: rgba(201,151,43,0.12); border: 1px solid rgba(201,151,43,0.25);
+      border-radius: 10px; font-size: 0.86rem; color: var(--gold-light);
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    /* Form */
+    .contact-form { background: var(--white); border-radius: 20px; padding: 38px; box-shadow: 0 24px 80px rgba(0,0,0,0.2); }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .form-group label { font-size: 0.84rem; font-weight: 600; color: var(--dark); }
+    .form-group input, .form-group select, .form-group textarea {
+      border: 1.5px solid var(--border); border-radius: 8px; padding: 11px 13px;
+      font-size: 0.92rem; font-family: var(--font); color: var(--dark);
+      background: var(--white); transition: border-color 0.2s; outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,151,43,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-privacy { font-size: 0.76rem; color: var(--gray); margin-bottom: 18px; line-height: 1.6; }
+    .form-submit {
+      width: 100%; padding: 15px; background: var(--navy); color: var(--white);
+      border: none; border-radius: 8px; font-size: 0.98rem; font-weight: 700;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .form-submit:hover { background: var(--navy2); transform: translateY(-1px); }
+    .form-success { display: none; text-align: center; padding: 32px; }
+    .form-success-icon { font-size: 3rem; margin-bottom: 14px; }
+    .form-success h3 { color: var(--navy); margin-bottom: 8px; }
+    .form-success p { color: var(--gray); font-size: 0.92rem; }
+
+    /* ── Footer ── */
+    footer { background: #070f1c; color: rgba(255,255,255,0.5); padding: 60px 0 30px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 44px; margin-bottom: 44px; }
+    .footer-brand { display: flex; flex-direction: column; gap: 14px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; color: var(--white); font-weight: 800; font-size: 1.05rem; }
+    .footer-logo-icon { width: 32px; height: 32px; background: var(--navy); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-weight: 900; font-size: 0.95rem; }
+    .footer-tagline { font-size: 0.86rem; line-height: 1.65; max-width: 250px; }
+    .footer-col h4 { color: var(--white); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { font-size: 0.86rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; }
+    .footer-disclaimer { font-size: 0.75rem; color: rgba(255,255,255,0.28); margin-top: 8px; }
+
+    /* ── Scroll reveal ── */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .why-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .why-floating-card { right: 0; bottom: 0; }
+    }
+    @media (max-width: 600px) {
+      .section { padding: 68px 0; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .hero-stats { gap: 20px; }
+      .contact-form { padding: 26px 18px; }
+      .zoom-strip-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">JB</div>
+        JapanBridge
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services"    data-en="Services"   data-ja="サービス">Services</a></li>
+        <li><a href="#why-japan"   data-en="Why Japan"  data-ja="なぜ日本？">Why Japan</a></li>
+        <li><a href="#how-it-works" data-en="Process"   data-ja="進め方">Process</a></li>
+        <li><a href="#faq"         data-en="FAQ"        data-ja="よくある質問">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn"        id="btn-ja" onclick="setLang('ja')">日本語</button>
+        </div>
+        <button class="nav-cta-btn" onclick="location.href='#contact'"
+          data-en="Free Consultation" data-ja="無料相談">Free Consultation</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services"     onclick="toggleMenu()" data-en="Services"       data-ja="サービス">Services</a>
+    <a href="#why-japan"    onclick="toggleMenu()" data-en="Why Japan"      data-ja="なぜ日本？">Why Japan</a>
+    <a href="#how-it-works" onclick="toggleMenu()" data-en="Process"        data-ja="進め方">Process</a>
+    <a href="#faq"          onclick="toggleMenu()" data-en="FAQ"            data-ja="よくある質問">FAQ</a>
+    <a href="#contact"      onclick="toggleMenu()" data-en="Free Consultation →" data-ja="無料相談 →">Free Consultation →</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span data-en="⛩ Japan Specialist — Anything About Japan"
+                data-ja="⛩ 日本スペシャリスト — 日本のことなら何でも">
+            ⛩ Japan Specialist — Anything About Japan
+          </span>
+        </div>
+        <h1>
+          <span data-en="Your Bridge to<br /><span>Japan's Market</span>"
+                data-ja="日本市場への扉を、<br /><span>一緒に開こう。</span>">
+            Your Bridge to<br /><span>Japan's Market</span>
+          </span>
+        </h1>
+        <p class="hero-sub"
+          data-en="Whether it's market research, real estate, product sourcing, or simply a question about Japan — I handle it all. Your dedicated Japan expert, fully in English."
+          data-ja="市場調査・不動産・仕入れ・パートナー探し、日本に関することなら何でも対応します。英語・日本語両対応の、あなた専任の日本エキスパートです。">
+          Whether it's market research, real estate, product sourcing, or simply a question about Japan — I handle it all. Your dedicated Japan expert, fully in English.
+        </p>
+
+        <div class="hero-zoom-pill">
+          <div class="hero-zoom-dot"></div>
+          <span class="hero-zoom-text"
+            data-en="<strong>Free 30-min Zoom consultation</strong> — no obligation, ask anything"
+            data-ja="<strong>初回30分・無料Zoom相談</strong> — 気軽に何でも聞いてください">
+            <strong>Free 30-min Zoom consultation</strong> — no obligation, ask anything
+          </span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--primary" style="font-size:1rem; padding:15px 32px;"
+            data-en="Book Free 30-min Zoom Call" data-ja="無料Zoom相談を予約する">
+            Book Free 30-min Zoom Call
+          </a>
+          <a href="#services" class="btn btn--outline" style="font-size:1rem; padding:15px 32px;"
+            data-en="Explore Services ↓" data-ja="サービスを見る ↓">
+            Explore Services ↓
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-number">¥<span>621</span>T</div>
+            <div class="hero-stat-label" data-en="Japan's annual GDP" data-ja="日本の年間GDP">Japan's annual GDP</div>
+          </div>
+          <div>
+            <div class="hero-stat-number"><span>3rd</span></div>
+            <div class="hero-stat-label" data-en="Largest economy globally" data-ja="世界第3位の経済大国">Largest economy globally</div>
+          </div>
+          <div>
+            <div class="hero-stat-number"><span>125M+</span></div>
+            <div class="hero-stat-label" data-en="High-income consumers" data-ja="高所得消費者">High-income consumers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Industries Bar ── -->
+  <div class="clients-bar">
+    <div class="container">
+      <div class="clients-bar-inner">
+        <span class="clients-label" data-en="Industries served" data-ja="対応業界">Industries served</span>
+        <div class="clients-logos">
+          <div class="client-logo-pill" data-en="Real Estate" data-ja="不動産">Real Estate</div>
+          <div class="client-logo-pill" data-en="Consumer Goods" data-ja="消費財">Consumer Goods</div>
+          <div class="client-logo-pill" data-en="Technology" data-ja="テクノロジー">Technology</div>
+          <div class="client-logo-pill" data-en="Food & Beverage" data-ja="食品・飲料">Food & Beverage</div>
+          <div class="client-logo-pill" data-en="Healthcare" data-ja="ヘルスケア">Healthcare</div>
+          <div class="client-logo-pill" data-en="Retail" data-ja="小売">Retail</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── USP Banner ── -->
+  <div class="usp-banner">
+    <div class="container usp-inner reveal">
+      <p class="usp-headline"
+        data-en="<span>Anything about Japan</span> — just ask."
+        data-ja="日本に関することなら、<span>何でも</span>お任せください。">
+        <span>Anything about Japan</span> — just ask.
+      </p>
+      <p class="usp-sub"
+        data-en="No request is too big or too small. If it involves Japan, I can research it, connect you with the right people, or handle it directly on your behalf."
+        data-ja="大きなことでも小さなことでも構いません。日本に関する調査・つなぎ役・代行など、お気軽にご相談ください。">
+        No request is too big or too small. If it involves Japan, I can research it, connect you with the right people, or handle it directly on your behalf.
+      </p>
+      <div class="usp-tags">
+        <span class="usp-tag" data-en="Market Research" data-ja="市場調査">Market Research</span>
+        <span class="usp-tag" data-en="Real Estate" data-ja="不動産">Real Estate</span>
+        <span class="usp-tag" data-en="Product Sourcing" data-ja="商品仕入れ">Product Sourcing</span>
+        <span class="usp-tag" data-en="Business Matchmaking" data-ja="ビジネスマッチング">Business Matchmaking</span>
+        <span class="usp-tag" data-en="Japan SEO" data-ja="日本向けSEO">Japan SEO</span>
+        <span class="usp-tag" data-en="Translation Support" data-ja="翻訳・通訳サポート">Translation Support</span>
+        <span class="usp-tag" data-en="Cultural Consulting" data-ja="文化・商習慣コンサル">Cultural Consulting</span>
+        <span class="usp-tag" data-en="Custom Research" data-ja="カスタムリサーチ">Custom Research</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Services ── -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" data-en="What I Do" data-ja="サービス内容">What I Do</span>
+        <h2 data-en="Full-Spectrum Japan Services" data-ja="日本に関するあらゆるサービス">Full-Spectrum Japan Services</h2>
+        <p style="color:var(--gray); max-width:540px; margin:12px auto 0;"
+          data-en="From first-time explorers to companies ready to scale — I provide the research, introductions, and hands-on support you need."
+          data-ja="初めて日本を探る段階から本格展開まで、リサーチ・紹介・実務サポートまで幅広く対応します。">
+          From first-time explorers to companies ready to scale — I provide the research, introductions, and hands-on support you need.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🔍</div>
+          <h3 data-en="Market Research & Intelligence" data-ja="市場調査・競合分析">Market Research & Intelligence</h3>
+          <p data-en="Deep-dive research into your target industry, competitive landscape, consumer behavior, and regulations in Japan. Actionable reports tailored to your business."
+             data-ja="対象業界・競合・消費者動向・規制まで徹底調査。あなたのビジネスに合わせたアクション可能なレポートを提供します。">
+            Deep-dive research into your target industry, competitive landscape, consumer behavior, and regulations in Japan. Actionable reports tailored to your business.
+          </p>
+          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🏢</div>
+          <h3 data-en="Real Estate & Office Setup" data-ja="不動産・オフィス設立">Real Estate & Office Setup</h3>
+          <p data-en="Commercial space, residential properties, co-working spaces — finding and negotiating property in Japan is complex for foreigners. I handle it fully in English."
+             data-ja="商業用・居住用・コワーキングスペースまで。外国人が日本で不動産を契約する複雑なプロセスを、英語で一括サポートします。">
+            Commercial space, residential properties, co-working spaces — finding and negotiating property in Japan is complex for foreigners. I handle it fully in English.
+          </p>
+          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📦</div>
+          <h3 data-en="Product Sourcing & Supply Chain" data-ja="商品仕入れ・サプライチェーン">Product Sourcing & Supply Chain</h3>
+          <p data-en="Access Japan's world-class manufacturers, wholesalers, and specialty suppliers. I identify partners, negotiate terms, and coordinate logistics on your behalf."
+             data-ja="日本の優れたメーカー・卸業者・専門サプライヤーへのアクセスを提供。交渉から物流調整まで代行します。">
+            Access Japan's world-class manufacturers, wholesalers, and specialty suppliers. I identify partners, negotiate terms, and coordinate logistics on your behalf.
+          </p>
+          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🤝</div>
+          <h3 data-en="Business Development & Matchmaking" data-ja="ビジネス開発・マッチング">Business Development & Matchmaking</h3>
+          <p data-en="I bring your business to the right Japanese companies. Introductions, pitch preparation, distributor search, and deal facilitation — bridging all cultural gaps."
+             data-ja="あなたのビジネスを適切な日本企業へ紹介。商談準備・ディストリビューター探し・ディール調整まで、文化的障壁を橋渡しします。">
+            I bring your business to the right Japanese companies. Introductions, pitch preparation, distributor search, and deal facilitation — bridging all cultural gaps.
+          </p>
+          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📈</div>
+          <h3 data-en="Japan SEO & Digital Strategy" data-ja="日本向けSEO・デジタル戦略">Japan SEO & Digital Strategy</h3>
+          <p data-en="Japan's digital landscape runs on different rules. I provide Japan-specific SEO, Google Japan optimization, and content localization to build your online presence."
+             data-ja="日本のデジタル環境は独自のルールで動きます。日本向けSEO・コンテンツローカライズで、オンラインプレゼンスを構築します。">
+            Japan's digital landscape runs on different rules. I provide Japan-specific SEO, Google Japan optimization, and content localization to build your online presence.
+          </p>
+          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+        </div>
+
+        <div class="service-card reveal" style="border-color: var(--gold); border-width: 2px;">
+          <div class="service-icon" style="background: rgba(201,151,43,0.12);">💬</div>
+          <h3 data-en="Anything Else About Japan" data-ja="その他、日本に関すること何でも">Anything Else About Japan</h3>
+          <p data-en="Can't find what you need above? Just ask. Japan culture, pricing, trends, regulations, introductions, translation — if it's Japan-related, reach out."
+             data-ja="上記にないことでも構いません。文化・価格調査・トレンド・規制・翻訳など、日本に関することなら何でもご相談ください。">
+            Can't find what you need above? Just ask. Japan culture, pricing, trends, regulations, introductions, translation — if it's Japan-related, reach out.
+          </p>
+          <a href="#contact" class="service-link" data-en="Ask anything →" data-ja="何でも聞く →">Ask anything →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Zoom CTA Strip ── -->
+  <div class="zoom-strip">
+    <div class="container zoom-strip-inner">
+      <div class="zoom-strip-text">
+        <strong data-en="🎥 Free 30-Minute Zoom Consultation" data-ja="🎥 初回30分・無料Zoom相談">🎥 Free 30-Minute Zoom Consultation</strong>
+        <span data-en="No sign-up fee, no commitment. Just a conversation about your Japan goals."
+              data-ja="初期費用・契約不要。日本でやりたいことを気軽に話しましょう。">
+          No sign-up fee, no commitment. Just a conversation about your Japan goals.
+        </span>
+      </div>
+      <button class="zoom-strip-btn" onclick="location.href='#contact'"
+        data-en="Book Your Free Call" data-ja="無料相談を予約する">
+        Book Your Free Call
+      </button>
+    </div>
+  </div>
+
+  <!-- ── Why Japan ── -->
+  <section class="section section--alt" id="why-japan">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-image-block reveal">
+          <div class="why-image-placeholder">
+            <img src="fumrin-building-4402415.jpg" alt="Tokyo business district at golden hour" />
+          </div>
+          <div class="why-floating-card">
+            <div class="why-floating-number">126M<span>+</span></div>
+            <div class="why-floating-label" data-en="Consumers ready to buy" data-ja="購買意欲の高い消費者">Consumers ready to buy</div>
+          </div>
+        </div>
+
+        <div class="why-content reveal">
+          <span class="section-label" data-en="Why Japan" data-ja="なぜ日本？">Why Japan</span>
+          <h2 data-en="A Market That Rewards the Right Approach" data-ja="正しいアプローチで結果が出る市場">A Market That Rewards the Right Approach</h2>
+          <p data-en="Japan is the world's third-largest economy — and one of the most underserved by foreign businesses. High consumer spending, fierce brand loyalty, and premium pricing make it extraordinarily lucrative for companies that enter strategically."
+             data-ja="日本は世界第3位の経済大国でありながら、外資系企業による参入が十分でない市場です。高い消費意欲・強いブランドロイヤリティ・プレミアム価格体制は、戦略的に参入した企業に大きな利益をもたらします。">
+            Japan is the world's third-largest economy — and one of the most underserved by foreign businesses. High consumer spending, fierce brand loyalty, and premium pricing make it extraordinarily lucrative for companies that enter strategically.
+          </p>
+          <p data-en="The barriers — language, business culture, regulatory complexity — are real. But with the right partner, they become your competitive advantage over companies that gave up at the door."
+             data-ja="言語・商習慣・規制の壁は確かに存在します。しかし適切なパートナーがいれば、それは諦めた競合に対するあなたの優位性になります。">
+            The barriers — language, business culture, regulatory complexity — are real. But with the right partner, they become your competitive advantage over companies that gave up at the door.
+          </p>
+          <ul class="why-list">
+            <li>
+              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <span data-en="Consumers willingly pay premium prices for quality" data-ja="消費者は品質に対してプレミアム価格を惜しまない">Consumers willingly pay premium prices for quality</span>
+            </li>
+            <li>
+              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <span data-en="Brand loyalty is exceptionally high once trust is established" data-ja="一度信頼を得ると、ブランドロイヤリティは非常に高い">Brand loyalty is exceptionally high once trust is established</span>
+            </li>
+            <li>
+              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <span data-en="Weak yen creates strong purchasing opportunities for foreign buyers" data-ja="円安により、外国からの調達・投資コストが低下">Weak yen creates strong purchasing opportunities for foreign buyers</span>
+            </li>
+            <li>
+              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <span data-en="Japanese government actively incentivizes foreign investment" data-ja="日本政府は積極的に外国投資を誘致・支援している">Japanese government actively incentivizes foreign investment</span>
+            </li>
+            <li>
+              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <span data-en="Less foreign competition in many product categories than Western markets" data-ja="多くのカテゴリーで外資系競合が少なく、参入余地が大きい">Less foreign competition in many product categories than Western markets</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ── -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" data-en="How It Works" data-ja="進め方">How It Works</span>
+        <h2 data-en="Simple, Transparent Process" data-ja="シンプルで透明なプロセス">Simple, Transparent Process</h2>
+        <p style="color:var(--gray); max-width:500px; margin:12px auto 0;"
+          data-en="From your first free Zoom call to your first Japanese business result."
+          data-ja="最初の無料Zoom相談から、日本での最初の成果まで。">
+          From your first free Zoom call to your first Japanese business result.
+        </p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number">1</div>
+          <h3 data-en="Free 30-min Zoom Call" data-ja="無料30分Zoom相談">Free 30-min Zoom Call</h3>
+          <p data-en="Tell me about your business and Japan goals. Ask anything. No obligation, no charge — just an honest conversation."
+             data-ja="あなたのビジネスと日本での目標を教えてください。何でも質問OK。費用・義務は一切なし。">
+            Tell me about your business and Japan goals. Ask anything. No obligation, no charge — just an honest conversation.
+          </p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">2</div>
+          <h3 data-en="Custom Research Plan" data-ja="カスタム調査プラン">Custom Research Plan</h3>
+          <p data-en="I build a tailored research plan — market sizing, competitive mapping, pricing, channels — specific to your product and goals."
+             data-ja="市場規模・競合・価格・流通チャネルなど、あなたの商品とゴールに合わせた調査プランを設計します。">
+            I build a tailored research plan — market sizing, competitive mapping, pricing, channels — specific to your product and goals.
+          </p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">3</div>
+          <h3 data-en="Strategy & Introductions" data-ja="戦略策定・紹介">Strategy & Introductions</h3>
+          <p data-en="Based on findings, I recommend your Japan entry strategy and make targeted introductions to the right Japanese companies or suppliers."
+             data-ja="調査結果をもとに参入戦略を提案し、最適な日本企業・サプライヤーへの紹介を行います。">
+            Based on findings, I recommend your Japan entry strategy and make targeted introductions to the right Japanese companies or suppliers.
+          </p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">4</div>
+          <h3 data-en="Ongoing Support" data-ja="継続サポート">Ongoing Support</h3>
+          <p data-en="Japan rewards long-term relationships. I stay as your ongoing advisor for follow-up research, negotiations, and new opportunities."
+             data-ja="日本はリレーションシップが重要。追加調査・交渉・新機会の探索を継続的にサポートします。">
+            Japan rewards long-term relationships. I stay as your ongoing advisor for follow-up research, negotiations, and new opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" data-en="FAQ" data-ja="よくある質問">FAQ</span>
+        <h2 data-en="Common Questions" data-ja="よくある質問">Common Questions</h2>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="Is the first consultation really free?" data-ja="初回相談は本当に無料ですか？">Is the first consultation really free?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="Yes, completely free. A 30-minute Zoom call with no obligation whatsoever. It's a chance for both of us to understand the fit before any commitment. You can ask anything about Japan, your market, or how I work."
+            data-ja="はい、完全無料です。義務一切なしの30分Zoom相談です。お互いの相性を確かめる機会として、日本・市場・私の働き方について何でも聞いていただけます。">
+            Yes, completely free. A 30-minute Zoom call with no obligation whatsoever. It's a chance for both of us to understand the fit before any commitment. You can ask anything about Japan, your market, or how I work.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="Do I need to speak Japanese?" data-ja="日本語は必要ですか？">Do I need to speak Japanese?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="Not at all. All communication with you is in English. I handle all Japanese language requirements on your behalf — documents, meetings, negotiations, and emails."
+            data-ja="まったく必要ありません。あなたとのやりとりはすべて英語で行います。書類・会議・交渉・メールなど、日本語が必要な部分はすべて私が代行します。">
+            Not at all. All communication with you is in English. I handle all Japanese language requirements on your behalf — documents, meetings, negotiations, and emails.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="What if my request doesn't fit a specific service?" data-ja="特定のサービスに当てはまらない場合は？">What if my request doesn't fit a specific service?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="Just reach out. My core value proposition is handling anything Japan-related. If I can't help directly, I'll connect you with someone who can. There are very few Japan-related questions I can't assist with."
+            data-ja="お気軽にご連絡ください。私の強みは「日本のことなら何でも対応」です。直接対応できない場合でも、適切な人物を紹介します。日本に関することで対応できないことはほとんどありません。">
+            Just reach out. My core value proposition is handling anything Japan-related. If I can't help directly, I'll connect you with someone who can. There are very few Japan-related questions I can't assist with.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="How long does a market research project take?" data-ja="市場調査の期間はどのくらいですか？">How long does a market research project take?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="A standard market research report takes 2–4 weeks depending on scope. For quick feasibility checks or specific questions, I can often deliver within a week. Timeline is always discussed and agreed upfront."
+            data-ja="標準的な市場調査レポートは範囲に応じて2〜4週間かかります。簡易的な検証や個別質問であれば1週間以内に対応できる場合が多いです。スケジュールは事前にご相談・合意します。">
+            A standard market research report takes 2–4 weeks depending on scope. For quick feasibility checks or specific questions, I can often deliver within a week. Timeline is always discussed and agreed upfront.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="What size of business do you work with?" data-ja="どのような規模の企業と取引していますか？">What size of business do you work with?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="All sizes — from solo founders exploring Japan for the first time, to growing startups, to established companies expanding into Asia. The free consultation helps me understand your situation and tailor the support accordingly."
+            data-ja="ソロの起業家から成長中のスタートアップ、アジア展開を目指す中堅企業まで幅広く対応します。無料相談であなたの状況を把握し、最適なサポートを提案します。">
+            All sizes — from solo founders exploring Japan for the first time, to growing startups, to established companies expanding into Asia. The free consultation helps me understand your situation and tailor the support accordingly.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left info -->
+        <div class="contact-info reveal">
+          <span class="section-label" style="color:var(--gold-light);"
+            data-en="Get in Touch" data-ja="お問い合わせ">Get in Touch</span>
+          <h2 data-en="Let's Talk About Your Japan Goals" data-ja="日本での目標について話しましょう">Let's Talk About Your Japan Goals</h2>
+          <p data-en="Tell me what you're trying to achieve in Japan. I'll respond within 1 business day with honest, practical advice — no sales pressure, no jargon."
+             data-ja="日本で達成したいことを教えてください。1営業日以内に、誠実で実用的なアドバイスをお返しします。押し売りや難しい専門用語は一切なし。">
+            Tell me what you're trying to achieve in Japan. I'll respond within 1 business day with honest, practical advice — no sales pressure, no jargon.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">✉️</div>
+              <div>
+                <div class="contact-method-label" data-en="Email" data-ja="メール">Email</div>
+                <div class="contact-method-value"><a href="mailto:tom@iwamae.com">tom@iwamae.com</a></div>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">🕐</div>
+              <div>
+                <div class="contact-method-label" data-en="Business Hours (JST)" data-ja="営業時間（JST）">Business Hours (JST)</div>
+                <div class="contact-method-value" data-en="Mon–Fri, 9:00 AM – 6:00 PM" data-ja="月〜金 9:00〜18:00">Mon–Fri, 9:00 AM – 6:00 PM</div>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">🌐</div>
+              <div>
+                <div class="contact-method-label" data-en="Languages" data-ja="対応言語">Languages</div>
+                <div class="contact-method-value" data-en="English · Japanese" data-ja="英語・日本語">English · Japanese</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoom-highlight">
+            <div class="zoom-highlight-title">
+              <div class="zoom-highlight-dot"></div>
+              <span data-en="Free 30-min Zoom Consultation Available" data-ja="初回30分・無料Zoom相談受付中">Free 30-min Zoom Consultation Available</span>
+            </div>
+            <p data-en="Book a free online meeting via Zoom, Google Meet, or your preferred platform. No commitment required — just a conversation."
+               data-ja="Zoom・Google Meet等のオンライン会議で無料相談をご予約いただけます。契約不要、お気軽にどうぞ。">
+              Book a free online meeting via Zoom, Google Meet, or your preferred platform. No commitment required — just a conversation.
+            </p>
+          </div>
+
+          <div class="contact-response-time">
+            ⚡ <span data-en="We respond to all inquiries within 1 business day" data-ja="すべてのお問い合わせに1営業日以内にご返信します">We respond to all inquiries within 1 business day</span>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reveal">
+          <div class="contact-form" id="contactFormWrapper">
+            <h3 style="color:var(--navy); margin-bottom:22px; font-size:1.15rem;"
+              data-en="Send a Message" data-ja="メッセージを送る">Send a Message</h3>
+
+            <form id="contactForm" onsubmit="submitForm(event)">
+              <div class="form-group">
+                <label for="name" data-en="Your Name *" data-ja="お名前 *">Your Name *</label>
+                <input type="text" id="name" name="name"
+                  data-placeholder-en="John Smith" data-placeholder-ja="山田 太郎"
+                  placeholder="John Smith" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-en="Email Address *" data-ja="メールアドレス *">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="service" data-en="Service of Interest" data-ja="ご興味のサービス">Service of Interest</label>
+                <select id="service" name="service">
+                  <option value=""    data-en="— Select a service —"               data-ja="— サービスを選ぶ —">— Select a service —</option>
+                  <option data-en="Market Research & Intelligence"  data-ja="市場調査・競合分析">Market Research & Intelligence</option>
+                  <option data-en="Real Estate & Office Setup"      data-ja="不動産・オフィス設立">Real Estate & Office Setup</option>
+                  <option data-en="Product Sourcing & Supply Chain" data-ja="商品仕入れ・サプライチェーン">Product Sourcing & Supply Chain</option>
+                  <option data-en="Business Development"            data-ja="ビジネス開発・マッチング">Business Development</option>
+                  <option data-en="Japan SEO & Digital Strategy"    data-ja="日本向けSEO・デジタル戦略">Japan SEO & Digital Strategy</option>
+                  <option data-en="Free 30-min Zoom Consultation"   data-ja="無料30分Zoom相談">Free 30-min Zoom Consultation</option>
+                  <option data-en="Other / Not Sure Yet"            data-ja="その他・未定">Other / Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-en="How Can I Help? *" data-ja="どのようなご用件ですか？ *">How Can I Help? *</label>
+                <textarea id="message" name="message"
+                  data-placeholder-en="Tell me about your business and what you'd like to achieve in Japan..."
+                  data-placeholder-ja="あなたのビジネスと、日本で達成したいことを教えてください..."
+                  placeholder="Tell me about your business and what you'd like to achieve in Japan..." required></textarea>
+              </div>
+
+              <p class="form-privacy"
+                data-en="By submitting this form you agree to be contacted about your inquiry. Your information is never shared with third parties."
+                data-ja="送信することで、お問い合わせ内容についてのご連絡に同意したものとします。個人情報は第三者へ提供しません。">
+                By submitting this form you agree to be contacted about your inquiry. Your information is never shared with third parties.
+              </p>
+
+              <button type="submit" class="form-submit"
+                data-en="Send Message — Free Consultation →"
+                data-ja="送信する — 無料相談を申し込む →">
+                Send Message — Free Consultation →
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="form-success-icon">✅</div>
+              <h3 data-en="Message Received!" data-ja="メッセージを受け取りました！">Message Received!</h3>
+              <p data-en="Thank you for reaching out. I'll review your inquiry and respond within 1 business day."
+                 data-ja="ご連絡ありがとうございます。内容を確認の上、1営業日以内にご返信します。">
+                Thank you for reaching out. I'll review your inquiry and respond within 1 business day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">JB</div>
+            JapanBridge
+          </div>
+          <p class="footer-tagline"
+            data-en="Japan business consulting — anything Japan-related for your company. Based in Japan, operating globally."
+            data-ja="日本ビジネスコンサルティング。日本に関することなら何でも。日本拠点、グローバル対応。">
+            Japan business consulting — anything Japan-related for your company. Based in Japan, operating globally.
+          </p>
+          <a href="mailto:tom@iwamae.com" style="color:var(--gold-light); font-size:0.86rem; margin-top:4px;">tom@iwamae.com</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-en="Services" data-ja="サービス">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" data-en="Market Research" data-ja="市場調査">Market Research</a></li>
+            <li><a href="#services" data-en="Real Estate" data-ja="不動産">Real Estate</a></li>
+            <li><a href="#services" data-en="Product Sourcing" data-ja="商品仕入れ">Product Sourcing</a></li>
+            <li><a href="#services" data-en="Business Dev" data-ja="ビジネス開発">Business Dev</a></li>
+            <li><a href="#services" data-en="Japan SEO" data-ja="日本向けSEO">Japan SEO</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-en="Company" data-ja="会社情報">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#why-japan" data-en="Why Japan" data-ja="なぜ日本？">Why Japan</a></li>
+            <li><a href="#how-it-works" data-en="Process" data-ja="進め方">Process</a></li>
+            <li><a href="#faq" data-en="FAQ" data-ja="よくある質問">FAQ</a></li>
+            <li><a href="#contact" data-en="Contact" data-ja="お問い合わせ">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-en="Contact" data-ja="連絡先">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:tom@iwamae.com">tom@iwamae.com</a></li>
+            <li><a href="#contact" data-en="Free 30-min Zoom Call" data-ja="無料Zoom相談">Free 30-min Zoom Call</a></li>
+            <li style="margin-top:14px; color:rgba(255,255,255,0.3); font-size:0.78rem;" data-en="Tokyo, Japan" data-ja="東京、日本">Tokyo, Japan</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 JapanBridge. <span data-en="All rights reserved." data-ja="All rights reserved.">All rights reserved.</span></span>
+        <span>
+          <a href="#" style="color:rgba(255,255,255,0.3); margin-right:14px;" data-en="Privacy Policy" data-ja="プライバシーポリシー">Privacy Policy</a>
+          <a href="#" style="color:rgba(255,255,255,0.3);" data-en="Terms" data-ja="利用規約">Terms</a>
+        </span>
+      </div>
+      <p class="footer-disclaimer"
+        data-en='"JapanBridge" is a working name. Operating as a sole proprietor.'
+        data-ja="「JapanBridge」は仮称です。個人事業主として運営中。">
+        "JapanBridge" is a working name. Operating as a sole proprietor.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Language Toggle ──
+    let currentLang = 'en';
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.documentElement.setAttribute('data-lang', lang);
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+
+      // Update all elements with data-en / data-ja
+      document.querySelectorAll('[data-en],[data-ja]').forEach(el => {
+        const val = el.getAttribute('data-' + lang);
+        if (val === null) return;
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          el.placeholder = el.getAttribute('data-placeholder-' + lang) || el.placeholder;
+        } else if (el.tagName === 'OPTION') {
+          el.textContent = val;
+        } else {
+          el.innerHTML = val;
+        }
+      });
+
+      // Update select option texts
+      document.querySelectorAll('select option').forEach(opt => {
+        const val = opt.getAttribute('data-' + lang);
+        if (val) opt.textContent = val;
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-placeholder-en],[data-placeholder-ja]').forEach(el => {
+        const ph = el.getAttribute('data-placeholder-' + lang);
+        if (ph) el.placeholder = ph;
+      });
+    }
+
+    // ── Navbar scroll ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // ── Mobile menu ──
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', (e) => {
+      const menu = document.getElementById('mobileMenu');
+      const hb = document.getElementById('hamburger');
+      if (!menu.contains(e.target) && !hb.contains(e.target)) menu.classList.remove('open');
+    });
+
+    // ── FAQ accordion ──
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.faq-answer').classList.remove('open');
+      });
+      if (!isOpen) { item.classList.add('active'); answer.classList.add('open'); }
+    }
+
+    // ── Scroll reveal ──
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      if (el.classList.contains('service-card')) el.style.transitionDelay = `${(i % 6) * 70}ms`;
+      revealObs.observe(el);
+    });
+
+    // ── Contact form ──
+    function submitForm(e) {
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const d = { name: form.name.value, email: form.email.value, service: form.service.value, message: form.message.value };
+      const subject = encodeURIComponent(`Japan Consulting Inquiry from ${d.name}`);
+      const body = encodeURIComponent(`Name: ${d.name}\nEmail: ${d.email}\nService: ${d.service}\n\nMessage:\n${d.message}`);
+      window.location.href = `mailto:tom@iwamae.com?subject=${subject}&body=${body}`;
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
