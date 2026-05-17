@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARKLinks | Japan Business Consulting – Anything About Japan</title>
-  <meta name="description" content="Japan business consulting for foreign companies. Market research, real estate, product sourcing, and anything Japan-related. Free 30-min Zoom consultation." />
-  <meta name="keywords" content="Japan market entry consulting, Japan business consulting, Japan market research, doing business in Japan, Japan expansion, Japan real estate, Japan product sourcing, free Japan consultation" />
+  <title>ARKLinks | Japanese Sake Tours & Export Consulting – Tokyo</title>
+  <meta name="description" content="ARKLinks connects international sake enthusiasts and trade buyers to Japan's finest breweries. Private sake tours, exclusive brewery access, and sake export sourcing from Tokyo." />
+  <meta name="keywords" content="Japanese sake brewery tour, private sake tour Japan, import Japanese sake, sake export supplier, sake brewery tour Niigata, sake brewery tour Kyoto, Japanese sake wholesale, sake distributor Japan" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
   <meta name="google-site-verification" content="RHl0MhOwFr08JJTwx42EEGGuYOEPCdHslGpAdcvsVR0" />
@@ -13,14 +13,14 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ARKLinks | Anything About Japan — Free 30-min Zoom Consultation" />
-  <meta property="og:description" content="Foreign companies: we handle anything Japan-related. Market research, real estate, product sourcing, and more. Free first consultation online." />
+  <meta property="og:title" content="ARKLinks | Japanese Sake Tours & Export Consulting" />
+  <meta property="og:description" content="Private brewery tours, exclusive sake experiences, and sake import sourcing. Your specialist gateway to Japanese sake." />
   <meta property="og:url" content="https://ark-links.com/" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ARKLinks | Japan Business Consulting" />
-  <meta name="twitter:description" content="Anything Japan-related for your business. Free 30-min Zoom consultation available." />
+  <meta name="twitter:title" content="ARKLinks | Japanese Sake Tours & Export Consulting" />
+  <meta name="twitter:description" content="Private sake brewery tours, exclusive kura access, and sake import sourcing from Tokyo." />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -28,12 +28,12 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ARKLinks",
-    "description": "Japan business consulting — market research, real estate, product sourcing, and anything Japan-related for foreign companies.",
+    "description": "Japanese sake specialist — private brewery tours, sake tasting experiences, and sake export/import consulting for international clients.",
     "email": "info@iwamae.com",
     "url": "https://ark-links.com",
     "areaServed": "JP",
-    "serviceType": ["Market Research", "Real Estate Consulting", "Product Sourcing", "Business Consulting", "SEO", "General Japan Consulting"],
-    "offers": { "@type": "Offer", "description": "Free 30-minute online consultation via Zoom" }
+    "serviceType": ["Sake Brewery Tours", "Sake Export Consulting", "Sake Sourcing", "Sake Import Support", "Japanese Sake Tourism"],
+    "offers": { "@type": "Offer", "description": "Free 30-minute online consultation for sake tours and trade inquiries" }
   }
   </script>
 
@@ -41,17 +41,19 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy:       #0f2240;
-      --navy2:      #1a3358;
-      --gold:       #c9972b;
-      --gold-light: #e8b84b;
+      --navy:       #1B2A4A;
+      --navy2:      #243659;
+      --gold:       #C9A84C;
+      --gold-light: #e8c76b;
+      --crimson:    #8B1A1A;
+      --forest:     #2E5D4B;
       --white:      #ffffff;
-      --off-white:  #f5f7fa;
+      --off-white:  #F5F0E8;
       --gray:       #6b7280;
       --dark:       #1f2937;
       --border:     #e5e7eb;
       --radius:     12px;
-      --shadow:     0 4px 24px rgba(15,34,64,0.10);
+      --shadow:     0 4px 24px rgba(27,42,74,0.12);
       --font:       'Inter', system-ui, -apple-system, sans-serif;
     }
 
@@ -84,6 +86,10 @@
     .btn--primary:hover { background: var(--gold-light); transform: translateY(-1px); }
     .btn--outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.55); }
     .btn--outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+    .btn--crimson { background: var(--crimson); color: var(--white); }
+    .btn--crimson:hover { background: #a52020; transform: translateY(-1px); }
+    .btn--forest { background: var(--forest); color: var(--white); }
+    .btn--forest:hover { background: #3a7a62; transform: translateY(-1px); }
 
     /* ── Language toggle ── */
     .lang-toggle {
@@ -138,61 +144,99 @@
     /* ── Hero ── */
     .hero {
       background:
-        linear-gradient(to right, rgba(5,16,32,0.55) 0%, rgba(5,16,32,0.30) 50%, rgba(5,16,32,0.18) 100%),
-        url('bridge.jpg') center 50% / cover no-repeat;
+        linear-gradient(to right, rgba(5,16,32,0.68) 0%, rgba(5,16,32,0.42) 55%, rgba(5,16,32,0.22) 100%),
+        url('bridge.jpg') center 40% / cover no-repeat;
       min-height: 100vh; display: flex; align-items: center;
       padding-top: 68px; position: relative; overflow: hidden;
     }
     .hero::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to bottom, transparent 70%, rgba(5,16,32,0.35) 100%);
+      background: linear-gradient(to bottom, transparent 70%, rgba(5,16,32,0.45) 100%);
       pointer-events: none;
     }
     .hero-content { position: relative; z-index: 2; max-width: 720px; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(201,151,43,0.15); border: 1px solid rgba(201,151,43,0.3);
+      background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.35);
       color: var(--gold-light); font-size: 0.8rem; font-weight: 600;
       letter-spacing: 0.08em; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
     }
     .hero h1 { color: var(--white); margin-bottom: 20px; }
     .hero h1 span { color: var(--gold-light); }
-    .hero-sub { font-size: 1.08rem; color: rgba(255,255,255,0.72); margin-bottom: 16px; max-width: 580px; line-height: 1.75; }
-    .hero-welcome { font-size: 0.88rem; color: rgba(255,255,255,0.55); max-width: 520px; line-height: 1.65; margin-top: 20px; border-left: 2px solid rgba(201,151,43,0.5); padding-left: 12px; }
+    .hero-sub { font-size: 1.08rem; color: rgba(255,255,255,0.75); margin-bottom: 16px; max-width: 580px; line-height: 1.75; }
+    .hero-welcome { font-size: 0.88rem; color: rgba(255,255,255,0.55); max-width: 520px; line-height: 1.65; margin-top: 20px; border-left: 2px solid rgba(201,168,76,0.5); padding-left: 12px; }
 
-    /* Free consultation pill in hero */
-    .hero-zoom-pill {
+    .hero-pill {
       display: inline-flex; align-items: center; gap: 10px;
       background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.18);
       border-radius: 100px; padding: 10px 20px; margin-bottom: 36px;
     }
-    .hero-zoom-dot {
+    .hero-pill-dot {
       width: 8px; height: 8px; background: #4ade80; border-radius: 50%;
       box-shadow: 0 0 0 3px rgba(74,222,128,0.25); flex-shrink: 0;
     }
-    .hero-zoom-text { font-size: 0.88rem; color: rgba(255,255,255,0.85); font-weight: 500; }
-    .hero-zoom-text strong { color: var(--white); }
+    .hero-pill-text { font-size: 0.88rem; color: rgba(255,255,255,0.85); font-weight: 500; }
+    .hero-pill-text strong { color: var(--white); }
 
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 56px; }
-    .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
-    .hero-stat-number { font-size: 1.9rem; font-weight: 800; color: var(--white); }
-    .hero-stat-number span { color: var(--gold-light); }
-    .hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 2px; }
 
-    /* ── Clients Bar ── */
-    .clients-bar { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 26px 0; }
-    .clients-bar-inner { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-    .clients-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
-    .clients-logos { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .client-logo-pill {
-      background: var(--white); border: 1px solid var(--border); border-radius: 8px;
-      padding: 7px 16px; font-size: 0.8rem; font-weight: 700; color: #9ca3af;
+    /* ── Services Tabs ── */
+    .services-tab-bar {
+      display: flex; gap: 12px; justify-content: center; margin: 44px 0 32px;
+      flex-wrap: wrap;
     }
+    .services-tab-btn {
+      padding: 12px 28px; border-radius: 8px; font-weight: 700; font-size: 0.92rem;
+      cursor: pointer; border: 2px solid var(--border); background: var(--white);
+      color: var(--gray); transition: all 0.2s;
+    }
+    .services-tab-btn.active-tours { border-color: var(--crimson); background: var(--crimson); color: var(--white); }
+    .services-tab-btn.active-trade { border-color: var(--forest); background: var(--forest); color: var(--white); }
+    .services-tab-btn:not(.active-tours):not(.active-trade):hover { border-color: var(--gold); color: var(--navy); }
+    .services-pillar { display: none; }
+    .services-pillar.visible { display: block; }
+    .pillar-header {
+      text-align: center; margin-bottom: 36px;
+    }
+    .pillar-header h3 { font-size: 1.3rem; color: var(--navy); margin-bottom: 8px; }
+    .pillar-header p { color: var(--gray); font-size: 0.95rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .pillar-label-tours { display: inline-block; background: rgba(139,26,26,0.1); color: var(--crimson); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 12px; }
+    .pillar-label-trade { display: inline-block; background: rgba(46,93,75,0.1); color: var(--forest); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 12px; }
 
-    /* ── USP banner ── */
+    /* ── Services ── */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+    .service-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 34px 30px;
+      transition: all 0.25s ease; position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; opacity: 0; transition: opacity 0.25s;
+    }
+    .tours-card::before { background: linear-gradient(90deg, var(--crimson), #c04040); }
+    .trade-card::before { background: linear-gradient(90deg, var(--forest), #3a7a62); }
+    .service-card:hover { border-color: transparent; box-shadow: var(--shadow); transform: translateY(-4px); }
+    .service-card:hover::before { opacity: 1; }
+    .service-icon {
+      width: 50px; height: 50px; background: var(--off-white); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.35rem; margin-bottom: 18px; transition: background 0.25s;
+    }
+    .tours-card:hover .service-icon { background: rgba(139,26,26,0.08); }
+    .trade-card:hover .service-icon { background: rgba(46,93,75,0.08); }
+    .service-card h3 { color: var(--navy); margin-bottom: 10px; }
+    .service-card p { color: var(--gray); font-size: 0.92rem; line-height: 1.7; }
+    .service-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.86rem; font-weight: 600; }
+    .tours-card .service-link { color: var(--crimson); }
+    .tours-card .service-link:hover { color: #c04040; }
+    .trade-card .service-link { color: var(--forest); }
+    .trade-card .service-link:hover { color: #3a7a62; }
+
+    /* ── USP Banner ── */
     .usp-banner {
       background:
-        linear-gradient(rgba(5,16,32,0.82) 0%, rgba(5,16,32,0.82) 100%),
+        linear-gradient(rgba(27,42,74,0.86) 0%, rgba(27,42,74,0.86) 100%),
         url('fumrin-building-4402415.jpg') center / cover no-repeat;
       background-attachment: fixed;
       padding: 72px 0;
@@ -208,71 +252,81 @@
       padding: 7px 18px; font-size: 0.85rem; font-weight: 500;
     }
 
-    /* ── Services ── */
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-top: 52px; }
-    .service-card {
+    /* ── Featured Experiences ── */
+    .experiences-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 52px; }
+    .experience-card {
       background: var(--white); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 34px 30px;
-      transition: all 0.25s ease; position: relative; overflow: hidden;
+      border-radius: 16px; overflow: hidden;
+      transition: all 0.25s ease; cursor: default;
     }
-    .service-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0;
-      height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light));
-      opacity: 0; transition: opacity 0.25s;
+    .experience-card:hover { box-shadow: 0 12px 40px rgba(27,42,74,0.14); transform: translateY(-4px); }
+    .experience-card-header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      padding: 28px 26px 22px; position: relative; overflow: hidden;
     }
-    .service-card:hover { border-color: transparent; box-shadow: var(--shadow); transform: translateY(-4px); }
-    .service-card:hover::before { opacity: 1; }
-    .service-icon {
-      width: 50px; height: 50px; background: var(--off-white); border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.35rem; margin-bottom: 18px; transition: background 0.25s;
+    .experience-card-header::after {
+      content: ''; position: absolute; bottom: -20px; right: -20px;
+      width: 80px; height: 80px; background: rgba(201,168,76,0.12);
+      border-radius: 50%;
     }
-    .service-card:hover .service-icon { background: rgba(201,151,43,0.1); }
-    .service-card h3 { color: var(--navy); margin-bottom: 10px; }
-    .service-card p { color: var(--gray); font-size: 0.92rem; line-height: 1.7; }
-    .service-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.86rem; font-weight: 600; color: var(--gold); }
-    .service-link:hover { color: var(--gold-light); }
+    .experience-region {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--gold-light); margin-bottom: 8px;
+    }
+    .experience-title { color: var(--white); font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
+    .experience-duration { color: rgba(255,255,255,0.6); font-size: 0.82rem; }
+    .experience-body { padding: 22px 26px; }
+    .experience-price {
+      font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 12px;
+    }
+    .experience-price span { font-size: 0.78rem; font-weight: 500; color: var(--gray); }
+    .experience-desc { color: var(--gray); font-size: 0.88rem; line-height: 1.7; margin-bottom: 16px; }
+    .experience-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+    .experience-tag {
+      background: var(--off-white); color: var(--gray); font-size: 0.72rem;
+      font-weight: 600; padding: 3px 10px; border-radius: 100px;
+    }
+    .experience-link { font-size: 0.86rem; font-weight: 700; color: var(--gold); display: inline-flex; align-items: center; gap: 5px; }
+    .experience-link:hover { color: var(--gold-light); }
+    .experience-custom {
+      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(27,42,74,0.06));
+      border: 2px dashed var(--gold); border-radius: 16px;
+      padding: 40px 26px; text-align: center;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      transition: all 0.25s;
+    }
+    .experience-custom:hover { background: rgba(201,168,76,0.12); }
+    .experience-custom-icon { font-size: 2.5rem; margin-bottom: 14px; }
+    .experience-custom h3 { color: var(--navy); margin-bottom: 10px; }
+    .experience-custom p { color: var(--gray); font-size: 0.88rem; line-height: 1.65; margin-bottom: 20px; }
 
-    /* ── Zoom CTA strip ── */
-    .zoom-strip { background: linear-gradient(90deg, #16a34a 0%, #15803d 100%); padding: 28px 0; }
-    .zoom-strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    .zoom-strip-text { color: var(--white); }
-    .zoom-strip-text strong { font-size: 1.15rem; display: block; margin-bottom: 4px; }
-    .zoom-strip-text span { font-size: 0.88rem; opacity: 0.85; }
-    .zoom-strip-btn {
-      background: var(--white); color: #15803d; border: none; border-radius: 8px;
+    /* ── CTA strip ── */
+    .cta-strip { background: linear-gradient(90deg, var(--navy) 0%, var(--navy2) 100%); padding: 28px 0; }
+    .cta-strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-strip-text { color: var(--white); }
+    .cta-strip-text strong { font-size: 1.15rem; display: block; margin-bottom: 4px; }
+    .cta-strip-text span { font-size: 0.88rem; opacity: 0.8; }
+    .cta-strip-btn {
+      background: var(--gold); color: var(--navy); border: none; border-radius: 8px;
       padding: 12px 26px; font-weight: 800; font-size: 0.95rem; cursor: pointer;
       transition: all 0.2s; white-space: nowrap; flex-shrink: 0;
     }
-    .zoom-strip-btn:hover { background: #f0fdf4; transform: translateY(-1px); }
+    .cta-strip-btn:hover { background: var(--gold-light); transform: translateY(-1px); }
 
-    /* ── Why Japan ── */
-    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-    .why-image-placeholder {
-      aspect-ratio: 4/3; border-radius: 20px;
-      position: relative; overflow: hidden;
+    /* ── Why ARKLinks ── */
+    .why-grid-trust { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 52px; }
+    .trust-card {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 30px 26px; transition: all 0.25s;
     }
-    .why-image-placeholder img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.6s ease;
+    .trust-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-color: rgba(201,168,76,0.3); }
+    .trust-icon {
+      width: 48px; height: 48px; background: rgba(201,168,76,0.1); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; margin-bottom: 16px;
     }
-    .why-image-placeholder:hover img { transform: scale(1.04); }
-    .why-floating-card {
-      position: absolute; bottom: -20px; right: -20px; background: var(--white);
-      border-radius: 16px; padding: 18px 22px; box-shadow: 0 12px 40px rgba(0,0,0,0.18);
-    }
-    .why-floating-number { font-size: 1.7rem; font-weight: 800; color: var(--navy); }
-    .why-floating-number span { color: var(--gold); }
-    .why-floating-label { font-size: 0.78rem; color: var(--gray); margin-top: 2px; }
-    .why-content h2 { margin-bottom: 18px; }
-    .why-content p { color: var(--gray); margin-bottom: 22px; line-height: 1.75; }
-    .why-list { list-style: none; display: flex; flex-direction: column; gap: 13px; }
-    .why-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; }
-    .why-check {
-      width: 22px; height: 22px; background: var(--gold); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
-    }
-    .why-check svg { width: 12px; height: 12px; }
+    .trust-card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.05rem; }
+    .trust-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
 
     /* ── Process ── */
     .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; margin-top: 52px; position: relative; }
@@ -310,7 +364,7 @@
     /* ── Contact ── */
     .contact-section {
       background:
-        linear-gradient(rgba(5,16,32,0.80) 0%, rgba(5,16,32,0.88) 100%),
+        linear-gradient(rgba(27,42,74,0.82) 0%, rgba(27,42,74,0.90) 100%),
         url('devinedsel-japancontest-9175030.jpg') center / cover no-repeat;
       background-attachment: fixed;
       padding: 100px 0;
@@ -330,22 +384,32 @@
     .contact-method-value a { color: var(--gold-light); }
     .contact-method-value a:hover { text-decoration: underline; }
 
-    /* Zoom highlight box */
-    .zoom-highlight {
+    .consultation-highlight {
       margin-top: 28px; padding: 20px 22px;
       background: rgba(74,222,128,0.1); border: 1px solid rgba(74,222,128,0.3);
       border-radius: 12px;
     }
-    .zoom-highlight-title { color: #4ade80; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
-    .zoom-highlight-dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 0 3px rgba(74,222,128,0.25); flex-shrink: 0; }
-    .zoom-highlight p { color: rgba(255,255,255,0.7); font-size: 0.88rem; line-height: 1.65; }
+    .consultation-highlight-title { color: #4ade80; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .consultation-dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 0 3px rgba(74,222,128,0.25); flex-shrink: 0; }
+    .consultation-highlight p { color: rgba(255,255,255,0.7); font-size: 0.88rem; line-height: 1.65; }
 
     .contact-response-time {
       margin-top: 16px; padding: 14px 18px;
-      background: rgba(201,151,43,0.12); border: 1px solid rgba(201,151,43,0.25);
+      background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.25);
       border-radius: 10px; font-size: 0.86rem; color: var(--gold-light);
       display: flex; align-items: center; gap: 8px;
     }
+
+    /* Contact Instagram block */
+    .contact-instagram {
+      margin-top: 20px; padding: 16px 20px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px; display: flex; align-items: center; gap: 14px;
+    }
+    .contact-instagram-icon { font-size: 1.6rem; flex-shrink: 0; }
+    .contact-instagram-text { font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
+    .contact-instagram-text a { color: var(--gold-light); font-weight: 700; }
+    .contact-instagram-text a:hover { text-decoration: underline; }
 
     /* Form */
     .contact-form { background: var(--white); border-radius: 20px; padding: 38px; box-shadow: 0 24px 80px rgba(0,0,0,0.2); }
@@ -357,9 +421,14 @@
       background: var(--white); transition: border-color 0.2s; outline: none;
     }
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,151,43,0.1);
+      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
     }
     .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-radio-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-radio-option { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 8px; transition: all 0.2s; }
+    .form-radio-option:hover { border-color: var(--gold); background: rgba(201,168,76,0.04); }
+    .form-radio-option input[type="radio"] { accent-color: var(--gold); width: 16px; height: 16px; flex-shrink: 0; }
+    .form-radio-option span { font-size: 0.9rem; font-weight: 500; color: var(--dark); }
     .form-privacy { font-size: 0.76rem; color: var(--gray); margin-bottom: 18px; line-height: 1.6; }
     .form-submit {
       width: 100%; padding: 15px; background: var(--navy); color: var(--white);
@@ -383,6 +452,9 @@
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
     .footer-links a { font-size: 0.86rem; transition: color 0.2s; }
     .footer-links a:hover { color: var(--white); }
+    .footer-instagram { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+    .footer-instagram a { color: var(--gold-light); font-size: 0.86rem; font-weight: 600; }
+    .footer-instagram a:hover { color: var(--white); }
     .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; }
     .footer-disclaimer { font-size: 0.75rem; color: rgba(255,255,255,0.28); margin-top: 8px; }
 
@@ -394,18 +466,16 @@
     @media (max-width: 900px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .why-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 36px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .process-steps::before { display: none; }
-      .why-floating-card { right: 0; bottom: 0; }
       .nav-cta-btn { display: none; }
     }
     @media (max-width: 600px) {
       .section { padding: 68px 0; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-      .hero-stats { gap: 20px; }
       .contact-form { padding: 26px 18px; }
-      .zoom-strip-inner { flex-direction: column; text-align: center; }
+      .cta-strip-inner { flex-direction: column; text-align: center; }
       .lang-btn { padding: 6px 10px; font-size: 0.75rem; }
     }
   </style>
@@ -416,14 +486,14 @@
   <nav id="navbar">
     <div class="container nav-inner">
       <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">AL</div>
+        <div class="nav-logo-icon">🍶</div>
         ARKLinks
       </a>
       <ul class="nav-links">
-        <li><a href="#services"    data-en="Services"   data-ja="サービス">Services</a></li>
-        <li><a href="#why-japan"   data-en="Why Japan"  data-ja="なぜ日本？">Why Japan</a></li>
-        <li><a href="#how-it-works" data-en="Process"   data-ja="進め方">Process</a></li>
-        <li><a href="#faq"         data-en="FAQ"        data-ja="よくある質問">FAQ</a></li>
+        <li><a href="#services"      data-en="Services"      data-ja="サービス">Services</a></li>
+        <li><a href="#experiences"   data-en="Experiences"   data-ja="体験">Experiences</a></li>
+        <li><a href="#why-us"        data-en="Why Us"        data-ja="選ばれる理由">Why Us</a></li>
+        <li><a href="#faq"           data-en="FAQ"           data-ja="よくある質問">FAQ</a></li>
       </ul>
       <div class="nav-right">
         <div class="lang-toggle">
@@ -441,11 +511,11 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services"     onclick="toggleMenu()" data-en="Services"       data-ja="サービス">Services</a>
-    <a href="#why-japan"    onclick="toggleMenu()" data-en="Why Japan"      data-ja="なぜ日本？">Why Japan</a>
-    <a href="#how-it-works" onclick="toggleMenu()" data-en="Process"        data-ja="進め方">Process</a>
-    <a href="#faq"          onclick="toggleMenu()" data-en="FAQ"            data-ja="よくある質問">FAQ</a>
-    <a href="#contact"      onclick="toggleMenu()" data-en="Free Consultation →" data-ja="無料相談 →">Free Consultation →</a>
+    <a href="#services"    onclick="toggleMenu()" data-en="Services"       data-ja="サービス">Services</a>
+    <a href="#experiences" onclick="toggleMenu()" data-en="Experiences"    data-ja="体験">Experiences</a>
+    <a href="#why-us"      onclick="toggleMenu()" data-en="Why Us"         data-ja="選ばれる理由">Why Us</a>
+    <a href="#faq"         onclick="toggleMenu()" data-en="FAQ"            data-ja="よくある質問">FAQ</a>
+    <a href="#contact"     onclick="toggleMenu()" data-en="Free Consultation →" data-ja="無料相談 →">Free Consultation →</a>
   </div>
 
   <!-- ── Hero ── -->
@@ -453,74 +523,73 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
-          <span data-en="⛩ Your Link to Japan"
-                data-ja="⛩ あなたと日本をつなぐ">
-            ⛩ Your Link to Japan
+          <span data-en="🍶 Your Gateway to Japanese Sake"
+                data-ja="🍶 日本酒への入口">
+            🍶 Your Gateway to Japanese Sake
           </span>
         </div>
         <h1>
-          <span data-en="Connecting You<br /><span>to Japan.</span>"
-                data-ja="あなたと日本を、<br /><span>つなぐ。</span>">
-            Connecting You<br /><span>to Japan.</span>
+          <span data-en="Experience Japan.<br /><span>Trade Its Finest Sake.</span>"
+                data-ja="日本を体験する。<br /><span>最高の日本酒を世界へ。</span>">
+            Experience Japan.<br /><span>Trade Its Finest Sake.</span>
           </span>
         </h1>
         <p class="hero-sub"
-          data-en="ARKLinks is your dedicated bridge to Japan — helping foreign companies enter the Japanese market, connecting Japanese products with global buyers, and supporting anyone with a Japan-related need."
-          data-ja="ARKLinksは日本への専任架け橋です。海外企業の日本進出・日本製品の海外販売・買い手売り手のマッチングなど、日本に関するあらゆるニーズにお応えします。">
-          ARKLinks is your dedicated bridge to Japan — helping foreign companies enter the Japanese market, connecting Japanese products with global buyers, and supporting anyone with a Japan-related need.
+          data-en="ARKLinks connects the world to Japan's most celebrated craft — from immersive brewery tours and exclusive kura access, to seamless sake import sourcing and export consulting."
+          data-ja="ARKLinksは日本酒の世界への架け橋です。没入型の酒蔵ツアー・蔵元への独占アクセスから、日本酒の輸入調達・輸出コンサルティングまで、ワンストップでご対応します。">
+          ARKLinks connects the world to Japan's most celebrated craft — from immersive brewery tours and exclusive kura access, to seamless sake import sourcing and export consulting.
         </p>
 
-        <div class="hero-zoom-pill">
-          <div class="hero-zoom-dot"></div>
-          <span class="hero-zoom-text"
-            data-en="<strong>Free 30-min Zoom consultation</strong> — no obligation, ask anything"
-            data-ja="<strong>初回30分・無料Zoom相談</strong> — 気軽に何でも聞いてください">
-            <strong>Free 30-min Zoom consultation</strong> — no obligation, ask anything
+        <div class="hero-pill">
+          <div class="hero-pill-dot"></div>
+          <span class="hero-pill-text"
+            data-en="<strong>Free 30-min consultation</strong> — tours &amp; trade inquiries welcome"
+            data-ja="<strong>無料30分相談受付中</strong> — ツアー・輸出入どちらもお気軽に">
+            <strong>Free 30-min consultation</strong> — tours &amp; trade inquiries welcome
           </span>
         </div>
 
         <div class="hero-actions">
-          <a href="#contact" class="btn btn--primary" style="font-size:1rem; padding:15px 32px;"
-            data-en="Book Free 30-min Zoom Call" data-ja="無料Zoom相談を予約する">
-            Book Free 30-min Zoom Call
+          <a href="#experiences" class="btn btn--crimson" style="font-size:1rem; padding:15px 32px;"
+            data-en="Plan My Sake Journey →" data-ja="酒蔵ツアーを計画する →">
+            Plan My Sake Journey →
           </a>
-          <a href="#services" class="btn btn--outline" style="font-size:1rem; padding:15px 32px;"
-            data-en="Explore Services ↓" data-ja="サービスを見る ↓">
-            Explore Services ↓
+          <a href="#contact" class="btn btn--outline" style="font-size:1rem; padding:15px 32px;"
+            data-en="Source Japanese Sake →" data-ja="日本酒を輸入する →">
+            Source Japanese Sake →
           </a>
         </div>
         <p class="hero-welcome"
-          data-en="Open to businesses of all sizes and individuals. No matter the scale — if you have a question about Japan, we welcome your first consultation."
-          data-ja="企業・個人を問わず、規模に関係なく相談を受け付けています。日本に関することなら何でも、まずはお気軽にご連絡ください。">
-          Open to businesses of all sizes and individuals. No matter the scale — if you have a question about Japan, we welcome your first consultation.
+          data-en="Both paths start with a free 30-minute consultation. No Japanese language required — we handle everything on the Japan side."
+          data-ja="どちらも無料30分相談からスタートします。日本語不要 — 日本側はすべて私たちが対応します。">
+          Both paths start with a free 30-minute consultation. No Japanese language required — we handle everything on the Japan side.
         </p>
       </div>
     </div>
   </section>
 
-
   <!-- ── USP Banner ── -->
   <div class="usp-banner">
     <div class="container usp-inner reveal">
       <p class="usp-headline"
-        data-en="Your gateway to <span>Japan</span> — and beyond."
-        data-ja="日本への扉を、<span>一緒に開こう。</span>">
-        Your gateway to <span>Japan</span> — and beyond.
+        data-en="Japan has <span>1,400+ active sake breweries.</span><br>Most are invisible to the world."
+        data-ja="日本には<span>1,400以上の活躍する酒蔵</span>があります。<br>その多くは、まだ世界に知られていない。">
+        Japan has <span>1,400+ active sake breweries.</span><br>Most are invisible to the world.
       </p>
       <p class="usp-sub"
-        data-en="Whether you're a company looking to enter Japan, an individual with a Japan-related question, or a Japanese business wanting to reach global buyers — ARKLinks is the link between you and Japan."
-        data-ja="日本進出を目指す企業から、日本に関する疑問を持つ個人、海外展開を目指す日本企業まで。どんなニーズでも、ARKLinksがあなたと日本をつなぎます。">
-        Whether you're a company looking to enter Japan, an individual with a Japan-related question, or a Japanese business wanting to reach global buyers — ARKLinks is the link between you and Japan.
+        data-en="We unlock them — for travelers seeking authentic experiences, and for trade buyers ready to source Japan's finest craft sake."
+        data-ja="私たちがその扉を開きます。本物の体験を求める旅行者にも、日本の最高の日本酒を調達したいバイヤーにも。">
+        We unlock them — for travelers seeking authentic experiences, and for trade buyers ready to source Japan's finest craft sake.
       </p>
       <div class="usp-tags">
-        <span class="usp-tag" data-en="Market Research" data-ja="市場調査">Market Research</span>
-        <span class="usp-tag" data-en="Japan Market Entry" data-ja="日本進出">Japan Market Entry</span>
-        <span class="usp-tag" data-en="Export Support" data-ja="輸出支援">Export Support</span>
-        <span class="usp-tag" data-en="Buyer-Seller Matching" data-ja="買い手売り手マッチング">Buyer-Seller Matching</span>
-        <span class="usp-tag" data-en="Real Estate" data-ja="不動産">Real Estate</span>
-        <span class="usp-tag" data-en="Product Sourcing" data-ja="商品仕入れ">Product Sourcing</span>
-        <span class="usp-tag" data-en="Japan SEO" data-ja="日本向けSEO">Japan SEO</span>
-        <span class="usp-tag" data-en="Business Consulting" data-ja="ビジネスコンサル">Business Consulting</span>
+        <span class="usp-tag" data-en="Private Brewery Tours" data-ja="プライベート酒蔵ツアー">Private Brewery Tours</span>
+        <span class="usp-tag" data-en="Sake Export Sourcing" data-ja="日本酒輸出調達">Sake Export Sourcing</span>
+        <span class="usp-tag" data-en="Toji Access" data-ja="杜氏へのアクセス">Toji Access</span>
+        <span class="usp-tag" data-en="Import Documentation" data-ja="輸入書類サポート">Import Documentation</span>
+        <span class="usp-tag" data-en="Sake Education" data-ja="日本酒教育">Sake Education</span>
+        <span class="usp-tag" data-en="Brewery Matchmaking" data-ja="蔵元マッチング">Brewery Matchmaking</span>
+        <span class="usp-tag" data-en="Small-Batch Sourcing" data-ja="少量生産蔵の調達">Small-Batch Sourcing</span>
+        <span class="usp-tag" data-en="Corporate Retreats" data-ja="法人向け体験">Corporate Retreats</span>
       </div>
     </div>
   </div>
@@ -529,217 +598,445 @@
   <section class="section" id="services">
     <div class="container">
       <div class="text-center reveal">
-        <span class="section-label" data-en="What I Do" data-ja="サービス内容">What I Do</span>
-        <h2 data-en="Full-Spectrum Japan Services" data-ja="日本に関するあらゆるサービス">Full-Spectrum Japan Services</h2>
-        <p style="color:var(--gray); max-width:540px; margin:12px auto 0;"
-          data-en="From first-time explorers to companies ready to scale — I provide the research, introductions, and hands-on support you need."
-          data-ja="初めて日本を探る段階から本格展開まで、リサーチ・紹介・実務サポートまで幅広く対応します。">
-          From first-time explorers to companies ready to scale — I provide the research, introductions, and hands-on support you need.
+        <span class="section-label" data-en="What We Offer" data-ja="サービス内容">What We Offer</span>
+        <h2 data-en="Two Ways to Engage with Japanese Sake" data-ja="日本酒との2つの関わり方">Two Ways to Engage with Japanese Sake</h2>
+        <p style="color:var(--gray); max-width:560px; margin:12px auto 0;"
+          data-en="Whether you're planning an unforgettable sake journey or building a sake import business — select your path below."
+          data-ja="忘れられない日本酒の旅を計画する方も、日本酒の輸入ビジネスを構築する方も — 下からあなたのパスをお選びください。">
+          Whether you're planning an unforgettable sake journey or building a sake import business — select your path below.
         </p>
       </div>
 
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">🔍</div>
-          <h3 data-en="Market Research & Intelligence" data-ja="市場調査・競合分析">Market Research & Intelligence</h3>
-          <p data-en="Deep-dive research into your target industry, competitive landscape, consumer behavior, and regulations in Japan. Actionable reports tailored to your business."
-             data-ja="対象業界・競合・消費者動向・規制まで徹底調査。あなたのビジネスに合わせたアクション可能なレポートを提供します。">
-            Deep-dive research into your target industry, competitive landscape, consumer behavior, and regulations in Japan. Actionable reports tailored to your business.
-          </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
-        </div>
+      <div class="services-tab-bar">
+        <button class="services-tab-btn active-tours" id="tab-tours" onclick="showPillar('tours')"
+          data-en="🍶 Sake Tours &amp; Experiences" data-ja="🍶 酒蔵ツアー &amp; 体験">
+          🍶 Sake Tours &amp; Experiences
+        </button>
+        <button class="services-tab-btn" id="tab-trade" onclick="showPillar('trade')"
+          data-en="🌍 Sake Export &amp; Trade" data-ja="🌍 日本酒輸出・貿易">
+          🌍 Sake Export &amp; Trade
+        </button>
+      </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">🏢</div>
-          <h3 data-en="Real Estate & Office Setup" data-ja="不動産・オフィス設立">Real Estate & Office Setup</h3>
-          <p data-en="Commercial space, residential properties, co-working spaces — finding and negotiating property in Japan is complex for foreigners. I handle it fully in English."
-             data-ja="商業用・居住用・コワーキングスペースまで。外国人が日本で不動産を契約する複雑なプロセスを、英語で一括サポートします。">
-            Commercial space, residential properties, co-working spaces — finding and negotiating property in Japan is complex for foreigners. I handle it fully in English.
+      <!-- TOURS PILLAR -->
+      <div id="pillar-tours" class="services-pillar visible reveal">
+        <div class="pillar-header">
+          <span class="pillar-label-tours" data-en="For Travelers & Sake Enthusiasts" data-ja="旅行者・日本酒愛好家向け">For Travelers &amp; Sake Enthusiasts</span>
+          <h3 data-en="Sake Tours & Experiences" data-ja="酒蔵ツアー & 体験">Sake Tours &amp; Experiences</h3>
+          <p data-en="We arrange exclusive brewery access, guided tastings, and multi-day sake itineraries across Japan's key sake-producing regions — in English, for international visitors."
+             data-ja="英語対応で、外国人旅行者に向けた独占的な酒蔵アクセス・ガイド付きテイスティング・日本主要産地の日本酒旅行を手配します。">
+            We arrange exclusive brewery access, guided tastings, and multi-day sake itineraries across Japan's key sake-producing regions — in English, for international visitors.
           </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
         </div>
+        <div class="services-grid">
+          <div class="service-card tours-card">
+            <div class="service-icon">🏯</div>
+            <h3 data-en="Private Brewery Tours" data-ja="プライベート酒蔵ツアー">Private Brewery Tours</h3>
+            <p data-en="Skip the public tours. We arrange exclusive access to craft sake breweries across Niigata, Fushimi, Nada, Akita, Hiroshima, and beyond — tailored entirely to your group."
+               data-ja="公開ツアーに頼らず、新潟・伏見・灘・秋田・広島など主要産地の酒蔵に独占的にアクセスできます。グループに合わせて完全カスタマイズ。">
+              Skip the public tours. We arrange exclusive access to craft sake breweries across Niigata, Fushimi, Nada, Akita, Hiroshima, and beyond — tailored entirely to your group.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">📦</div>
-          <h3 data-en="Product Sourcing & Supply Chain" data-ja="商品仕入れ・サプライチェーン">Product Sourcing & Supply Chain</h3>
-          <p data-en="Access Japan's world-class manufacturers, wholesalers, and specialty suppliers. I identify partners, negotiate terms, and coordinate logistics on your behalf."
-             data-ja="日本の優れたメーカー・卸業者・専門サプライヤーへのアクセスを提供。交渉から物流調整まで代行します。">
-            Access Japan's world-class manufacturers, wholesalers, and specialty suppliers. I identify partners, negotiate terms, and coordinate logistics on your behalf.
-          </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          <div class="service-card tours-card">
+            <div class="service-icon">🥂</div>
+            <h3 data-en="Sake Tasting Experiences" data-ja="日本酒テイスティング体験">Sake Tasting Experiences</h3>
+            <p data-en="Guided tastings with English-speaking sake sommeliers. Learn to read flavor profiles, understand classification grades (junmai, ginjo, daiginjo), and identify your preferences."
+               data-ja="英語対応の日本酒ソムリエによるガイド付きテイスティング。香りや味わいの特徴、等級（純米・吟醸・大吟醸）の読み方を学べます。">
+              Guided tastings with English-speaking sake sommeliers. Learn to read flavor profiles, understand classification grades (junmai, ginjo, daiginjo), and identify your preferences.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
+
+          <div class="service-card tours-card">
+            <div class="service-icon">🗾</div>
+            <h3 data-en="Multi-Day Sake Itineraries" data-ja="複数日の日本酒旅行">Multi-Day Sake Itineraries</h3>
+            <p data-en="Custom 3–10 day itineraries built entirely around sake — breweries, sake bars, sake-paired kaiseki dining, and regional culture immersion."
+               data-ja="酒蔵・日本酒バー・日本酒ペアリング懐石・地域文化を組み合わせた、3〜10日間のカスタム旅程をご提案します。">
+              Custom 3–10 day itineraries built entirely around sake — breweries, sake bars, sake-paired kaiseki dining, and regional culture immersion.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
+
+          <div class="service-card tours-card">
+            <div class="service-icon">👨‍🍳</div>
+            <h3 data-en="Toji (Master Brewer) Meetings" data-ja="杜氏との面会">Toji (Master Brewer) Meetings</h3>
+            <p data-en="Exclusive introductions to toji — the master brewers who define Japanese sake craftsmanship. Rare access not available through standard tourism channels."
+               data-ja="日本酒の品質を決める杜氏との特別対面。通常の観光ルートでは叶わない貴重な機会です。">
+              Exclusive introductions to toji — the master brewers who define Japanese sake craftsmanship. Rare access not available through standard tourism channels.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
+
+          <div class="service-card tours-card">
+            <div class="service-icon">🍱</div>
+            <h3 data-en="Sake &amp; Food Pairing Dinners" data-ja="日本酒 &amp; 料理ペアリングディナー">Sake &amp; Food Pairing Dinners</h3>
+            <p data-en="Curated sake-pairing dinner experiences at top-tier restaurants and izakayas, including sake-focused omakase with expert commentary on each pairing."
+               data-ja="一流レストランや居酒屋での日本酒ペアリングディナー体験。各ペアリングを専門家が解説する日本酒おまかせも含みます。">
+              Curated sake-pairing dinner experiences at top-tier restaurants and izakayas, including sake-focused omakase with expert commentary on each pairing.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
+
+          <div class="service-card tours-card">
+            <div class="service-icon">🏢</div>
+            <h3 data-en="Group &amp; Corporate Retreats" data-ja="グループ・法人向けリトリート">Group &amp; Corporate Retreats</h3>
+            <p data-en="Sake-themed group experiences for teams, incentive travel, or trade delegations — private kura visits, masterclasses, and sake certificate programs for groups of 4–30."
+               data-ja="チーム・報奨旅行・業界代表団向けの日本酒テーマ体験。4〜30名のグループ向けに、蔵見学・マスタークラス・認定プログラムをご用意します。">
+              Sake-themed group experiences for teams, incentive travel, or trade delegations — private kura visits, masterclasses, and sake certificate programs for groups of 4–30.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
         </div>
+      </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">🤝</div>
-          <h3 data-en="Business Development & Matchmaking" data-ja="ビジネス開発・マッチング">Business Development & Matchmaking</h3>
-          <p data-en="I bring your business to the right Japanese companies. Introductions, pitch preparation, distributor search, and deal facilitation — bridging all cultural gaps."
-             data-ja="あなたのビジネスを適切な日本企業へ紹介。商談準備・ディストリビューター探し・ディール調整まで、文化的障壁を橋渡しします。">
-            I bring your business to the right Japanese companies. Introductions, pitch preparation, distributor search, and deal facilitation — bridging all cultural gaps.
+      <!-- TRADE PILLAR -->
+      <div id="pillar-trade" class="services-pillar reveal">
+        <div class="pillar-header">
+          <span class="pillar-label-trade" data-en="For Importers, Distributors &amp; Restaurants" data-ja="輸入業者・ディストリビューター・飲食店向け">For Importers, Distributors &amp; Restaurants</span>
+          <h3 data-en="Sake Export &amp; Trade Consulting" data-ja="日本酒輸出・貿易コンサルティング">Sake Export &amp; Trade Consulting</h3>
+          <p data-en="We act as your Japan-side partner — navigating brewery relationships, export licensing, and import regulations so you can focus on growing your sake business."
+             data-ja="私たちが日本側のパートナーとして、酒蔵との関係構築・輸出許可・輸入規制のナビゲートを担います。あなたは日本酒ビジネスの成長に集中できます。">
+            We act as your Japan-side partner — navigating brewery relationships, export licensing, and import regulations so you can focus on growing your sake business.
           </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
         </div>
+        <div class="services-grid">
+          <div class="service-card trade-card">
+            <div class="service-icon">🔍</div>
+            <h3 data-en="Brewery Sourcing &amp; Matchmaking" data-ja="蔵元選定 &amp; マッチング">Brewery Sourcing &amp; Matchmaking</h3>
+            <p data-en="We identify sake breweries that match your target profile — price point, style (junmai, ginjo, sparkling, craft), volume requirements, and export readiness."
+               data-ja="ターゲットの価格帯・スタイル（純米・吟醸・スパークリング・クラフト）・必要数量・輸出準備状況に合う酒蔵を選定します。">
+              We identify sake breweries that match your target profile — price point, style (junmai, ginjo, sparkling, craft), volume requirements, and export readiness.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">🌍</div>
-          <h3 data-en="Japan Product Export Support" data-ja="日本製品の海外販売支援">Japan Product Export Support</h3>
-          <p data-en="Are you a Japanese manufacturer or wholesaler with quality products ready to sell globally? I find international buyers, negotiate terms, and manage the export process to build your international revenue."
-             data-ja="優れた日本製品を海外に売りたい製造業者・卸業者様へ。国際的な買い手を見つけ、交渉から輸出手続きまで一括でサポートします。">
-            Are you a Japanese manufacturer or wholesaler with quality products ready to sell globally? I find international buyers, negotiate terms, and manage the export process to build your international revenue.
-          </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
-        </div>
+          <div class="service-card trade-card">
+            <div class="service-icon">⭐</div>
+            <h3 data-en="Exclusive &amp; Small-Batch Sourcing" data-ja="限定・少量生産蔵の調達">Exclusive &amp; Small-Batch Sourcing</h3>
+            <p data-en="Access to limited-production sake rarely available outside Japan — small kura, seasonal releases, and award-winning breweries seeking international exposure."
+               data-ja="国内でしか手に入らない少量生産の日本酒へのアクセス。小規模蔵・季節限定品・海外進出を希望する受賞銘柄など。">
+              Access to limited-production sake rarely available outside Japan — small kura, seasonal releases, and award-winning breweries seeking international exposure.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">📈</div>
-          <h3 data-en="Japan SEO & Digital Strategy" data-ja="日本向けSEO・デジタル戦略">Japan SEO & Digital Strategy</h3>
-          <p data-en="Japan's digital landscape runs on different rules. I provide Japan-specific SEO, Google Japan optimization, and content localization to build your online presence."
-             data-ja="日本のデジタル環境は独自のルールで動きます。日本向けSEO・コンテンツローカライズで、オンラインプレゼンスを構築します。">
-            Japan's digital landscape runs on different rules. I provide Japan-specific SEO, Google Japan optimization, and content localization to build your online presence.
-          </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
-        </div>
+          <div class="service-card trade-card">
+            <div class="service-icon">📋</div>
+            <h3 data-en="Export Documentation &amp; Compliance" data-ja="輸出書類 &amp; コンプライアンス">Export Documentation &amp; Compliance</h3>
+            <p data-en="We guide you through Japanese export procedures, certificate of origin, alcohol tax documentation, and destination-country import requirements — in English."
+               data-ja="日本の輸出手続き・原産地証明・酒税関連書類、および輸入先国の規制対応を英語でサポートします。">
+              We guide you through Japanese export procedures, certificate of origin, alcohol tax documentation, and destination-country import requirements — in English.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">🛒</div>
-          <h3 data-en="Sales Expansion & Buyer Matching in Japan" data-ja="日本での販売展開・買い手マッチング">Sales Expansion & Buyer Matching in Japan</h3>
-          <p data-en="Want to sell your products in Japan? Or looking for buyers? I identify target retailers, distributors, and importers in Japan's competitive market, handle negotiations, and set up distribution channels."
-             data-ja="日本で製品を販売したい、または買い手を見つけたい。小売・流通・輸入業者を見つけ、交渉から販売チャネル構築まで代行します。">
-            Want to sell your products in Japan? Or looking for buyers? I identify target retailers, distributors, and importers in Japan's competitive market, handle negotiations, and set up distribution channels.
-          </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
-        </div>
+          <div class="service-card trade-card">
+            <div class="service-icon">🤝</div>
+            <h3 data-en="Importer &amp; Distributor Introductions" data-ja="輸入業者・ディストリビューター紹介">Importer &amp; Distributor Introductions</h3>
+            <p data-en="For sake breweries looking to go global — we identify and introduce vetted importers and distributors in your target markets (US, EU, UK, Australia, Southeast Asia)."
+               data-ja="海外展開を目指す酒蔵向けに、対象市場（米国・EU・英国・オーストラリア・東南アジア）の信頼できる輸入業者・ディストリビューターをご紹介します。">
+              For sake breweries looking to go global — we identify and introduce vetted importers and distributors in your target markets (US, EU, UK, Australia, Southeast Asia).
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
 
-        <div class="service-card reveal">
-          <div class="service-icon">📦</div>
-          <h3 data-en="Japan-Exclusive Product Shipping" data-ja="日本限定商品の海外配送">Japan-Exclusive Product Shipping</h3>
-          <p data-en="Found a Japan-only product you can't buy abroad? I purchase and ship Japan-exclusive items — limited editions, regional foods, electronics, cosmetics, and more — directly to you, anywhere in the world."
-             data-ja="日本でしか買えない商品を海外に届けます。限定品・地域限定食品・電化製品・コスメなど、日本限定アイテムの購入・発送を代行します。世界中どこへでも対応。">
-            Found a Japan-only product you can't buy abroad? I purchase and ship Japan-exclusive items — limited editions, regional foods, electronics, cosmetics, and more — directly to you, anywhere in the world.
-          </p>
-          <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
-        </div>
+          <div class="service-card trade-card">
+            <div class="service-icon">🏆</div>
+            <h3 data-en="Trade Show &amp; Event Representation" data-ja="展示会・イベント代理出展">Trade Show &amp; Event Representation</h3>
+            <p data-en="We represent your brand at Japan sake trade events, food &amp; beverage exhibitions, and international sake competitions — handling all Japanese-language communication."
+               data-ja="日本国内の日本酒イベント・食品飲料展示会・国際コンペでのブランド代理出展。日本語でのコミュニケーションはすべて代行します。">
+              We represent your brand at Japan sake trade events, food &amp; beverage exhibitions, and international sake competitions — handling all Japanese-language communication.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
 
-        <div class="service-card reveal" style="border-color: var(--gold); border-width: 2px;">
-          <div class="service-icon" style="background: rgba(201,151,43,0.12);">💬</div>
-          <h3 data-en="Anything Else About Japan" data-ja="その他、日本に関すること何でも">Anything Else About Japan</h3>
-          <p data-en="Can't find what you need above? Just ask. Japan culture, pricing, trends, regulations, introductions, translation — if it's Japan-related, reach out."
-             data-ja="上記にないことでも構いません。文化・価格調査・トレンド・規制・翻訳など、日本に関することなら何でもご相談ください。">
-            Can't find what you need above? Just ask. Japan culture, pricing, trends, regulations, introductions, translation — if it's Japan-related, reach out.
-          </p>
-          <a href="#contact" class="service-link" data-en="Ask anything →" data-ja="何でも聞く →">Ask anything →</a>
+          <div class="service-card trade-card">
+            <div class="service-icon">🔄</div>
+            <h3 data-en="Ongoing Supplier Relationship Management" data-ja="継続的なサプライヤー関係管理">Ongoing Supplier Relationship Management</h3>
+            <p data-en="After your first order, we remain your Japan-side liaison — managing ongoing communications, order coordination, and quality assurance in Japanese."
+               data-ja="初回発注後も日本側の窓口として継続。日本語でのコミュニケーション・発注調整・品質管理を継続的にサポートします。">
+              After your first order, we remain your Japan-side liaison — managing ongoing communications, order coordination, and quality assurance in Japanese.
+            </p>
+            <a href="#contact" class="service-link" data-en="Inquire now →" data-ja="相談する →">Inquire now →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Zoom CTA Strip ── -->
-  <div class="zoom-strip">
-    <div class="container zoom-strip-inner">
-      <div class="zoom-strip-text">
-        <strong data-en="🎥 Free 30-Minute Zoom Consultation" data-ja="🎥 初回30分・無料Zoom相談">🎥 Free 30-Minute Zoom Consultation</strong>
-        <span data-en="No sign-up fee, no commitment. Just a conversation about your Japan goals."
-              data-ja="初期費用・契約不要。日本でやりたいことを気軽に話しましょう。">
-          No sign-up fee, no commitment. Just a conversation about your Japan goals.
+  <!-- ── CTA Strip ── -->
+  <div class="cta-strip">
+    <div class="container cta-strip-inner">
+      <div class="cta-strip-text">
+        <strong data-en="🍶 Free 30-Minute Sake Consultation" data-ja="🍶 初回30分・無料日本酒相談">🍶 Free 30-Minute Sake Consultation</strong>
+        <span data-en="Tours, sourcing, or just curious about Japanese sake — ask us anything."
+              data-ja="ツアー・調達・日本酒についての疑問など、何でもお気軽にどうぞ。">
+          Tours, sourcing, or just curious about Japanese sake — ask us anything.
         </span>
       </div>
-      <button class="zoom-strip-btn" onclick="location.href='#contact'"
-        data-en="Book Your Free Call" data-ja="無料相談を予約する">
-        Book Your Free Call
+      <button class="cta-strip-btn" onclick="location.href='#contact'"
+        data-en="Book Your Free Call →" data-ja="無料相談を予約する →">
+        Book Your Free Call →
       </button>
     </div>
   </div>
 
-  <!-- ── Why Japan ── -->
-  <section class="section section--alt" id="why-japan">
+  <!-- ── Featured Experiences ── -->
+  <section class="section section--alt" id="experiences">
     <div class="container">
-      <div class="why-grid">
-        <div class="why-image-block reveal">
-          <div class="why-image-placeholder">
-            <img src="fumrin-building-4402415.jpg" alt="Tokyo business district at golden hour" />
+      <div class="text-center reveal">
+        <span class="section-label" data-en="Sake Journeys" data-ja="日本酒の旅">Sake Journeys</span>
+        <h2 data-en="Featured Sake Experiences" data-ja="おすすめ日本酒体験">Featured Sake Experiences</h2>
+        <p style="color:var(--gray); max-width:540px; margin:12px auto 0;"
+          data-en="Curated experiences across Japan's finest sake-producing regions. All fully guided in English with exclusive brewery access."
+          data-ja="日本の主要日本酒産地でのキュレーション体験。すべて英語対応・独占的な酒蔵アクセス付き。">
+          Curated experiences across Japan's finest sake-producing regions. All fully guided in English with exclusive brewery access.
+        </p>
+      </div>
+
+      <div class="experiences-grid">
+
+        <div class="experience-card reveal">
+          <div class="experience-card-header">
+            <div class="experience-region" data-en="Niigata Prefecture" data-ja="新潟県">Niigata Prefecture</div>
+            <div class="experience-title" data-en="The Niigata Sake Trail" data-ja="新潟日本酒トレイル">The Niigata Sake Trail</div>
+            <div class="experience-duration" data-en="3 days / 2 nights" data-ja="3日間 / 2泊">3 days / 2 nights</div>
+          </div>
+          <div class="experience-body">
+            <div class="experience-price">¥150,000<span data-en=" / person from" data-ja="〜 / 人">/ person from</span></div>
+            <p class="experience-desc"
+              data-en="Niigata produces more designated sake breweries per capita than any other prefecture. Visit Ponshukan sake museum, taste at three private kura, join a toji-led tour during active brewing season, and finish with a sake-pairing kappo dinner."
+              data-ja="日本一の地酒産地・新潟で、ぽんしゅ館見学・3蔵でのプライベートテイスティング・醸造期間中の杜氏案内ツアー・割烹でのペアリングディナーを体験する3日間。">
+              Niigata produces more designated sake breweries per capita than any other prefecture. Visit Ponshukan sake museum, taste at three private kura, join a toji-led tour during active brewing season, and finish with a sake-pairing kappo dinner.
+            </p>
+            <div class="experience-tags">
+              <span class="experience-tag" data-en="Small Group" data-ja="少人数">Small Group</span>
+              <span class="experience-tag" data-en="Brewing Season" data-ja="醸造期">Brewing Season</span>
+              <span class="experience-tag" data-en="Oct–Mar" data-ja="10〜3月">Oct–Mar</span>
+            </div>
+            <a href="#contact" class="experience-link" data-en="Inquire →" data-ja="問い合わせる →">Inquire →</a>
           </div>
         </div>
 
-        <div class="why-content reveal">
-          <span class="section-label" data-en="Why Japan" data-ja="なぜ日本？">Why Japan</span>
-          <h2 data-en="A Market That Rewards the Right Approach" data-ja="正しいアプローチで結果が出る市場">A Market That Rewards the Right Approach</h2>
-          <p data-en="Japan is the world's third-largest economy — and one of the most underserved by foreign businesses. High consumer spending, fierce brand loyalty, and premium pricing make it extraordinarily lucrative for companies that enter strategically."
-             data-ja="日本は世界第3位の経済大国でありながら、外資系企業による参入が十分でない市場です。高い消費意欲・強いブランドロイヤリティ・プレミアム価格体制は、戦略的に参入した企業に大きな利益をもたらします。">
-            Japan is the world's third-largest economy — and one of the most underserved by foreign businesses. High consumer spending, fierce brand loyalty, and premium pricing make it extraordinarily lucrative for companies that enter strategically.
+        <div class="experience-card reveal">
+          <div class="experience-card-header">
+            <div class="experience-region" data-en="Kyoto / Fushimi" data-ja="京都・伏見">Kyoto / Fushimi</div>
+            <div class="experience-title" data-en="Fushimi Sake District" data-ja="伏見酒蔵ツアー">Fushimi Sake District</div>
+            <div class="experience-duration" data-en="1–2 days" data-ja="1〜2日間">1–2 days</div>
+          </div>
+          <div class="experience-body">
+            <div class="experience-price">¥45,000<span data-en=" / person from" data-ja="〜 / 人">/ person from</span></div>
+            <p class="experience-desc"
+              data-en="One of Japan's three great sake regions, fed by pure underground water. Walk historic sakagura streets, visit a 200-year-old operating kura, try a hands-on brewing workshop, and taste Fushimi's signature soft sake at a riverside bar."
+              data-ja="日本三大酒処のひとつ、伏流水に育まれた伏見。歴史ある酒蔵街の散策・200年以上続く現役蔵の見学・醸造体験ワークショップ・川沿いの日本酒バーでの試飲を楽しむ1〜2日間。">
+              One of Japan's three great sake regions, fed by pure underground water. Walk historic sakagura streets, visit a 200-year-old operating kura, try a hands-on brewing workshop, and taste Fushimi's signature soft sake at a riverside bar.
+            </p>
+            <div class="experience-tags">
+              <span class="experience-tag" data-en="Year-Round" data-ja="通年">Year-Round</span>
+              <span class="experience-tag" data-en="Beginner Friendly" data-ja="初心者歓迎">Beginner Friendly</span>
+              <span class="experience-tag" data-en="Day Trip" data-ja="日帰り可">Day Trip</span>
+            </div>
+            <a href="#contact" class="experience-link" data-en="Inquire →" data-ja="問い合わせる →">Inquire →</a>
+          </div>
+        </div>
+
+        <div class="experience-card reveal">
+          <div class="experience-card-header">
+            <div class="experience-region" data-en="Hyogo / Nada" data-ja="兵庫・灘">Hyogo / Nada</div>
+            <div class="experience-title" data-en="Nada Power Breweries" data-ja="灘の大蔵見学">Nada Power Breweries</div>
+            <div class="experience-duration" data-en="1 day" data-ja="1日間">1 day</div>
+          </div>
+          <div class="experience-body">
+            <div class="experience-price">¥40,000<span data-en=" / person from" data-ja="〜 / 人">/ person from</span></div>
+            <p class="experience-desc"
+              data-en="Nada accounts for ~30% of Japan's total sake production. Exclusive behind-the-scenes access to two major kura, a sake museum visit, and a masterclass comparing Nada's signature dry style with other regions."
+              data-ja="日本酒生産量の約30%を占める灘。主要蔵2社の工場見学（一般非公開エリアへのアクセス）・博物館訪問・灘の「男酒」スタイルを他産地と比較するマスタークラス。">
+              Nada accounts for ~30% of Japan's total sake production. Exclusive behind-the-scenes access to two major kura, a sake museum visit, and a masterclass comparing Nada's signature dry style with other regions.
+            </p>
+            <div class="experience-tags">
+              <span class="experience-tag" data-en="Trade Buyers" data-ja="業界バイヤー向け">Trade Buyers</span>
+              <span class="experience-tag" data-en="Year-Round" data-ja="通年">Year-Round</span>
+              <span class="experience-tag" data-en="Industry Focus" data-ja="業界向け">Industry Focus</span>
+            </div>
+            <a href="#contact" class="experience-link" data-en="Inquire →" data-ja="問い合わせる →">Inquire →</a>
+          </div>
+        </div>
+
+        <div class="experience-card reveal">
+          <div class="experience-card-header">
+            <div class="experience-region" data-en="Akita Prefecture" data-ja="秋田県">Akita Prefecture</div>
+            <div class="experience-title" data-en="Akita Sake Immersion" data-ja="秋田日本酒没入体験">Akita Sake Immersion</div>
+            <div class="experience-duration" data-en="4 days / 3 nights" data-ja="4日間 / 3泊">4 days / 3 nights</div>
+          </div>
+          <div class="experience-body">
+            <div class="experience-price">¥200,000<span data-en=" / person from" data-ja="〜 / 人">/ person from</span></div>
+            <p class="experience-desc"
+              data-en="Sake's hidden gem — 40+ breweries, snowmelt water, and deep toji tradition. Private stay at a brewery guesthouse, participation in actual sake brewing, an audience with the head toji. Limited to 4 guests."
+              data-ja="日本酒の隠れた名産地・秋田。40以上の蔵が連なるこの地で、蔵の宿に滞在し、実際の仕込み作業に参加し、杜氏と対話する4日間の没入型プログラム。1回4名様限定。">
+              Sake's hidden gem — 40+ breweries, snowmelt water, and deep toji tradition. Private stay at a brewery guesthouse, participation in actual sake brewing, an audience with the head toji. Limited to 4 guests.
+            </p>
+            <div class="experience-tags">
+              <span class="experience-tag" data-en="Exclusive" data-ja="限定">Exclusive</span>
+              <span class="experience-tag" data-en="Max 4 Guests" data-ja="最大4名">Max 4 Guests</span>
+              <span class="experience-tag" data-en="Oct–Feb" data-ja="10〜2月">Oct–Feb</span>
+            </div>
+            <a href="#contact" class="experience-link" data-en="Inquire →" data-ja="問い合わせる →">Inquire →</a>
+          </div>
+        </div>
+
+        <div class="experience-card reveal">
+          <div class="experience-card-header">
+            <div class="experience-region" data-en="Tokyo" data-ja="東京">Tokyo</div>
+            <div class="experience-title" data-en="Tokyo Sake Bar Crawl" data-ja="東京日本酒バーはしご">Tokyo Sake Bar Crawl</div>
+            <div class="experience-duration" data-en="Evening, 4–5 hours" data-ja="夕方〜4〜5時間">Evening, 4–5 hours</div>
+          </div>
+          <div class="experience-body">
+            <div class="experience-price">¥25,000<span data-en=" / person from" data-ja="〜 / 人">/ person from</span></div>
+            <p class="experience-desc"
+              data-en="Three handpicked Tokyo sake venues with an expert guide: an intimate Shinjuku standing bar, a Ginza rare-sake specialist with labels unavailable elsewhere, and a modern sake cocktail bar. Beginners welcome."
+              data-ja="専門ガイドと巡る厳選3店：新宿の立ち飲みバー・銀座の希少酒専門店・モダンな日本酒カクテルバー。初心者も大歓迎。">
+              Three handpicked Tokyo sake venues with an expert guide: an intimate Shinjuku standing bar, a Ginza rare-sake specialist with labels unavailable elsewhere, and a modern sake cocktail bar. Beginners welcome.
+            </p>
+            <div class="experience-tags">
+              <span class="experience-tag" data-en="Year-Round" data-ja="通年">Year-Round</span>
+              <span class="experience-tag" data-en="Beginners OK" data-ja="初心者歓迎">Beginners OK</span>
+              <span class="experience-tag" data-en="Evening" data-ja="夜">Evening</span>
+            </div>
+            <a href="#contact" class="experience-link" data-en="Inquire →" data-ja="問い合わせる →">Inquire →</a>
+          </div>
+        </div>
+
+        <div class="experience-custom reveal">
+          <div class="experience-custom-icon">✏️</div>
+          <h3 data-en="Custom Sake Itinerary" data-ja="カスタム日本酒旅行">Custom Sake Itinerary</h3>
+          <p data-en="Don't see what you're looking for? Every sake journey we create is built from scratch. Share your dates, interests, group size, and sake knowledge level — we'll design something unforgettable."
+             data-ja="ご希望のプランが見つからない場合は、ゼロからカスタム旅程を作成します。日程・ご興味・グループ人数・日本酒の知識レベルをお知らせください。">
+            Don't see what you're looking for? Every sake journey we create is built from scratch. Share your dates, interests, group size, and sake knowledge level — we'll design something unforgettable.
           </p>
-          <p data-en="The barriers — language, business culture, regulatory complexity — are real. But with the right partner, they become your competitive advantage over companies that gave up at the door."
-             data-ja="言語・商習慣・規制の壁は確かに存在します。しかし適切なパートナーがいれば、それは諦めた競合に対するあなたの優位性になります。">
-            The barriers — language, business culture, regulatory complexity — are real. But with the right partner, they become your competitive advantage over companies that gave up at the door.
+          <a href="#contact" class="btn btn--primary"
+            data-en="Start Planning →" data-ja="プランニングを始める →">Start Planning →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why ARKLinks ── -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" data-en="Why ARKLinks" data-ja="選ばれる理由">Why ARKLinks</span>
+        <h2 data-en="Sake Specialists. Japan-Based. Globally Connected." data-ja="日本酒専門家。日本拠点。世界へつながる。">Sake Specialists. Japan-Based. Globally Connected.</h2>
+        <p style="color:var(--gray); max-width:560px; margin:12px auto 0;"
+          data-en="We're not a travel agency or a broker. We're sake people with deep Japan roots — and we only work with one category: Japanese sake."
+          data-ja="私たちは旅行代理店でも仲買業者でもありません。日本に根ざした日本酒専門家として、ひとつのカテゴリーだけに特化しています。それが日本酒です。">
+          We're not a travel agency or a broker. We're sake people with deep Japan roots — and we only work with one category: Japanese sake.
+        </p>
+      </div>
+
+      <div class="why-grid-trust">
+        <div class="trust-card reveal">
+          <div class="trust-icon">🍶</div>
+          <h3 data-en="Sake Specialists Only" data-ja="日本酒専門特化">Sake Specialists Only</h3>
+          <p data-en="We focus exclusively on sake — not general Japan tourism, not general import/export. This depth of specialization means better brewery access, better sourcing, and better experiences."
+             data-ja="私たちは日本酒のみに特化。一般的な観光や輸出入全般は扱いません。この専門性の深さが、より良い酒蔵アクセス・調達・体験につながります。">
+            We focus exclusively on sake — not general Japan tourism, not general import/export. This depth of specialization means better brewery access, better sourcing, and better experiences.
           </p>
-          <ul class="why-list">
-            <li>
-              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <span data-en="Consumers willingly pay premium prices for quality" data-ja="消費者は品質に対してプレミアム価格を惜しまない">Consumers willingly pay premium prices for quality</span>
-            </li>
-            <li>
-              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <span data-en="Brand loyalty is exceptionally high once trust is established" data-ja="一度信頼を得ると、ブランドロイヤリティは非常に高い">Brand loyalty is exceptionally high once trust is established</span>
-            </li>
-            <li>
-              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <span data-en="Weak yen creates strong purchasing opportunities for foreign buyers" data-ja="円安により、外国からの調達・投資コストが低下">Weak yen creates strong purchasing opportunities for foreign buyers</span>
-            </li>
-            <li>
-              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <span data-en="Japanese government actively incentivizes foreign investment" data-ja="日本政府は積極的に外国投資を誘致・支援している">Japanese government actively incentivizes foreign investment</span>
-            </li>
-            <li>
-              <div class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <span data-en="Less foreign competition in many product categories than Western markets" data-ja="多くのカテゴリーで外資系競合が少なく、参入余地が大きい">Less foreign competition in many product categories than Western markets</span>
-            </li>
-          </ul>
+        </div>
+
+        <div class="trust-card reveal">
+          <div class="trust-icon">📍</div>
+          <h3 data-en="On-the-Ground in Japan" data-ja="日本現地在住">On-the-Ground in Japan</h3>
+          <p data-en="Tokyo-based, with active brewery relationships in Niigata, Kyoto, Hyogo, Akita, and Hiroshima. We're not consulting remotely — we're in Japan, in the breweries."
+             data-ja="東京拠点。新潟・京都・兵庫・秋田・広島の酒蔵と継続的な関係を持っています。リモートではなく、日本で、蔵の中で動いています。">
+            Tokyo-based, with active brewery relationships in Niigata, Kyoto, Hyogo, Akita, and Hiroshima. We're not consulting remotely — we're in Japan, in the breweries.
+          </p>
+        </div>
+
+        <div class="trust-card reveal">
+          <div class="trust-icon">🌐</div>
+          <h3 data-en="Bilingual &amp; Bicultural" data-ja="バイリンガル対応">Bilingual &amp; Bicultural</h3>
+          <p data-en="We handle all Japan-side communication in Japanese — brewery negotiations, export documentation, logistics coordination — while you communicate with us in English."
+             data-ja="酒蔵との交渉・輸出書類・物流調整はすべて日本語で対応。お客様は英語でコミュニケーションできます。">
+            We handle all Japan-side communication in Japanese — brewery negotiations, export documentation, logistics coordination — while you communicate with us in English.
+          </p>
+        </div>
+
+        <div class="trust-card reveal">
+          <div class="trust-icon">📜</div>
+          <h3 data-en="Sake Knowledge" data-ja="日本酒の専門知識">Sake Knowledge</h3>
+          <p data-en="Our team holds sake certifications and understands the language of toji — koji ratios, moromi fermentation, seimaibuai, and how to evaluate quality across styles."
+             data-ja="チームは日本酒関連の資格を保有。杜氏の言葉（麹の割合・もろみ・精米歩合）を理解し、スタイルを超えた品質評価ができます。">
+            Our team holds sake certifications and understands the language of toji — koji ratios, moromi fermentation, seimaibuai, and how to evaluate quality across styles.
+          </p>
+        </div>
+
+        <div class="trust-card reveal">
+          <div class="trust-icon">🤲</div>
+          <h3 data-en="Trust-Based Brewery Relationships" data-ja="信頼関係に基づく酒蔵ネットワーク">Trust-Based Brewery Relationships</h3>
+          <p data-en="Our kura connections are built on trust, not cold outreach. Many of our partner breweries do not list on standard export platforms — you only reach them through relationships."
+             data-ja="酒蔵とのつながりは信頼の上に成立しています。パートナー蔵の多くは標準的な輸出プラットフォームには掲載されていません。関係性を通じてのみアクセスできる蔵です。">
+            Our kura connections are built on trust, not cold outreach. Many of our partner breweries do not list on standard export platforms — you only reach them through relationships.
+          </p>
+        </div>
+
+        <div class="trust-card reveal">
+          <div class="trust-icon">🔁</div>
+          <h3 data-en="End-to-End Support" data-ja="エンドツーエンドのサポート">End-to-End Support</h3>
+          <p data-en="From first inquiry to final delivery or last tour day — we manage the full journey. You focus on enjoying sake or building your business; we handle everything in between."
+             data-ja="最初のお問い合わせから納品またはツアー最終日まで、すべてのプロセスをマネジメントします。日本酒を楽しむことやビジネス構築に集中していただければ、あとは私たちが対応します。">
+            From first inquiry to final delivery or last tour day — we manage the full journey. You focus on enjoying sake or building your business; we handle everything in between.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ── Process ── -->
-  <section class="section" id="how-it-works">
+  <section class="section section--alt" id="how-it-works">
     <div class="container">
       <div class="text-center reveal">
-        <span class="section-label" data-en="How It Works" data-ja="進め方">How It Works</span>
-        <h2 data-en="Simple, Transparent Process" data-ja="シンプルで透明なプロセス">Simple, Transparent Process</h2>
+        <span class="section-label" data-en="Getting Started" data-ja="始め方">Getting Started</span>
+        <h2 data-en="Simple to Begin, Deeply Rewarding" data-ja="始めるのは簡単、体験は深い">Simple to Begin, Deeply Rewarding</h2>
         <p style="color:var(--gray); max-width:500px; margin:12px auto 0;"
-          data-en="From your first free Zoom call to your first Japanese business result."
-          data-ja="最初の無料Zoom相談から、日本での最初の成果まで。">
-          From your first free Zoom call to your first Japanese business result.
+          data-en="Whether you're booking a sake tour or sourcing sake to import — it starts the same way."
+          data-ja="酒蔵ツアーを予約する場合も、輸入する日本酒を調達する場合も、スタートは同じです。">
+          Whether you're booking a sake tour or sourcing sake to import — it starts the same way.
         </p>
       </div>
       <div class="process-steps">
         <div class="process-step reveal">
           <div class="step-number">1</div>
-          <h3 data-en="Free 30-min Zoom Call" data-ja="無料30分Zoom相談">Free 30-min Zoom Call</h3>
-          <p data-en="Tell me about your business and Japan goals. Ask anything. No obligation, no charge — just an honest conversation."
-             data-ja="あなたのビジネスと日本での目標を教えてください。何でも質問OK。費用・義務は一切なし。">
-            Tell me about your business and Japan goals. Ask anything. No obligation, no charge — just an honest conversation.
+          <h3 data-en="Free Consultation" data-ja="無料相談">Free Consultation</h3>
+          <p data-en="30-minute online call. Tell us about your goals — touring preferences, regions of interest, or import requirements. No obligation, no charge."
+             data-ja="30分のオンライン相談。ツアーの好み・希望地域・輸入要件など、あなたの目標を教えてください。費用・義務は一切なし。">
+            30-minute online call. Tell us about your goals — touring preferences, regions of interest, or import requirements. No obligation, no charge.
           </p>
         </div>
         <div class="process-step reveal">
           <div class="step-number">2</div>
-          <h3 data-en="Custom Research Plan" data-ja="カスタム調査プラン">Custom Research Plan</h3>
-          <p data-en="I build a tailored research plan — market sizing, competitive mapping, pricing, channels — specific to your product and goals."
-             data-ja="市場規模・競合・価格・流通チャネルなど、あなたの商品とゴールに合わせた調査プランを設計します。">
-            I build a tailored research plan — market sizing, competitive mapping, pricing, channels — specific to your product and goals.
+          <h3 data-en="Custom Proposal" data-ja="カスタム提案">Custom Proposal</h3>
+          <p data-en="Within 3–5 business days, we deliver a tailored itinerary or brewery shortlist — matched to your style, budget, and objectives."
+             data-ja="3〜5営業日以内に、あなたのスタイル・予算・目的に合わせたカスタム旅程または蔵元候補リストをご提案します。">
+            Within 3–5 business days, we deliver a tailored itinerary or brewery shortlist — matched to your style, budget, and objectives.
           </p>
         </div>
         <div class="process-step reveal">
           <div class="step-number">3</div>
-          <h3 data-en="Strategy & Introductions" data-ja="戦略策定・紹介">Strategy & Introductions</h3>
-          <p data-en="Based on findings, I recommend your Japan entry strategy and make targeted introductions to the right Japanese companies or suppliers."
-             data-ja="調査結果をもとに参入戦略を提案し、最適な日本企業・サプライヤーへの紹介を行います。">
-            Based on findings, I recommend your Japan entry strategy and make targeted introductions to the right Japanese companies or suppliers.
+          <h3 data-en="Review &amp; Refine" data-ja="確認・調整">Review &amp; Refine</h3>
+          <p data-en="We adjust based on your feedback until the plan is exactly right. Brewery tastings, pricing, logistics — all details confirmed upfront."
+             data-ja="フィードバックをもとに計画を調整し、すべての詳細（酒蔵テイスティング・価格・物流）を事前に確定します。">
+            We adjust based on your feedback until the plan is exactly right. Brewery tastings, pricing, logistics — all details confirmed upfront.
           </p>
         </div>
         <div class="process-step reveal">
           <div class="step-number">4</div>
-          <h3 data-en="Ongoing Support" data-ja="継続サポート">Ongoing Support</h3>
-          <p data-en="Japan rewards long-term relationships. I stay as your ongoing advisor for follow-up research, negotiations, and new opportunities."
-             data-ja="日本はリレーションシップが重要。追加調査・交渉・新機会の探索を継続的にサポートします。">
-            Japan rewards long-term relationships. I stay as your ongoing advisor for follow-up research, negotiations, and new opportunities.
+          <h3 data-en="Experience &amp; Beyond" data-ja="体験、そして先へ">Experience &amp; Beyond</h3>
+          <p data-en="Enjoy your sake journey or receive your first shipment. We stay as your ongoing Japan-side partner for future tours, new breweries, and growing orders."
+             data-ja="日本酒の旅を楽しんでいただくか、初回荷物を受け取ってください。今後のツアー・新たな蔵元・発注拡大のために、日本側のパートナーとして継続サポートします。">
+            Enjoy your sake journey or receive your first shipment. We stay as your ongoing Japan-side partner for future tours, new breweries, and growing orders.
           </p>
         </div>
       </div>
@@ -747,7 +1044,7 @@
   </section>
 
   <!-- ── FAQ ── -->
-  <section class="section section--alt" id="faq">
+  <section class="section" id="faq">
     <div class="container">
       <div class="text-center reveal">
         <span class="section-label" data-en="FAQ" data-ja="よくある質問">FAQ</span>
@@ -757,61 +1054,73 @@
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="Do I need to speak Japanese to join a brewery tour?" data-ja="酒蔵ツアーに参加するのに日本語は必要ですか？">Do I need to speak Japanese to join a brewery tour?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="Not at all. All tours are fully guided in English. We handle all communication with the breweries in Japanese — negotiations, explanations, and logistics. You simply show up and enjoy."
+            data-ja="まったく必要ありません。すべてのツアーは英語でガイドします。酒蔵とのコミュニケーション（交渉・説明・手配）はすべて私たちが日本語で行います。あなたは楽しむだけです。">
+            Not at all. All tours are fully guided in English. We handle all communication with the breweries in Japanese — negotiations, explanations, and logistics. You simply show up and enjoy.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="When is the best time of year to visit a sake brewery?" data-ja="酒蔵を訪れるのに最適な時期はいつですか？">When is the best time of year to visit a sake brewery?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="Active sake brewing (shikomi) runs October through March — the cold months offer the most dramatic brewery experiences, including watching active fermentation. That said, many breweries offer tours year-round. We'll match timing to your travel dates."
+            data-ja="日本酒の醸造（仕込み）は10月から3月が最盛期です。この冬季には、活発な発酵の現場を見学できる最も臨場感ある体験ができます。ただし多くの蔵は通年ツアーに対応しています。ご旅行の日程に合わせてご提案します。">
+            Active sake brewing (shikomi) runs October through March — the cold months offer the most dramatic brewery experiences, including watching active fermentation. That said, many breweries offer tours year-round. We'll match timing to your travel dates.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="Can you source sake that's not on standard export platforms?" data-ja="標準的な輸出プラットフォームにない日本酒を調達できますか？">Can you source sake that's not on standard export platforms?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="This is exactly our value. Many of our partner breweries do not appear on consumer-facing export sites. We have direct relationships with craft producers who export selectively — often exclusively through relationships like ours. If you're looking for something distinctive, this is where we shine."
+            data-ja="これが私たちの価値です。パートナー蔵の多くは消費者向けの輸出プラットフォームには掲載されていません。選択的に（多くは関係性を通じてのみ）輸出するクラフト蔵と直接つながっています。他とは違う銘柄をお探しなら、ぜひご相談ください。">
+            This is exactly our value. Many of our partner breweries do not appear on consumer-facing export sites. We have direct relationships with craft producers who export selectively — often exclusively through relationships like ours. If you're looking for something distinctive, this is where we shine.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="What is the minimum order quantity for importing sake?" data-ja="日本酒輸入の最低発注数量はどのくらいですか？">What is the minimum order quantity for importing sake?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="MOQs vary by brewery — typically from 1 case (12 × 720ml) for initial sample orders, to 1 pallet (~60–80 cases) for commercial import orders. We negotiate based on your specific situation, and for first-time buyers we often secure sample quantities to let you test the market before committing."
+            data-ja="最低発注数量は酒蔵によって異なります。初回サンプル発注では1ケース（720ml×12本）から、商業輸入では1パレット（約60〜80ケース）程度が一般的です。状況に合わせて交渉します。初めてのバイヤー様には、本格発注前にサンプル数量を確保できるよう調整することが多いです。">
+            MOQs vary by brewery — typically from 1 case (12 × 720ml) for initial sample orders, to 1 pallet (~60–80 cases) for commercial import orders. We negotiate based on your specific situation, and for first-time buyers we often secure sample quantities to let you test the market before committing.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span data-en="Can you arrange tours for corporate groups or trade delegations?" data-ja="法人グループや業界代表団向けのツアーも手配できますか？">Can you arrange tours for corporate groups or trade delegations?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer"
+            data-en="Yes. We regularly arrange group experiences of 4–30 people, including corporate incentive travel and trade delegations. These often combine both pillars — exclusive brewery tours with a sourcing or import component for trade buyers in the group. Contact us for group pricing and availability."
+            data-ja="はい。4〜30名のグループ体験を定期的に手配しています。法人向け報奨旅行や業界代表団にも対応しています。グループ内の貿易バイヤーには、独占的な酒蔵ツアーと調達・輸入コンポーネントを組み合わせることも多いです。グループ料金と空き状況はお問い合わせください。">
+            Yes. We regularly arrange group experiences of 4–30 people, including corporate incentive travel and trade delegations. These often combine both pillars — exclusive brewery tours with a sourcing or import component for trade buyers in the group. Contact us for group pricing and availability.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
             <span data-en="Is the first consultation really free?" data-ja="初回相談は本当に無料ですか？">Is the first consultation really free?</span>
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer"
-            data-en="Yes, completely free. A 30-minute Zoom call with no obligation whatsoever. It's a chance for both of us to understand the fit before any commitment. You can ask anything about Japan, your market, or how I work."
-            data-ja="はい、完全無料です。義務一切なしの30分Zoom相談です。お互いの相性を確かめる機会として、日本・市場・私の働き方について何でも聞いていただけます。">
-            Yes, completely free. A 30-minute Zoom call with no obligation whatsoever. It's a chance for both of us to understand the fit before any commitment. You can ask anything about Japan, your market, or how I work.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span data-en="Do I need to speak Japanese?" data-ja="日本語は必要ですか？">Do I need to speak Japanese?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"
-            data-en="Not at all. All communication with you is in English. I handle all Japanese language requirements on your behalf — documents, meetings, negotiations, and emails."
-            data-ja="まったく必要ありません。あなたとのやりとりはすべて英語で行います。書類・会議・交渉・メールなど、日本語が必要な部分はすべて私が代行します。">
-            Not at all. All communication with you is in English. I handle all Japanese language requirements on your behalf — documents, meetings, negotiations, and emails.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span data-en="What if my request doesn't fit a specific service?" data-ja="特定のサービスに当てはまらない場合は？">What if my request doesn't fit a specific service?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"
-            data-en="Just reach out. My core value proposition is handling anything Japan-related. If I can't help directly, I'll connect you with someone who can. There are very few Japan-related questions I can't assist with."
-            data-ja="お気軽にご連絡ください。私の強みは「日本のことなら何でも対応」です。直接対応できない場合でも、適切な人物を紹介します。日本に関することで対応できないことはほとんどありません。">
-            Just reach out. My core value proposition is handling anything Japan-related. If I can't help directly, I'll connect you with someone who can. There are very few Japan-related questions I can't assist with.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span data-en="How long does a market research project take?" data-ja="市場調査の期間はどのくらいですか？">How long does a market research project take?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"
-            data-en="A standard market research report takes 2–4 weeks depending on scope. For quick feasibility checks or specific questions, I can often deliver within a week. Timeline is always discussed and agreed upfront."
-            data-ja="標準的な市場調査レポートは範囲に応じて2〜4週間かかります。簡易的な検証や個別質問であれば1週間以内に対応できる場合が多いです。スケジュールは事前にご相談・合意します。">
-            A standard market research report takes 2–4 weeks depending on scope. For quick feasibility checks or specific questions, I can often deliver within a week. Timeline is always discussed and agreed upfront.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            <span data-en="What size of business do you work with?" data-ja="どのような規模の企業と取引していますか？">What size of business do you work with?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer"
-            data-en="All sizes — from solo founders exploring Japan for the first time, to growing startups, to established companies expanding into Japan. The free consultation helps me understand your situation and tailor the support accordingly."
-            data-ja="ソロの起業家から成長中のスタートアップ、日本展開を目指す中堅企業まで幅広く対応します。無料相談であなたの状況を把握し、最適なサポートを提案します。">
-            All sizes — from solo founders exploring Japan for the first time, to growing startups, to established companies expanding into Japan. The free consultation helps me understand your situation and tailor the support accordingly.
+            data-en="Yes, completely free. A 30-minute online call with no obligation. It's a chance for us to understand your situation and for you to ask anything about Japanese sake, specific regions, brewery access, or import logistics — before any commitment."
+            data-ja="はい、完全無料です。義務なしの30分オンライン相談です。日本酒・特定の産地・酒蔵アクセス・輸入物流など何でも聞いていただける機会です。契約の前にお気軽にどうぞ。">
+            Yes, completely free. A 30-minute online call with no obligation. It's a chance for us to understand your situation and for you to ask anything about Japanese sake, specific regions, brewery access, or import logistics — before any commitment.
           </div>
         </div>
 
@@ -827,10 +1136,10 @@
         <div class="contact-info reveal">
           <span class="section-label" style="color:var(--gold-light);"
             data-en="Get in Touch" data-ja="お問い合わせ">Get in Touch</span>
-          <h2 data-en="Let's Talk About Your Japan Goals" data-ja="日本での目標について話しましょう">Let's Talk About Your Japan Goals</h2>
-          <p data-en="Tell me what you're trying to achieve in Japan. I'll respond within 2–3 business days with honest, practical advice — no sales pressure, no jargon."
-             data-ja="日本で達成したいことを教えてください。2〜3営業日以内に、誠実で実用的なアドバイスをお返しします。押し売りや難しい専門用語は一切なし。">
-            Tell me what you're trying to achieve in Japan. I'll respond within 2–3 business days with honest, practical advice — no sales pressure, no jargon.
+          <h2 data-en="Let's Talk Sake" data-ja="日本酒について話しましょう">Let's Talk Sake</h2>
+          <p data-en="Tell us whether you're looking to experience sake in Japan, source it for your business, or both. We'll respond within 2 business days with honest, practical guidance."
+             data-ja="日本で日本酒を体験したいのか、ビジネスとして調達したいのか、またはその両方なのかをお知らせください。2営業日以内に、誠実で実践的なアドバイスをお返しします。">
+            Tell us whether you're looking to experience sake in Japan, source it for your business, or both. We'll respond within 2 business days with honest, practical guidance.
           </p>
 
           <div class="contact-methods">
@@ -857,29 +1166,61 @@
             </div>
           </div>
 
-          <div class="zoom-highlight">
-            <div class="zoom-highlight-title">
-              <div class="zoom-highlight-dot"></div>
-              <span data-en="Free 30-min Zoom Consultation Available" data-ja="初回30分・無料Zoom相談受付中">Free 30-min Zoom Consultation Available</span>
+          <div class="consultation-highlight">
+            <div class="consultation-highlight-title">
+              <div class="consultation-dot"></div>
+              <span data-en="Free 30-min Consultation Available" data-ja="無料30分相談受付中">Free 30-min Consultation Available</span>
             </div>
-            <p data-en="Book a free online meeting via Zoom, Google Meet, or your preferred platform. No commitment required — just a conversation."
-               data-ja="Zoom・Google Meet等のオンライン会議で無料相談をご予約いただけます。契約不要、お気軽にどうぞ。">
-              Book a free online meeting via Zoom, Google Meet, or your preferred platform. No commitment required — just a conversation.
+            <p data-en="Book a free online meeting via Zoom, Google Meet, or your preferred platform. No commitment required."
+               data-ja="Zoom・Google Meet等でオンライン無料相談をご予約いただけます。契約不要。">
+              Book a free online meeting via Zoom, Google Meet, or your preferred platform. No commitment required.
             </p>
           </div>
 
           <div class="contact-response-time">
-            ⚡ <span data-en="We respond to all inquiries within 2–3 business days" data-ja="すべてのお問い合わせに2〜3営業日以内にご返信します">We respond to all inquiries within 2–3 business days</span>
+            ⚡ <span data-en="We respond to all inquiries within 2 business days" data-ja="すべてのお問い合わせに2営業日以内にご返信します">We respond to all inquiries within 2 business days</span>
+          </div>
+
+          <div class="contact-instagram">
+            <div class="contact-instagram-icon">📸</div>
+            <div class="contact-instagram-text"
+              data-en="Follow our sake journey on Instagram: <a href='https://www.instagram.com/japanese_sake_collective1/' target='_blank' rel='noopener'>@japanese_sake_collective1</a>"
+              data-ja="Instagramで日本酒の旅をフォロー：<a href='https://www.instagram.com/japanese_sake_collective1/' target='_blank' rel='noopener'>@japanese_sake_collective1</a>">
+              Follow our sake journey on Instagram: <a href="https://www.instagram.com/japanese_sake_collective1/" target="_blank" rel="noopener">@japanese_sake_collective1</a>
+            </div>
           </div>
         </div>
 
         <!-- Right: Form -->
         <div class="reveal">
           <div class="contact-form" id="contactFormWrapper">
-            <h3 style="color:var(--navy); margin-bottom:22px; font-size:1.15rem;"
+            <h3 style="color:var(--navy); margin-bottom:8px; font-size:1.15rem;"
               data-en="Send a Message" data-ja="メッセージを送る">Send a Message</h3>
+            <p style="color:var(--gray); font-size:0.84rem; margin-bottom:20px;"
+              data-en="Free 30-min consultation included for all inquiries."
+              data-ja="すべてのお問い合わせに無料30分相談が含まれます。">
+              Free 30-min consultation included for all inquiries.
+            </p>
 
             <form id="contactForm" onsubmit="submitForm(event)">
+              <div class="form-group">
+                <label data-en="I'm interested in: *" data-ja="ご興味の分野：*">I'm interested in: *</label>
+                <div class="form-radio-group">
+                  <label class="form-radio-option">
+                    <input type="radio" name="interest" value="Sake Tours & Experiences" required />
+                    <span data-en="🍶 Sake Tours &amp; Experiences" data-ja="🍶 酒蔵ツアー &amp; 体験">🍶 Sake Tours &amp; Experiences</span>
+                  </label>
+                  <label class="form-radio-option">
+                    <input type="radio" name="interest" value="Sake Export & Trade" />
+                    <span data-en="🌍 Sake Export &amp; Trade" data-ja="🌍 日本酒輸出・貿易">🌍 Sake Export &amp; Trade</span>
+                  </label>
+                  <label class="form-radio-option">
+                    <input type="radio" name="interest" value="Both / Not Sure Yet" />
+                    <span data-en="💬 Both / Not Sure Yet" data-ja="💬 両方・まだ未定">💬 Both / Not Sure Yet</span>
+                  </label>
+                </div>
+              </div>
+
               <div class="form-group">
                 <label for="name" data-en="Your Name *" data-ja="お名前 *">Your Name *</label>
                 <input type="text" id="name" name="name"
@@ -893,25 +1234,18 @@
               </div>
 
               <div class="form-group">
-                <label for="service" data-en="Service of Interest" data-ja="ご興味のサービス">Service of Interest</label>
-                <select id="service" name="service">
-                  <option value=""    data-en="— Select a service —"               data-ja="— サービスを選ぶ —">— Select a service —</option>
-                  <option data-en="Market Research & Intelligence"  data-ja="市場調査・競合分析">Market Research & Intelligence</option>
-                  <option data-en="Real Estate & Office Setup"      data-ja="不動産・オフィス設立">Real Estate & Office Setup</option>
-                  <option data-en="Product Sourcing & Supply Chain" data-ja="商品仕入れ・サプライチェーン">Product Sourcing & Supply Chain</option>
-                  <option data-en="Business Development"            data-ja="ビジネス開発・マッチング">Business Development</option>
-                  <option data-en="Japan SEO & Digital Strategy"    data-ja="日本向けSEO・デジタル戦略">Japan SEO & Digital Strategy</option>
-                  <option data-en="Free 30-min Zoom Consultation"   data-ja="無料30分Zoom相談">Free 30-min Zoom Consultation</option>
-                  <option data-en="Other / Not Sure Yet"            data-ja="その他・未定">Other / Not Sure Yet</option>
-                </select>
+                <label for="country" data-en="Your Country *" data-ja="お住まいの国 *">Your Country *</label>
+                <input type="text" id="country" name="country"
+                  data-placeholder-en="e.g. United States" data-placeholder-ja="例：アメリカ"
+                  placeholder="e.g. United States" required />
               </div>
 
               <div class="form-group">
-                <label for="message" data-en="How Can I Help? *" data-ja="どのようなご用件ですか？ *">How Can I Help? *</label>
+                <label for="message" data-en="Tell us about your goals *" data-ja="目標や希望をお聞かせください *">Tell us about your goals *</label>
                 <textarea id="message" name="message"
-                  data-placeholder-en="Tell me about your business and what you'd like to achieve in Japan..."
-                  data-placeholder-ja="あなたのビジネスと、日本で達成したいことを教えてください..."
-                  placeholder="Tell me about your business and what you'd like to achieve in Japan..." required></textarea>
+                  data-placeholder-en="e.g. I want to visit sake breweries in Niigata in March... / I'm looking to import craft sake for my restaurant in London..."
+                  data-placeholder-ja="例：3月に新潟の酒蔵を訪れたいです… / ロンドンのレストラン向けにクラフト日本酒を輸入したいです…"
+                  placeholder="e.g. I want to visit sake breweries in Niigata in March... / I'm looking to import craft sake for my restaurant in London..." required></textarea>
               </div>
 
               <p class="form-privacy"
@@ -928,11 +1262,11 @@
             </form>
 
             <div class="form-success" id="formSuccess">
-              <div class="form-success-icon">✅</div>
+              <div class="form-success-icon">🍶</div>
               <h3 data-en="Message Received!" data-ja="メッセージを受け取りました！">Message Received!</h3>
-              <p data-en="Thank you for reaching out. I'll review your inquiry and respond within 2–3 business days."
-                 data-ja="ご連絡ありがとうございます。内容を確認の上、2〜3営業日以内にご返信します。">
-                Thank you for reaching out. I'll review your inquiry and respond within 2–3 business days.
+              <p data-en="Thank you for reaching out. We'll review your inquiry and respond within 2 business days."
+                 data-ja="ご連絡ありがとうございます。内容を確認の上、2営業日以内にご返信します。">
+                Thank you for reaching out. We'll review your inquiry and respond within 2 business days.
               </p>
             </div>
           </div>
@@ -947,35 +1281,39 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <div class="footer-logo-icon">AL</div>
+            <div class="footer-logo-icon">🍶</div>
             ARKLinks
           </div>
           <p class="footer-tagline"
-            data-en="Connecting companies. Linking the world. Japan market entry, export support, buyer-seller matching, and more."
-            data-ja="企業と企業、世界をつなぐ。日本進出・輸出支援・マッチングなど、国境を越えたビジネスの架け橋。">
-            Connecting companies. Linking the world. Japan market entry, export support, buyer-seller matching, and more.
+            data-en="Your gateway to Japanese sake — private brewery tours, sake export sourcing, and trade consulting from Tokyo."
+            data-ja="日本酒への入口 — プライベート酒蔵ツアー・日本酒輸出調達・東京拠点の貿易コンサルティング。">
+            Your gateway to Japanese sake — private brewery tours, sake export sourcing, and trade consulting from Tokyo.
           </p>
           <a href="mailto:info@iwamae.com" style="color:var(--gold-light); font-size:0.86rem; margin-top:4px;">info@iwamae.com</a>
+          <div class="footer-instagram">
+            <span style="font-size:1.1rem;">📸</span>
+            <a href="https://www.instagram.com/japanese_sake_collective1/" target="_blank" rel="noopener">@japanese_sake_collective1</a>
+          </div>
         </div>
 
         <div class="footer-col">
-          <h4 data-en="Services" data-ja="サービス">Services</h4>
+          <h4 data-en="Sake Tours" data-ja="酒蔵ツアー">Sake Tours</h4>
           <ul class="footer-links">
-            <li><a href="#services" data-en="Market Research" data-ja="市場調査">Market Research</a></li>
-            <li><a href="#services" data-en="Real Estate" data-ja="不動産">Real Estate</a></li>
-            <li><a href="#services" data-en="Product Sourcing" data-ja="商品仕入れ">Product Sourcing</a></li>
-            <li><a href="#services" data-en="Business Dev" data-ja="ビジネス開発">Business Dev</a></li>
-            <li><a href="#services" data-en="Japan SEO" data-ja="日本向けSEO">Japan SEO</a></li>
+            <li><a href="#experiences" data-en="Niigata Sake Trail" data-ja="新潟日本酒トレイル">Niigata Sake Trail</a></li>
+            <li><a href="#experiences" data-en="Fushimi District" data-ja="伏見酒蔵ツアー">Fushimi District</a></li>
+            <li><a href="#experiences" data-en="Akita Immersion" data-ja="秋田没入体験">Akita Immersion</a></li>
+            <li><a href="#experiences" data-en="Tokyo Bar Crawl" data-ja="東京はしご">Tokyo Bar Crawl</a></li>
+            <li><a href="#contact" data-en="Custom Itinerary" data-ja="カスタム旅行">Custom Itinerary</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4 data-en="Company" data-ja="会社情報">Company</h4>
+          <h4 data-en="Sake Trade" data-ja="日本酒貿易">Sake Trade</h4>
           <ul class="footer-links">
-            <li><a href="#why-japan" data-en="Why Japan" data-ja="なぜ日本？">Why Japan</a></li>
-            <li><a href="#how-it-works" data-en="Process" data-ja="進め方">Process</a></li>
-            <li><a href="#faq" data-en="FAQ" data-ja="よくある質問">FAQ</a></li>
-            <li><a href="#contact" data-en="Contact" data-ja="お問い合わせ">Contact</a></li>
+            <li><a href="#services" data-en="Brewery Sourcing" data-ja="蔵元調達">Brewery Sourcing</a></li>
+            <li><a href="#services" data-en="Export Consulting" data-ja="輸出コンサル">Export Consulting</a></li>
+            <li><a href="#services" data-en="Import Support" data-ja="輸入サポート">Import Support</a></li>
+            <li><a href="#services" data-en="Trade Events" data-ja="貿易展示会">Trade Events</a></li>
           </ul>
         </div>
 
@@ -983,7 +1321,8 @@
           <h4 data-en="Contact" data-ja="連絡先">Contact</h4>
           <ul class="footer-links">
             <li><a href="mailto:info@iwamae.com">info@iwamae.com</a></li>
-            <li><a href="#contact" data-en="Free 30-min Zoom Call" data-ja="無料Zoom相談">Free 30-min Zoom Call</a></li>
+            <li><a href="#contact" data-en="Free 30-min Call" data-ja="無料30分相談">Free 30-min Call</a></li>
+            <li><a href="#faq" data-en="FAQ" data-ja="よくある質問">FAQ</a></li>
             <li style="margin-top:14px; color:rgba(255,255,255,0.3); font-size:0.78rem;" data-en="Tokyo, Japan" data-ja="東京、日本">Tokyo, Japan</li>
           </ul>
         </div>
@@ -997,9 +1336,9 @@
         </span>
       </div>
       <p class="footer-disclaimer"
-        data-en='"ARKLinks" is a working name. Operating as a sole proprietor.'
-        data-ja="「ARKLinks」は仮称です。個人事業主として運営中。">
-        "ARKLinks" is a working name. Operating as a sole proprietor.
+        data-en='"ARKLinks" is a working name. Operating as a sole proprietor. Japanese sake specialist — Tokyo, Japan.'
+        data-ja="「ARKLinks」は仮称です。個人事業主として運営中。日本酒専門 — 東京、日本。">
+        "ARKLinks" is a working name. Operating as a sole proprietor. Japanese sake specialist — Tokyo, Japan.
       </p>
     </div>
   </footer>
@@ -1014,7 +1353,6 @@
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
       document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
 
-      // Update all elements with data-en / data-ja
       document.querySelectorAll('[data-en],[data-ja]').forEach(el => {
         const val = el.getAttribute('data-' + lang);
         if (val === null) return;
@@ -1027,17 +1365,32 @@
         }
       });
 
-      // Update select option texts
-      document.querySelectorAll('select option').forEach(opt => {
-        const val = opt.getAttribute('data-' + lang);
-        if (val) opt.textContent = val;
-      });
-
-      // Update placeholders
       document.querySelectorAll('[data-placeholder-en],[data-placeholder-ja]').forEach(el => {
         const ph = el.getAttribute('data-placeholder-' + lang);
         if (ph) el.placeholder = ph;
       });
+    }
+
+    // ── Services Pillar Toggle ──
+    function showPillar(which) {
+      const tourPillar  = document.getElementById('pillar-tours');
+      const tradePillar = document.getElementById('pillar-trade');
+      const tabTours    = document.getElementById('tab-tours');
+      const tabTrade    = document.getElementById('tab-trade');
+
+      if (which === 'tours') {
+        tourPillar.classList.add('visible');
+        tradePillar.classList.remove('visible');
+        tabTours.classList.add('active-tours');
+        tabTours.classList.remove('active-trade');
+        tabTrade.classList.remove('active-tours', 'active-trade');
+      } else {
+        tradePillar.classList.add('visible');
+        tourPillar.classList.remove('visible');
+        tabTrade.classList.add('active-trade');
+        tabTrade.classList.remove('active-tours');
+        tabTours.classList.remove('active-tours', 'active-trade');
+      }
     }
 
     // ── Navbar scroll ──
@@ -1072,7 +1425,9 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach((el, i) => {
-      if (el.classList.contains('service-card')) el.style.transitionDelay = `${(i % 6) * 70}ms`;
+      if (el.classList.contains('service-card') || el.classList.contains('experience-card') || el.classList.contains('trust-card')) {
+        el.style.transitionDelay = `${(i % 6) * 70}ms`;
+      }
       revealObs.observe(el);
     });
 
@@ -1097,13 +1452,13 @@
           document.getElementById('formSuccess').style.display = 'block';
         } else {
           btn.disabled = false;
-          btn.textContent = 'Send Message — Free Consultation →';
+          btn.textContent = currentLang === 'ja' ? '送信する — 無料相談を申し込む →' : 'Send Message — Free Consultation →';
           alert('Something went wrong. Please email us directly at info@iwamae.com');
         }
       })
       .catch(() => {
         btn.disabled = false;
-        btn.textContent = 'Send Message — Free Consultation →';
+        btn.textContent = currentLang === 'ja' ? '送信する — 無料相談を申し込む →' : 'Send Message — Free Consultation →';
         alert('Something went wrong. Please email us directly at info@iwamae.com');
       });
     }
