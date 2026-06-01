@@ -54,11 +54,11 @@
       --border:     #e5e7eb;
       --radius:     12px;
       --shadow:     0 4px 24px rgba(27,42,74,0.12);
-      --font:       'Inter', system-ui, -apple-system, sans-serif;
+      --font:       'Inter', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, -apple-system, sans-serif;
     }
 
     html { scroll-behavior: smooth; }
-    body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.65; font-size: 16px; }
+    body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.65; font-size: 16px; font-weight: 500; }
     img { display: block; max-width: 100%; }
     a { text-decoration: none; color: inherit; }
     h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
@@ -207,27 +207,26 @@
     .pillar-label-trade { display: inline-block; background: rgba(46,93,75,0.6); color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 12px; }
 
     /* ── Services ── */
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
     .service-card {
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 34px 30px;
-      transition: all 0.25s ease; position: relative; overflow: hidden;
+      background: var(--white);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-top: 3px solid var(--border);
+      border-radius: 2px; padding: 30px 26px;
+      transition: all 0.22s ease; position: relative; overflow: hidden;
     }
-    .service-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0;
-      height: 3px; opacity: 0; transition: opacity 0.25s;
-    }
-    .tours-card::before { background: linear-gradient(90deg, var(--crimson), #c04040); }
-    .trade-card::before { background: linear-gradient(90deg, var(--forest), #3a7a62); }
-    .service-card:hover { border-color: transparent; box-shadow: var(--shadow); transform: translateY(-4px); }
-    .service-card:hover::before { opacity: 1; }
+    .service-card::before { display: none; }
+    .tours-card { border-top-color: var(--crimson); }
+    .trade-card { border-top-color: var(--forest); }
+    .service-card:hover { box-shadow: 0 20px 56px rgba(5,10,20,0.30); transform: translateY(-4px); }
     .service-icon {
-      width: 50px; height: 50px; background: var(--off-white); border-radius: 12px;
+      width: 40px; height: 40px; background: none; border-radius: 0;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.35rem; margin-bottom: 18px; transition: background 0.25s;
+      font-size: 1.55rem; margin-bottom: 14px; transition: transform 0.22s;
     }
-    .tours-card:hover .service-icon { background: rgba(139,26,26,0.08); }
-    .trade-card:hover .service-icon { background: rgba(46,93,75,0.08); }
+    .service-card:hover .service-icon { transform: scale(1.12); }
+    .tours-card:hover .service-icon { background: none; }
+    .trade-card:hover .service-icon { background: none; }
     .service-card h3 { color: var(--navy); margin-bottom: 10px; }
     .service-card p { color: var(--gray); font-size: 0.92rem; line-height: 1.7; }
     .service-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.86rem; font-weight: 600; }
@@ -318,16 +317,16 @@
     .cta-strip-btn:hover { background: var(--gold-light); transform: translateY(-1px); }
 
     /* ── Why ARKLinks ── */
-    .why-grid-trust { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 52px; }
+    .why-grid-trust { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px 36px; margin-top: 52px; }
     .trust-card {
-      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 30px 26px; transition: all 0.25s;
+      background: var(--white); border: 1px solid var(--border); border-radius: 2px;
+      padding: 28px 24px; transition: all 0.22s;
     }
-    .trust-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-color: rgba(201,168,76,0.3); }
+    .trust-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-color: rgba(201,168,76,0.45); }
     .trust-icon {
-      width: 48px; height: 48px; background: rgba(201,168,76,0.1); border-radius: 12px;
+      width: 42px; height: 42px; background: rgba(201,168,76,0.1); border-radius: 4px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.3rem; margin-bottom: 16px;
+      font-size: 1.2rem; margin-bottom: 14px;
     }
     .trust-card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.05rem; }
     .trust-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
@@ -374,11 +373,22 @@
     }
     #why-us h2 { color: var(--white); }
     #why-us .text-center p { color: rgba(255,255,255,0.70) !important; }
-    #why-us .trust-card { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.12); }
-    #why-us .trust-card:hover { border-color: rgba(201,168,76,0.4); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
+    #why-us .trust-card {
+      background: transparent;
+      border: none;
+      border-left: 2px solid rgba(201,168,76,0.32);
+      border-radius: 0;
+      padding: 14px 24px 22px 28px;
+    }
+    #why-us .trust-card:hover {
+      background: rgba(255,255,255,0.04);
+      border-left-color: var(--gold);
+      box-shadow: none;
+      transform: none;
+    }
     #why-us .trust-card h3 { color: var(--white); }
     #why-us .trust-card p { color: rgba(255,255,255,0.70); }
-    #why-us .trust-icon { background: rgba(201,168,76,0.15); }
+    #why-us .trust-icon { background: rgba(201,168,76,0.12); border-radius: 4px; }
 
     #how-it-works {
       background:
@@ -1086,9 +1096,9 @@
           <div class="contact-instagram">
             <div class="contact-instagram-icon">📸</div>
             <div class="contact-instagram-text"
-              data-en="Follow our sake journey on Instagram: <a href='https://www.instagram.com/japanese_sake_collective1/' target='_blank' rel='noopener'>@japanese_sake_collective1</a>"
-              data-ja="Instagramで日本酒の旅をフォロー：<a href='https://www.instagram.com/japanese_sake_collective1/' target='_blank' rel='noopener'>@japanese_sake_collective1</a>">
-              Follow our sake journey on Instagram: <a href="https://www.instagram.com/japanese_sake_collective1/" target="_blank" rel="noopener">@japanese_sake_collective1</a>
+              data-en="Follow our sake journey on Instagram: <a href='https://www.instagram.com/japanese_sake_guide/' target='_blank' rel='noopener'>@japanese_sake_guide</a>"
+              data-ja="Instagramで日本酒の旅をフォロー：<a href='https://www.instagram.com/japanese_sake_guide/' target='_blank' rel='noopener'>@japanese_sake_guide</a>">
+              Follow our sake journey on Instagram: <a href="https://www.instagram.com/japanese_sake_guide/" target="_blank" rel="noopener">@japanese_sake_guide</a>
             </div>
           </div>
         </div>
@@ -1194,7 +1204,7 @@
           <a href="mailto:info@iwamae.com" style="color:var(--gold-light); font-size:0.86rem; margin-top:4px;">info@iwamae.com</a>
           <div class="footer-instagram">
             <span style="font-size:1.1rem;">📸</span>
-            <a href="https://www.instagram.com/japanese_sake_collective1/" target="_blank" rel="noopener">@japanese_sake_collective1</a>
+            <a href="https://www.instagram.com/japanese_sake_guide/" target="_blank" rel="noopener">@japanese_sake_guide</a>
           </div>
         </div>
 
