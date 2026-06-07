@@ -512,6 +512,64 @@
     .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; }
     .footer-disclaimer { font-size: 0.75rem; color: rgba(255,255,255,0.28); margin-top: 8px; }
 
+    /* ── Founder Story ── */
+    .founder-section {
+      background: var(--off-white);
+      padding: 96px 0;
+    }
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 72px;
+      align-items: center;
+    }
+    .founder-img-wrap {
+      position: relative;
+    }
+    .founder-img-wrap img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      filter: grayscale(15%);
+      box-shadow: 0 24px 64px rgba(27,42,74,0.18);
+    }
+    .founder-img-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -8px -8px 8px 8px;
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      z-index: 0;
+    }
+    .founder-img-wrap img { position: relative; z-index: 1; }
+    .founder-text .section-label { margin-bottom: 10px; }
+    .founder-text h2 { color: var(--navy); margin-bottom: 8px; }
+    .founder-name { font-size: 1rem; color: var(--gray); font-weight: 500; margin-bottom: 32px; }
+    .founder-story {
+      color: var(--gray);
+      font-size: 0.97rem;
+      line-height: 1.85;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .founder-story p { margin: 0; }
+    .founder-quote {
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+      color: var(--navy);
+      font-style: italic;
+      font-size: 1.05rem;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-top: 8px;
+    }
+    @media (max-width: 900px) {
+      .founder-grid { grid-template-columns: 1fr; gap: 40px; }
+      .founder-img-wrap img { aspect-ratio: 4/3; }
+    }
+
     /* ── Scroll reveal ── */
     .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -1036,6 +1094,43 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Founder Story ── -->
+  <section class="founder-section" id="founder">
+    <div class="container">
+      <div class="founder-grid">
+        <div class="founder-img-wrap reveal">
+          <img src="founder.jpg" alt="Tomoya Iwamae — Founder of ARKLinks">
+        </div>
+        <div class="founder-text reveal">
+          <span class="section-label" data-en="Founder Story" data-ja="創業者ストーリー">Founder Story</span>
+          <h2 data-en="Why I Started ARKLinks" data-ja="ARKLinksを始めた理由">Why I Started ARKLinks</h2>
+          <p class="founder-name" data-en="Tomoya Iwamae — Founder & CEO" data-ja="岩前知也 — 創業者 &amp; CEO">Tomoya Iwamae — Founder &amp; CEO</p>
+          <div class="founder-story">
+            <p data-en="I've always been drawn to the world beyond Japan's borders. That curiosity led me to study English at Waseda University, and later into the world of high-stakes corporate sales — presenting to C-suite executives at Japan's largest listed companies, closing deals that demanded both precision and trust."
+               data-ja="幼い頃から、日本の外の世界に引かれてきました。その好奇心が私を早稲田大学英語学科へと導き、その後は大手上場企業の役員クラスへのプレゼンや高度な法人営業の世界へと進みました。">
+              I've always been drawn to the world beyond Japan's borders. That curiosity led me to study English at Waseda University, and later into the world of high-stakes corporate sales — presenting to C-suite executives at Japan's largest listed companies, closing deals that demanded both precision and trust.
+            </p>
+            <p data-en="After work, I found myself drawn to bars. Not just for the drinks, but for the conversations. It was there, glass in hand, that I started paying closer attention to Japanese sake — a drink unlike anything else in the world, born from Japanese water, rice, and generations of craft."
+               data-ja="仕事終わりにはバーに足を運ぶようになりました。お酒のためだけでなく、会話のために。そこで手にしたグラスをきっかけに、日本酒という飲み物に深く向き合うようになりました。日本の水、米、そして代々受け継がれる職人の技から生まれる、世界に類を見ないお酒です。">
+              After work, I found myself drawn to bars. Not just for the drinks, but for the conversations. It was there, glass in hand, that I started paying closer attention to Japanese sake — a drink unlike anything else in the world, born from Japanese water, rice, and generations of craft.
+            </p>
+            <blockquote class="founder-quote" data-en="Nearly 70% of Japan's sake breweries are operating at a loss — not because their sake isn't extraordinary, but because the people behind it are artisans, not salespeople." data-ja="日本の酒蔵の約70%が赤字経営です。お酒の品質が低いからではなく、作り手が職人であり、営業のプロではないからです。">
+              Nearly 70% of Japan's sake breweries are operating at a loss — not because their sake isn't extraordinary, but because the people behind it are artisans, not salespeople.
+            </blockquote>
+            <p data-en="They've dedicated their lives to perfecting what's in the bottle. Getting it in front of the world? That's a different skill entirely. That's where I come in. A background in English, three years of corporate sales experience, and a genuine obsession with sake."
+               data-ja="蔵元たちはボトルの中身を極めることに人生を捧げています。それを世界に届けるのは、全く別のスキルです。そこに私が入る余地がある。英語の素地、3年間の法人営業経験、そして日本酒への純粋な情熱。">
+              They've dedicated their lives to perfecting what's in the bottle. Getting it in front of the world? That's a different skill entirely. That's where I come in. A background in English, three years of corporate sales experience, and a genuine obsession with sake.
+            </p>
+            <p data-en="I started ARKLinks because I believe the world deserves to taste what Japan has been quietly perfecting for centuries — and because someone needed to tell that story in a language the world can hear."
+               data-ja="ARKLinksを立ち上げたのは、世界が何世紀もかけて日本が静かに磨き続けてきたものを味わうべきだと信じているから。そして誰かが、その物語を世界に届く言葉で語る必要があったからです。">
+              I started ARKLinks because I believe the world deserves to taste what Japan has been quietly perfecting for centuries — and because someone needed to tell that story in a language the world can hear.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
