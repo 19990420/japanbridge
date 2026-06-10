@@ -272,7 +272,7 @@
     .experiences-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 52px; }
     .experience-card {
       background: var(--white); border: 1px solid var(--border);
-      border-radius: 16px; overflow: hidden;
+      border-radius: 0; overflow: hidden;
       transition: all 0.25s ease; cursor: default;
     }
     .experience-card:hover { box-shadow: 0 12px 40px rgba(27,42,74,0.14); transform: translateY(-4px); }
@@ -299,14 +299,15 @@
     .experience-desc { color: var(--gray); font-size: 0.88rem; line-height: 1.7; margin-bottom: 16px; }
     .experience-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
     .experience-tag {
-      background: var(--off-white); color: var(--gray); font-size: 0.72rem;
-      font-weight: 600; padding: 3px 10px; border-radius: 100px;
+      background: var(--off-white); color: var(--gray); font-size: 0.68rem;
+      font-weight: 400; padding: 3px 10px; border-radius: 0;
+      letter-spacing: 0.08em; text-transform: uppercase;
     }
     .experience-link { font-size: 0.86rem; font-weight: 700; color: var(--gold); display: inline-flex; align-items: center; gap: 5px; }
     .experience-link:hover { color: var(--gold-light); }
     .experience-custom {
-      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(27,42,74,0.06));
-      border: 2px dashed var(--gold); border-radius: 16px;
+      background: transparent;
+      border: 1px solid var(--gold); border-radius: 0;
       padding: 40px 26px; text-align: center;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       transition: all 0.25s;
@@ -517,7 +518,7 @@
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 44px; margin-bottom: 44px; }
     .footer-brand { display: flex; flex-direction: column; gap: 14px; }
     .footer-logo { display: flex; align-items: center; gap: 0; }
-    .footer-logo img { height: 48px; width: auto; display: block; filter: brightness(0) invert(1); }
+    .footer-logo img { height: 56px; width: auto; display: block; }
     .footer-tagline { font-size: 0.86rem; line-height: 1.65; max-width: 250px; }
     .footer-col h4 { color: var(--white); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
@@ -652,9 +653,9 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
-          <span data-en="🍶 Your Gateway to Japanese Sake"
-                data-ja="🍶 日本酒への入口">
-            🍶 Your Gateway to Japanese Sake
+          <span data-en="Your Gateway to Japanese Sake"
+                data-ja="日本酒への入口">
+            Your Gateway to Japanese Sake
           </span>
         </div>
         <h1>
@@ -672,20 +673,20 @@
         <div class="hero-pill">
           <div class="hero-pill-dot"></div>
           <span class="hero-pill-text"
-            data-en="<strong>Free 30-min consultation</strong> — tours &amp; trade inquiries welcome"
-            data-ja="<strong>無料30分相談受付中</strong> — ツアー・輸出入どちらもお気軽に">
-            <strong>Free 30-min consultation</strong> — tours &amp; trade inquiries welcome
+            data-en="Free 30-min consultation — tours &amp; trade inquiries welcome"
+            data-ja="無料30分相談受付中 — ツアー・輸出入どちらもお気軽に">
+            Free 30-min consultation — tours &amp; trade inquiries welcome
           </span>
         </div>
 
         <div class="hero-actions">
-          <a href="#contact" class="btn btn--crimson" style="font-size:1rem; padding:15px 32px;"
-            data-en="Plan My Sake Journey →" data-ja="酒蔵ツアーを計画する →">
-            Plan My Sake Journey →
+          <a href="#contact" class="btn btn--primary"
+            data-en="Plan My Sake Journey" data-ja="酒蔵ツアーを計画する">
+            Plan My Sake Journey
           </a>
-          <a href="#contact" class="btn btn--outline" style="font-size:1rem; padding:15px 32px;"
-            data-en="Source Japanese Sake →" data-ja="日本酒を輸入する →">
-            Source Japanese Sake →
+          <a href="#contact" class="btn btn--outline"
+            data-en="Source Japanese Sake" data-ja="日本酒を輸入する">
+            Source Japanese Sake
           </a>
         </div>
         <p class="hero-welcome"
@@ -738,12 +739,12 @@
 
       <div class="services-tab-bar">
         <button class="services-tab-btn active-tours" id="tab-tours" onclick="showPillar('tours')"
-          data-en="🍶 Sake Tours &amp; Experiences" data-ja="🍶 酒蔵ツアー &amp; 体験">
-          🍶 Sake Tours &amp; Experiences
+          data-en="Sake Tours &amp; Experiences" data-ja="酒蔵ツアー &amp; 体験">
+          Sake Tours &amp; Experiences
         </button>
         <button class="services-tab-btn" id="tab-trade" onclick="showPillar('trade')"
-          data-en="🌍 Sake Export &amp; Trade" data-ja="🌍 日本酒輸出・貿易">
-          🌍 Sake Export &amp; Trade
+          data-en="Sake Export &amp; Trade" data-ja="日本酒輸出・貿易">
+          Sake Export &amp; Trade
         </button>
       </div>
 
@@ -899,7 +900,7 @@
   <div class="cta-strip">
     <div class="container cta-strip-inner">
       <div class="cta-strip-text">
-        <strong data-en="🍶 Free 30-Minute Sake Consultation" data-ja="🍶 初回30分・無料日本酒相談">🍶 Free 30-Minute Sake Consultation</strong>
+        <strong data-en="Free 30-Minute Sake Consultation" data-ja="初回30分・無料日本酒相談">Free 30-Minute Sake Consultation</strong>
         <span data-en="Tours, sourcing, or just curious about Japanese sake — ask us anything."
               data-ja="ツアー・調達・日本酒についての疑問など、何でもお気軽にどうぞ。">
           Tours, sourcing, or just curious about Japanese sake — ask us anything.
@@ -1208,7 +1209,7 @@
           </div>
 
           <div class="contact-instagram">
-            <div class="contact-instagram-icon">📸</div>
+            <div class="contact-instagram-icon">&#9632;</div>
             <div class="contact-instagram-text"
               data-en="Follow our sake journey on Instagram: <a href='https://www.instagram.com/japanese_sake_guide/' target='_blank' rel='noopener'>@japanese_sake_guide</a>"
               data-ja="Instagramで日本酒の旅をフォロー：<a href='https://www.instagram.com/japanese_sake_guide/' target='_blank' rel='noopener'>@japanese_sake_guide</a>">
@@ -1234,7 +1235,7 @@
                 <div class="form-radio-group">
                   <label class="form-radio-option">
                     <input type="radio" name="interest" value="Sake Tours & Experiences" required />
-                    <span data-en="🍶 Sake Tours &amp; Experiences" data-ja="🍶 酒蔵ツアー &amp; 体験">🍶 Sake Tours &amp; Experiences</span>
+                    <span data-en="Sake Tours &amp; Experiences" data-ja="酒蔵ツアー &amp; 体験">Sake Tours &amp; Experiences</span>
                   </label>
                   <label class="form-radio-option">
                     <input type="radio" name="interest" value="Sake Export & Trade" />
@@ -1288,7 +1289,7 @@
             </form>
 
             <div class="form-success" id="formSuccess">
-              <div class="form-success-icon">🍶</div>
+              <div class="form-success-icon">✓</div>
               <h3 data-en="Message Received!" data-ja="メッセージを受け取りました！">Message Received!</h3>
               <p data-en="Thank you for reaching out. We'll review your inquiry and respond within 2 business days."
                  data-ja="ご連絡ありがとうございます。内容を確認の上、2営業日以内にご返信します。">
@@ -1307,7 +1308,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="会社ロゴpng.png" alt="ARK LINKS">
+            <img src="logo-white.png" alt="ARK LINKS">
           </div>
           <p class="footer-tagline"
             data-en="Your gateway to Japanese sake — private brewery tours, sake export sourcing, and trade consulting from Tokyo."
@@ -1316,7 +1317,7 @@
           </p>
           <a href="mailto:info@iwamae.com" style="color:var(--gold-light); font-size:0.86rem; margin-top:4px;">info@iwamae.com</a>
           <div class="footer-instagram">
-            <span style="font-size:1.1rem;">📸</span>
+            <span style="font-size:0.9rem; letter-spacing:0.05em;">IG</span>
             <a href="https://www.instagram.com/japanese_sake_guide/" target="_blank" rel="noopener">@japanese_sake_guide</a>
           </div>
         </div>
