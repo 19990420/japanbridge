@@ -107,16 +107,16 @@
     /* ── Navigation ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(255,255,255,0.96); backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border); transition: box-shadow 0.2s;
+      background: rgba(0,0,0,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08); transition: box-shadow 0.2s;
     }
     nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
     .nav-logo { display: flex; align-items: center; gap: 0; font-weight: 800; font-size: 1.1rem; color: #1a1a1a; flex-shrink: 0; }
     .nav-logo img { height: 52px; width: auto; display: block; }
     .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
-    .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--gray); transition: color 0.2s; }
-    .nav-links a:hover { color: var(--navy); }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: rgba(255,255,255,0.75); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
     .nav-right { display: flex; align-items: center; gap: 10px; }
     .nav-cta-btn {
       background: var(--gold); color: var(--white); border: none;
@@ -125,7 +125,7 @@
     }
     .nav-cta-btn:hover { background: var(--gold-light); }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
 
     /* ── Mobile Menu ── */
     .mobile-menu {
