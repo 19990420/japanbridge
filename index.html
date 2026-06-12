@@ -219,34 +219,83 @@
     .pillar-label-tours { display: inline-block; background: transparent; border: 1px solid rgba(255,255,255,0.4); color: #fff; font-size: 0.68rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; padding: 4px 14px; border-radius: 0; margin-bottom: 14px; }
     .pillar-label-trade { display: inline-block; background: transparent; border: 1px solid rgba(255,255,255,0.4); color: #fff; font-size: 0.68rem; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; padding: 4px 14px; border-radius: 0; margin-bottom: 14px; }
 
-    /* ── Services ── */
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
-    .service-card {
-      background: var(--white);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-top: 1px solid rgba(255,255,255,0.3);
-      border-radius: 0; padding: 36px 28px;
-      transition: all 0.3s ease; position: relative; overflow: hidden;
+    /* ── Services Panels ── */
+    .service-panel {
+      display: flex;
+      min-height: 420px;
     }
-    .service-card::before { display: none; }
-    .tours-card { border-top-color: var(--crimson); }
-    .trade-card { border-top-color: var(--forest); }
-    .service-card:hover { box-shadow: 0 20px 56px rgba(5,10,20,0.30); transform: translateY(-4px); }
-    .service-icon {
-      width: 40px; height: 40px; background: none; border-radius: 0;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.55rem; margin-bottom: 14px; transition: transform 0.22s;
+    .service-panel--reverse { flex-direction: row-reverse; }
+    .service-panel-text {
+      flex: 0 0 45%;
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 56px 52px;
     }
-    .service-card:hover .service-icon { transform: scale(1.12); }
-    .tours-card:hover .service-icon { background: none; }
-    .trade-card:hover .service-icon { background: none; }
-    .service-card h3 { color: var(--dark); margin-bottom: 10px; font-weight: 400; letter-spacing: 0.06em; }
-    .service-card p { color: var(--gray); font-size: 0.88rem; line-height: 1.8; font-weight: 300; }
-    .service-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font-size: 0.72rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
-    .tours-card .service-link { color: var(--dark); }
-    .tours-card .service-link:hover { opacity: 0.6; }
-    .trade-card .service-link { color: var(--dark); }
-    .trade-card .service-link:hover { opacity: 0.6; }
+    .service-panel-text--dark { background: #080808; }
+    .service-panel-photo {
+      flex: 0 0 55%;
+      background-size: cover;
+      background-position: center;
+    }
+    .service-panel-num {
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+    .service-panel-title {
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.03em;
+      line-height: 1.2;
+      margin: 0 0 10px;
+    }
+    .service-panel-sub {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.08em;
+      font-weight: 300;
+      margin: 0;
+    }
+    .service-panel-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      margin: 20px 0;
+      opacity: 0.8;
+    }
+    .service-panel-body {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.9;
+      font-weight: 300;
+      margin: 0;
+    }
+    .service-panel-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid rgba(201,168,76,0.4);
+      padding-bottom: 3px;
+      transition: opacity 0.2s;
+      font-weight: 400;
+    }
+    .service-panel-link:hover { opacity: 0.6; }
+    @media (max-width: 768px) {
+      .service-panel, .service-panel--reverse { flex-direction: column; }
+      .service-panel-text { flex: none; padding: 40px 28px; }
+      .service-panel-photo { flex: none; min-height: 240px; }
+    }
 
     /* ── USP Banner ── */
     .usp-banner {
@@ -722,8 +771,74 @@
   </div>
 
   <!-- ── Services ── -->
-  <section id="services" style="padding:0; line-height:0; display:block;">
-    <img src="HP素材.png" alt="ARKLinks — Story × Content / Ultra-Premium Tasting Events / Global Export" style="width:100%; display:block; line-height:0;">
+  <section id="services" style="padding:0;">
+
+    <!-- 01 Story × Content -->
+    <div class="service-panel reveal">
+      <div class="service-panel-text">
+        <span class="service-panel-num">01</span>
+        <h2 class="service-panel-title"
+          data-en="Story × Content"
+          data-ja="ストーリー × コンテンツ">Story × Content</h2>
+        <p class="service-panel-sub"
+          data-en="The philosophy and time poured into every drop."
+          data-ja="超高級日本酒の背景">The philosophy and time poured into every drop.</p>
+        <div class="service-panel-rule"></div>
+        <p class="service-panel-body"
+          data-en="We film the full journey — from the rice farmer's field, through the brewery, to the finished bottle — and tell that story in English for a global audience. Tradition, terroir, rice, water, craft. Every element, told in a language the world can hear."
+          data-ja="一滴に込められた、造り手の哲学と時間。伝統、土地、米、水、技。そのすべてが織りなす物語を世界へ。農家から蔵元、完成したボトルまでの旅を映像に収め、英語で世界に発信します。">
+          We film the full journey — from the rice farmer's field, through the brewery, to the finished bottle — and tell that story in English for a global audience. Tradition, terroir, rice, water, craft. Every element, told in a language the world can hear.
+        </p>
+        <a href="#contact" class="service-panel-link"
+          data-en="Learn more →" data-ja="詳しく見る →">Learn more →</a>
+      </div>
+      <div class="service-panel-photo" style="background-image:url('service-photo-01.jpg');"></div>
+    </div>
+
+    <!-- 02 Ultra-Premium Tasting Events -->
+    <div class="service-panel service-panel--reverse reveal">
+      <div class="service-panel-text service-panel-text--dark">
+        <span class="service-panel-num">02</span>
+        <h2 class="service-panel-title"
+          data-en="Ultra-Premium Tasting Events"
+          data-ja="超高級テイスティング体験会">Ultra-Premium Tasting Events</h2>
+        <p class="service-panel-sub"
+          data-en="A singular cup, for those who are chosen."
+          data-ja="選ばれし人のための、特別な一杯。">A singular cup, for those who are chosen.</p>
+        <div class="service-panel-rule"></div>
+        <p class="service-panel-body"
+          data-en="Private, invitation-only experiences at Tokyo's finest kaiseki and kappo restaurants. Maximum 6 guests. Sake priced ¥10,000+ only. Hear the brewer's story, feel the aroma, savour the finish. The ultimate sake experience, through all five senses."
+          data-ja="蔵元の想いを聞き、香りを感じ、余韻を愉しむ。五感で味わう、至高の日本酒体験。東京最高級の懐石・割烹料亭で開催する完全招待制イベント。最大6名。¥30,000/人〜。">
+          Private, invitation-only experiences at Tokyo's finest kaiseki and kappo restaurants. Maximum 6 guests. Sake priced ¥10,000+ only. Hear the brewer's story, feel the aroma, savour the finish. The ultimate sake experience, through all five senses.
+        </p>
+        <a href="#contact" class="service-panel-link"
+          data-en="Request an invitation →" data-ja="招待を申し込む →">Request an invitation →</a>
+      </div>
+      <div class="service-panel-photo" style="background-image:url('service-photo-02.jpg');"></div>
+    </div>
+
+    <!-- 03 Global Export -->
+    <div class="service-panel reveal">
+      <div class="service-panel-text">
+        <span class="service-panel-num">03</span>
+        <h2 class="service-panel-title"
+          data-en="Global Export &amp; Distribution"
+          data-ja="海外輸出・流通支援">Global Export &amp; Distribution</h2>
+        <p class="service-panel-sub"
+          data-en="Japan's finest drop, to the world's most special places."
+          data-ja="日本の誇る一滴を、世界の特別な場所へ。">Japan's finest drop, to the world's most special places.</p>
+        <div class="service-panel-rule"></div>
+        <p class="service-panel-body"
+          data-en="We connect Japan's finest sake breweries to luxury restaurants, five-star hotels, and premium importers worldwide. Export, branding, distribution — fully supported end-to-end. Working exclusively with sake priced ¥10,000+, we take the value of premium Japanese sake global."
+          data-ja="輸出、ブランディング、流通までを一貫サポートし、高級日本酒の価値をグローバルに広げます。米国・欧州・アジアのラグジュアリーチャネルへ、1本1万円以上の日本酒のみを届けます。">
+          We connect Japan's finest sake breweries to luxury restaurants, five-star hotels, and premium importers worldwide. Export, branding, distribution — fully supported end-to-end. Working exclusively with sake priced ¥10,000+, we take the value of premium Japanese sake global.
+        </p>
+        <a href="#contact" class="service-panel-link"
+          data-en="Inquire now →" data-ja="お問い合わせ →">Inquire now →</a>
+      </div>
+      <div class="service-panel-photo" style="background-image:url('service-photo-03.jpg');"></div>
+    </div>
+
   </section>
 
   <!-- ── CTA Strip ── -->
