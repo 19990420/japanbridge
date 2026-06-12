@@ -646,13 +646,42 @@
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .process-steps::before { display: none; }
       .nav-cta-btn { display: none; }
+      .why-grid-trust { grid-template-columns: 1fr 1fr; }
+      .hero-content { max-width: 100%; }
+      .hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
     }
     @media (max-width: 600px) {
-      .section { padding: 68px 0; }
+      .section { padding: 56px 0; }
+      .container { padding: 0 20px; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
       .contact-form { padding: 26px 18px; }
       .cta-strip-inner { flex-direction: column; text-align: center; }
       .lang-btn { padding: 6px 10px; font-size: 0.75rem; }
+      /* Hero */
+      .hero { min-height: 88vh; }
+      .hero-content { margin: 0; padding: 0 4px; }
+      .hero h1 { font-size: clamp(1.9rem, 9vw, 3rem); }
+      .hero-sub { font-size: 0.95rem; }
+      .hero-badge { font-size: 0.62rem; padding: 6px 14px; }
+      .btn { font-size: 0.7rem; padding: 13px 18px; letter-spacing: 0.1em; }
+      .hero-actions { flex-direction: column; gap: 10px; align-items: flex-start; }
+      /* Services panels */
+      .service-panel-text { padding: 36px 20px; }
+      .service-panel-title { font-size: 1.5rem; }
+      .service-panel-photo { min-height: 220px; }
+      /* USP tags */
+      .usp-tags { gap: 8px; }
+      .usp-tag { font-size: 0.65rem; padding: 5px 10px; }
+      /* Why grid */
+      .why-grid-trust { grid-template-columns: 1fr; }
+      /* Process */
+      .process-steps { grid-template-columns: 1fr; gap: 32px; }
+      /* FAQ */
+      .faq-list { margin-top: 32px; }
+      /* Contact */
+      .contact-info h2 { font-size: 1.6rem; }
+      /* CTA strip */
+      .cta-strip { padding: 22px 0; }
     }
   </style>
 </head>
@@ -678,7 +707,7 @@
           <button class="lang-btn"        id="btn-ja" onclick="setLang('ja')">日本語</button>
         </div>
         <button class="nav-cta-btn" onclick="location.href='#contact'"
-          data-en="Free Consultation" data-ja="無料相談">Free Consultation</button>
+          data-en="Contact" data-ja="お問い合わせ">Contact</button>
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">
           <span></span><span></span><span></span>
         </div>
@@ -715,15 +744,6 @@
           data-ja="ARKLinksは1万円以上の超高級日本酒に完全特化。東京でのプライベート体験会の開催と、世界のラグジュアリー市場への輸出を手がけます。">
           ARKLinks specialises exclusively in Japanese sake priced ¥10,000 and above — curating private tasting experiences in Tokyo and connecting the world's finest sake to global luxury markets.
         </p>
-
-        <div class="hero-pill">
-          <div class="hero-pill-dot"></div>
-          <span class="hero-pill-text"
-            data-en="Free 30-min consultation — experiences &amp; export inquiries welcome"
-            data-ja="無料30分相談受付中 — 体験・輸出どちらもお気軽に">
-            Free 30-min consultation — experiences &amp; export inquiries welcome
-          </span>
-        </div>
 
         <div class="hero-actions">
           <a href="#contact" class="btn btn--primary"
@@ -1204,9 +1224,9 @@
               </p>
 
               <button type="submit" class="form-submit"
-                data-en="Send Message — Free Consultation →"
-                data-ja="送信する — 無料相談を申し込む →">
-                Send Message — Free Consultation →
+                data-en="Send Message →"
+                data-ja="送信する →">
+                Send Message →
               </button>
             </form>
 
@@ -1268,7 +1288,7 @@
           <h4 data-en="Contact" data-ja="連絡先">Contact</h4>
           <ul class="footer-links">
             <li><a href="mailto:info@iwamae.com">info@iwamae.com</a></li>
-            <li><a href="#contact" data-en="Free 30-min Call" data-ja="無料30分相談">Free 30-min Call</a></li>
+            <li><a href="#contact" data-en="Contact" data-ja="お問い合わせ">Contact</a></li>
             <li><a href="#faq" data-en="FAQ" data-ja="よくある質問">FAQ</a></li>
             <li style="margin-top:14px; color:rgba(255,255,255,0.3); font-size:0.78rem;" data-en="Tokyo, Japan" data-ja="東京、日本">Tokyo, Japan</li>
           </ul>
@@ -1399,13 +1419,13 @@
           document.getElementById('formSuccess').style.display = 'block';
         } else {
           btn.disabled = false;
-          btn.textContent = currentLang === 'ja' ? '送信する — 無料相談を申し込む →' : 'Send Message — Free Consultation →';
+          btn.textContent = currentLang === 'ja' ? '送信する →' : 'Send Message →';
           alert('Something went wrong. Please email us directly at info@iwamae.com');
         }
       })
       .catch(() => {
         btn.disabled = false;
-        btn.textContent = currentLang === 'ja' ? '送信する — 無料相談を申し込む →' : 'Send Message — Free Consultation →';
+        btn.textContent = currentLang === 'ja' ? '送信する →' : 'Send Message →';
         alert('Something went wrong. Please email us directly at info@iwamae.com');
       });
     }
