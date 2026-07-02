@@ -146,9 +146,13 @@
     .hero-bg {
       position: absolute; inset: 0;
       background: url('tea-fields.jpg') center center / cover no-repeat;
-      animation: kenburns 16s ease-out forwards;
+      animation: kenburns 26s ease-in-out infinite alternate;
+      will-change: transform;
     }
-    @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.08); } }
+    @keyframes kenburns {
+      from { transform: scale(1) translate(0, 0); }
+      to   { transform: scale(1.10) translate(-1.5%, 1%); }
+    }
     .hero::after {
       content: ''; position: absolute; inset: 0;
       background: linear-gradient(to bottom, rgba(20,18,15,0.35) 0%, rgba(20,18,15,0.28) 40%, rgba(20,18,15,0.78) 100%);
