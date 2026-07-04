@@ -29,7 +29,7 @@
     "@type": "ProfessionalService",
     "name": "ARKLinks",
     "description": "ARKLinks composes private, bespoke journeys with Japan's finest primary producers — sake breweries, wineries, tea farms and rice growers — for discerning international travellers.",
-    "email": "info@iwamae.com",
+    "email": "info@ark-links.com",
     "url": "https://ark-links.com",
     "areaServed": "JP",
     "serviceType": ["Private Sake Brewery Journeys", "Private Winery Journeys", "Tea Farm & Matcha Journeys", "Bespoke Cultural Journeys in Japan"]
@@ -600,7 +600,7 @@
         <div class="enquire-info reveal">
           <div class="contact-method">
             <span class="contact-method-label" data-en="Correspondence" data-ja="メール">Correspondence</span>
-            <div class="contact-method-value"><a href="mailto:info@iwamae.com">info@iwamae.com</a></div>
+            <div class="contact-method-value"><a href="mailto:info@ark-links.com">info@ark-links.com</a></div>
           </div>
           <div class="contact-method">
             <span class="contact-method-label" data-en="Instagram" data-ja="インスタグラム">Instagram</span>
@@ -619,6 +619,15 @@
 
         <div class="reveal">
           <form id="contactForm">
+            <div class="form-group">
+              <label data-en="I am enquiring as" data-ja="お立場">I am enquiring as</label>
+              <div class="form-check-group">
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Individual guest" checked /><span data-en="Individual guest" data-ja="個人のお客様">Individual guest</span></label>
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Hotel / Concierge" /><span data-en="Hotel &amp; concierge" data-ja="ホテル・コンシェルジュ">Hotel &amp; concierge</span></label>
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Travel agency / designer" /><span data-en="Travel agency &amp; designer" data-ja="旅行会社・旅行デザイナー">Travel agency &amp; designer</span></label>
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Corporate / other" /><span data-en="Corporate &amp; other" data-ja="法人・その他">Corporate &amp; other</span></label>
+              </div>
+            </div>
             <div class="form-group">
               <label data-en="Which crafts call to you?" data-ja="心惹かれるものは？">Which crafts call to you?</label>
               <div class="form-check-group">
@@ -671,7 +680,7 @@
       <div class="footer-links">
         <a href="#journeys" data-en="Journeys" data-ja="旅">Journeys</a>
         <a href="#founder"  data-en="Founder"  data-ja="創業者">Founder</a>
-        <a href="mailto:info@iwamae.com" data-en="Correspondence" data-ja="メール">Correspondence</a>
+        <a href="mailto:info@ark-links.com" data-en="Correspondence" data-ja="メール">Correspondence</a>
         <a href="https://www.instagram.com/ark.links" target="_blank" rel="noopener">Instagram</a>
       </div>
       <span class="footer-copy" data-en="Tokyo, Japan" data-ja="東京">Tokyo, Japan</span>
@@ -746,10 +755,10 @@
           form.style.display = 'none';
           document.getElementById('formSuccess').style.display = 'block';
         } else {
-          alert('Something went wrong. Please email us directly at info@iwamae.com');
+          alert('Something went wrong. Please email us directly at info@ark-links.com');
         }
       }).catch(function() {
-        alert('Something went wrong. Please email us directly at info@iwamae.com');
+        alert('Something went wrong. Please email us directly at info@ark-links.com');
       });
     });
   </script>
