@@ -11,16 +11,25 @@
   <meta name="google-site-verification" content="RHl0MhOwFr08JJTwx42EEGGuYOEPCdHslGpAdcvsVR0" />
   <link rel="canonical" href="https://ark-links.com/" />
 
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple_touch_icon.png" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ARKLinks" />
   <meta property="og:title" content="ARKLinks | Private Journeys into Japan's Craft" />
   <meta property="og:description" content="Meet the makers behind Japan's finest sake, wine, tea and rice. Each journey composed once — for you." />
   <meta property="og:url" content="https://ark-links.com/" />
+  <meta property="og:image" content="https://ark-links.com/og_image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ARKLinks | Private Journeys into Japan's Craft" />
   <meta name="twitter:description" content="Private, by-introduction journeys with Japan's finest producers." />
+  <meta name="twitter:image" content="https://ark-links.com/og_image.jpg" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -36,6 +45,7 @@
   }
   </script>
 
+  <link rel="preload" as="image" href="tea_fields.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet" />
@@ -145,7 +155,7 @@
     .hero { position: relative; min-height: 100vh; display: flex; align-items: flex-end; overflow: hidden; }
     .hero-bg {
       position: absolute; inset: 0;
-      background: url('tea-fields.jpg') center center / cover no-repeat;
+      background: url('tea_fields.webp') center center / cover no-repeat;
       animation: kenburns 26s ease-in-out infinite alternate;
       will-change: transform;
     }
@@ -155,16 +165,17 @@
     }
     .hero::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to bottom, rgba(20,18,15,0.35) 0%, rgba(20,18,15,0.28) 40%, rgba(20,18,15,0.78) 100%);
+      background: linear-gradient(to bottom, rgba(20,18,15,0.52) 0%, rgba(20,18,15,0.40) 45%, rgba(20,18,15,0.88) 100%);
     }
     .hero-content { position: relative; z-index: 2; padding-bottom: clamp(80px, 14vh, 150px); max-width: 780px; }
-    .hero .label { color: rgba(255,255,255,0.65); margin-bottom: 28px; }
-    .hero h1 { color: #fff; margin-bottom: 30px; }
+    .hero .label { color: rgba(255,255,255,0.8); margin-bottom: 28px; text-shadow: 0 1px 18px rgba(20,18,15,0.5); }
+    .hero h1 { color: #fff; margin-bottom: 30px; text-shadow: 0 2px 28px rgba(20,18,15,0.45); }
     .hero h1 .accent { color: #D9CBAA; font-style: italic; }
     html[data-lang="ja"] .hero h1 .accent { font-style: normal; }
     .hero-sub {
-      font-size: 15px; color: rgba(255,255,255,0.82); max-width: 480px;
+      font-size: 15px; color: rgba(255,255,255,0.92); max-width: 480px;
       line-height: 2; margin-bottom: 44px; font-weight: 300;
+      text-shadow: 0 1px 18px rgba(20,18,15,0.5);
     }
     .hero .quiet-link { color: #fff; border-color: rgba(255,255,255,0.4); }
     .hero .quiet-link:hover { border-color: #D9CBAA; color: #D9CBAA; }
@@ -313,7 +324,7 @@
   <!-- ══════════ NAV ══════════ -->
   <nav id="navbar">
     <div class="container nav-inner">
-      <a class="nav-logo" href="#top"><img src="logo-transparent.png" alt="ARKLinks" class="on-hero" id="navLogo" /></a>
+      <a class="nav-logo" href="#top"><img src="logo_nav.png" alt="ARKLinks" class="on-hero" id="navLogo" /></a>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="#journeys"   class="on-hero" data-en="Journeys"   data-ja="旅">Journeys</a></li>
@@ -379,7 +390,7 @@
 
       <!-- 01 Sake -->
       <div class="journey reveal">
-        <div class="journey-img"><img src="sake-brewery.jpg" alt="Private sake brewery journey" /></div>
+        <div class="journey-img"><img src="sake_brewery.webp" alt="Private sake brewery journey" loading="lazy" decoding="async" /></div>
         <div class="journey-body">
           <span class="journey-num">01</span>
           <span class="label" data-en="Sake &middot; The Brewery" data-ja="日本酒・蔵">Sake &middot; The Brewery</span>
@@ -395,7 +406,7 @@
 
       <!-- 02 Wine -->
       <div class="journey reveal">
-        <div class="journey-img"><img src="winery.jpg" alt="Private Japanese winery journey" /></div>
+        <div class="journey-img"><img src="winery.webp" alt="Private Japanese winery journey" loading="lazy" decoding="async" /></div>
         <div class="journey-body">
           <span class="journey-num">02</span>
           <span class="label" data-en="Wine &middot; The Vineyard" data-ja="ワイン・葡萄畑">Wine &middot; The Vineyard</span>
@@ -411,7 +422,7 @@
 
       <!-- 03 Tea -->
       <div class="journey reveal">
-        <div class="journey-img"><img src="tea.jpg" alt="Private tea and matcha farm journey" /></div>
+        <div class="journey-img"><img src="tea.webp" alt="Private tea and matcha farm journey" loading="lazy" decoding="async" /></div>
         <div class="journey-body">
           <span class="journey-num">03</span>
           <span class="label" data-en="Tea &middot; The Farm" data-ja="茶・茶園">Tea &middot; The Farm</span>
@@ -427,7 +438,7 @@
 
       <!-- 04 Rice -->
       <div class="journey reveal">
-        <div class="journey-img"><img src="rice.jpg" alt="Heritage rice farm journey" /></div>
+        <div class="journey-img"><img src="rice.webp" alt="Heritage rice farm journey" loading="lazy" decoding="async" /></div>
         <div class="journey-body">
           <span class="journey-num">04</span>
           <span class="label" data-en="Rice &middot; The Paddies" data-ja="米・田">Rice &middot; The Paddies</span>
@@ -479,7 +490,7 @@
   <!-- ══════════ FOUNDER ══════════ -->
   <section class="section" id="founder">
     <div class="container founder-grid">
-      <div class="founder-img reveal"><img src="founder.jpg" alt="Tomoya Iwamae, Founder of ARKLinks" /></div>
+      <div class="founder-img reveal"><img src="founder.webp" alt="Tomoya Iwamae, Founder of ARKLinks" loading="lazy" decoding="async" /></div>
       <div class="founder-body reveal">
         <span class="label" data-en="The Founder" data-ja="創業者">The Founder</span>
         <h2 data-en="Why ARKLinks exists" data-ja="ARKLinksが在る理由">Why ARKLinks exists</h2>
