@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" translate="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARKLinks | Private Journeys into Japan's Craft — Sake, Wine, Tea &amp; Rice</title>
+  <meta name="description" content="ARKLinks composes private, by-introduction journeys with Japan's finest producers — centuries-old sake breweries, mountain wineries, family tea farms and heritage rice growers." />
+  <meta name="keywords" content="private Japan experience, luxury Japan journey, sake brewery private visit, Japanese tea farm experience, matcha farm private tour, Japanese winery private tour, bespoke Japan travel" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google" content="notranslate" />
+  <meta name="google-site-verification" content="RHl0MhOwFr08JJTwx42EEGGuYOEPCdHslGpAdcvsVR0" />
+  <link rel="canonical" href="https://ark-links.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple_touch_icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ARKLinks" />
+  <meta property="og:title" content="ARKLinks | Private Journeys into Japan's Craft" />
+  <meta property="og:description" content="Meet the makers behind Japan's finest sake, wine, tea and rice. Each journey composed once — for you." />
+  <meta property="og:url" content="https://ark-links.com/" />
+  <meta property="og:image" content="https://ark-links.com/og_image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ARKLinks | Private Journeys into Japan's Craft" />
+  <meta name="twitter:description" content="Private, by-introduction journeys with Japan's finest producers." />
+  <meta name="twitter:image" content="https://ark-links.com/og_image.jpg" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ARKLinks",
+    "description": "ARKLinks composes private, bespoke journeys with Japan's finest primary producers — sake breweries, wineries, tea farms and rice growers — for discerning international travellers.",
+    "email": "info@ark-links.com",
+    "url": "https://ark-links.com",
+    "areaServed": "JP",
+    "serviceType": ["Private Sake Brewery Journeys", "Private Winery Journeys", "Tea Farm & Matcha Journeys", "Bespoke Cultural Journeys in Japan"]
+  }
+  </script>
+
+  <link rel="preload" as="image" href="tea_fields.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #F5F1E8;
+      --bg-alt:    #EDE7DA;
+      --ink:       #1F1D1A;
+      --ink-soft:  #4A463F;
+      --ink-faint: #8A847A;
+      --dark:      #14120F;
+      --dark-text: #D9D2C4;
+      --accent:    #9A7B4F;
+      --line:      rgba(31,29,26,.15);
+      --line-dark: rgba(217,210,196,.18);
+      --serif:     'Cormorant Garamond', 'Shippori Mincho', Georgia, serif;
+      --sans:      'Jost', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans); font-weight: 300; font-size: 16px;
+      color: var(--ink-soft); background: var(--bg);
+      line-height: 1.8; letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+    }
+    html[data-lang="ja"] body { font-size: 15px; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    h1, h2, h3 { font-family: var(--serif); font-weight: 300; color: var(--ink); line-height: 1.15; letter-spacing: 0.01em; }
+    html[data-lang="ja"] h1, html[data-lang="ja"] h2, html[data-lang="ja"] h3 { font-family: 'Shippori Mincho', var(--serif); line-height: 1.5; }
+    h1 { font-size: clamp(44px, 7vw, 84px); }
+    h2 { font-size: clamp(30px, 4vw, 48px); }
+    h3 { font-size: clamp(24px, 2.6vw, 32px); font-weight: 400; }
+
+    .label {
+      font-family: var(--sans); font-size: 11px; font-weight: 400;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--ink-faint); display: block;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 48px); }
+    .narrow { max-width: 620px; margin-left: auto; margin-right: auto; }
+    .section { padding-block: clamp(96px, 14vh, 180px); }
+    .text-center { text-align: center; }
+
+    /* ── Quiet link ── */
+    .quiet-link {
+      display: inline-block; font-size: 12px; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--ink);
+      border-bottom: 1px solid var(--line); padding-bottom: 6px;
+      transition: border-color 0.4s ease, color 0.4s ease;
+    }
+    .quiet-link:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Navigation ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      transition: background 0.5s ease, box-shadow 0.5s ease;
+      background: transparent;
+    }
+    nav.scrolled { background: rgba(245,241,232,0.96); backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--line); }
+    .nav-inner {
+      display: flex; justify-content: space-between; align-items: center;
+      height: 84px;
+    }
+    .nav-logo img { height: 46px; width: auto; transition: filter 0.5s ease; }
+    nav:not(.scrolled) .nav-logo img.on-hero { filter: brightness(0) invert(1); }
+    .nav-right { display: flex; align-items: center; gap: 36px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--ink); transition: color 0.4s, opacity 0.4s;
+    }
+    nav:not(.scrolled) .nav-links a.on-hero { color: rgba(255,255,255,0.85); }
+    .nav-links a:hover { opacity: 0.55; }
+
+    .lang-toggle { display: flex; gap: 14px; }
+    .lang-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: var(--sans); font-size: 11px; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--ink-faint);
+      padding: 2px 0; border-bottom: 1px solid transparent; transition: all 0.4s;
+    }
+    nav:not(.scrolled) .lang-btn.on-hero { color: rgba(255,255,255,0.55); }
+    .lang-btn.active { color: var(--ink); border-bottom-color: var(--accent); }
+    nav:not(.scrolled) .lang-btn.active.on-hero { color: #fff; }
+
+    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { width: 24px; height: 1px; background: var(--ink); transition: background 0.4s; }
+    nav:not(.scrolled) .hamburger.on-hero span { background: #fff; }
+
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; z-index: 99;
+      background: var(--bg); flex-direction: column;
+      align-items: center; justify-content: center; gap: 34px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--serif); font-size: 26px; color: var(--ink); }
+    .mobile-menu .label { margin-bottom: 6px; }
+
+    /* ── Hero ── */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: flex-end; overflow: hidden; }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('tea_fields.webp') center center / cover no-repeat;
+      animation: kenburns 26s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+    @keyframes kenburns {
+      from { transform: scale(1) translate(0, 0); }
+      to   { transform: scale(1.10) translate(-1.5%, 1%); }
+    }
+    .hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(20,18,15,0.52) 0%, rgba(20,18,15,0.40) 45%, rgba(20,18,15,0.88) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; padding-bottom: clamp(80px, 14vh, 150px); max-width: 780px; }
+    .hero .label { color: rgba(255,255,255,0.8); margin-bottom: 28px; text-shadow: 0 1px 18px rgba(20,18,15,0.5); }
+    .hero h1 { color: #fff; margin-bottom: 30px; text-shadow: 0 2px 28px rgba(20,18,15,0.45); }
+    .hero h1 .accent { color: #D9CBAA; font-style: italic; }
+    html[data-lang="ja"] .hero h1 .accent { font-style: normal; }
+    .hero-sub {
+      font-size: 15px; color: rgba(255,255,255,0.92); max-width: 480px;
+      line-height: 2; margin-bottom: 44px; font-weight: 300;
+      text-shadow: 0 1px 18px rgba(20,18,15,0.5);
+    }
+    .hero .quiet-link { color: #fff; border-color: rgba(255,255,255,0.4); }
+    .hero .quiet-link:hover { border-color: #D9CBAA; color: #D9CBAA; }
+
+    /* ── Manifesto ── */
+    .manifesto { text-align: center; }
+    .manifesto .kanji {
+      font-family: 'Shippori Mincho', serif; font-size: 44px; color: var(--accent);
+      display: block; margin-bottom: 40px; font-weight: 400;
+    }
+    .manifesto h2 { margin-bottom: 36px; }
+    .manifesto p { max-width: 560px; margin: 0 auto; font-size: 15.5px; line-height: 2.1; }
+
+    /* ── Journeys (alternating rows) ── */
+    .journeys-head { margin-bottom: clamp(70px, 10vh, 120px); }
+    .journeys-head .label { margin-bottom: 22px; }
+    .journey {
+      display: grid; grid-template-columns: 7fr 5fr; gap: clamp(40px, 6vw, 90px);
+      align-items: center; margin-bottom: clamp(90px, 13vh, 160px);
+    }
+    .journey:last-child { margin-bottom: 0; }
+    .journey:nth-child(even) .journey-img { order: 2; }
+    .journey-img { overflow: hidden; }
+    .journey-img img { width: 100%; height: clamp(340px, 46vw, 560px); object-fit: cover; transition: transform 1.4s ease; }
+    .journey-img:hover img { transform: scale(1.04); }
+    .journey-num {
+      font-family: var(--serif); font-size: 15px; color: var(--accent);
+      letter-spacing: 0.3em; display: block; margin-bottom: 20px;
+    }
+    .journey-body .label { margin-bottom: 14px; }
+    .journey-body h3 { margin-bottom: 22px; }
+    .journey-body p { font-size: 14.5px; line-height: 2; max-width: 420px; margin-bottom: 34px; }
+    .journey-note { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 30px; display: block; }
+
+    /* ── Private (dark) section ── */
+    .private { background: var(--dark); color: var(--dark-text); }
+    .private .label { color: rgba(217,210,196,0.45); }
+    .private h2 { color: var(--dark-text); }
+    .private p { color: rgba(217,210,196,0.75); }
+    .private-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: clamp(40px, 5vw, 80px); margin-top: clamp(60px, 9vh, 110px);
+    }
+    .private-item { border-top: 1px solid var(--line-dark); padding-top: 28px; }
+    .private-item h3 { font-size: 20px; color: var(--dark-text); margin-bottom: 16px; }
+    .private-item p { font-size: 14px; line-height: 2; }
+
+    /* ── Founder ── */
+    .founder-grid {
+      display: grid; grid-template-columns: 5fr 6fr;
+      gap: clamp(48px, 7vw, 110px); align-items: center;
+    }
+    .founder-img { overflow: hidden; }
+    .founder-img img { width: 100%; height: clamp(420px, 55vw, 620px); object-fit: cover; transition: transform 1.4s ease; }
+    .founder-img:hover img { transform: scale(1.03); }
+    .founder-body .label { margin-bottom: 22px; }
+    .founder-body h2 { margin-bottom: 34px; }
+    .founder-body p { font-size: 14.5px; line-height: 2.05; margin-bottom: 22px; max-width: 520px; }
+    .founder-sig {
+      font-family: var(--serif); font-style: italic; font-size: 17px;
+      color: var(--ink); margin-top: 36px;
+    }
+    html[data-lang="ja"] .founder-sig { font-style: normal; font-family: 'Shippori Mincho', serif; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 720px; margin: clamp(56px, 8vh, 90px) auto 0; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 30px 4px; cursor: pointer; gap: 24px;
+    }
+    .faq-question h3 { font-size: 19px; font-weight: 400; }
+    .faq-toggle { font-family: var(--serif); font-size: 22px; color: var(--accent); transition: transform 0.5s ease; flex-shrink: 0; font-weight: 300; }
+    .faq-item.active .faq-toggle { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .faq-answer p { padding: 0 4px 34px; font-size: 14.5px; line-height: 2; max-width: 620px; }
+
+    /* ── Enquire (dark) ── */
+    .enquire { background: var(--dark); color: var(--dark-text); }
+    .enquire .label { color: rgba(217,210,196,0.45); }
+    .enquire h2 { color: var(--dark-text); margin-bottom: 26px; }
+    .enquire-lede { max-width: 520px; margin: 0 auto 70px; text-align: center; font-size: 14.5px; line-height: 2; color: rgba(217,210,196,0.7); }
+    .enquire-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(48px, 7vw, 100px); align-items: start; }
+    .enquire-info .contact-method { margin-bottom: 30px; }
+    .enquire-info .contact-method-label { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(217,210,196,0.42); margin-bottom: 8px; display: block; }
+    .enquire-info .contact-method-value { font-family: var(--serif); font-size: 19px; color: var(--dark-text); }
+    .enquire-info .contact-method-value a { transition: color 0.4s; }
+    .enquire-info .contact-method-value a:hover { color: var(--accent); }
+    .enquire-note { font-size: 13px; line-height: 2; color: rgba(217,210,196,0.55); max-width: 380px; margin-top: 46px; border-top: 1px solid var(--line-dark); padding-top: 28px; }
+
+    .form-group { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+    .form-group label { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(217,210,196,0.5); }
+    .form-group input, .form-group textarea {
+      background: transparent; border: none; border-bottom: 1px solid var(--line-dark);
+      padding: 10px 2px; font-family: var(--sans); font-weight: 300;
+      font-size: 15px; color: var(--dark-text); transition: border-color 0.4s;
+      border-radius: 0;
+    }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-bottom-color: var(--accent); }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-check-group { display: flex; flex-wrap: wrap; gap: 10px 26px; padding-top: 4px; }
+    .form-check-option { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .form-check-option input { accent-color: var(--accent); width: 13px; height: 13px; }
+    .form-check-option span { font-size: 14px; color: rgba(217,210,196,0.8); }
+    .form-privacy { font-size: 12px; color: rgba(217,210,196,0.4); margin: 6px 0 36px; line-height: 1.9; }
+    .form-submit {
+      background: transparent; color: var(--dark-text);
+      border: 1px solid var(--line-dark); padding: 16px 52px;
+      font-family: var(--sans); font-size: 11px; letter-spacing: 0.3em;
+      text-transform: uppercase; cursor: pointer; transition: all 0.5s ease;
+    }
+    .form-submit:hover { border-color: var(--accent); color: var(--accent); }
+    .form-success { display: none; padding: 40px 0; }
+    .form-success h3 { color: var(--dark-text); font-size: 24px; margin-bottom: 14px; }
+    .form-success p { color: rgba(217,210,196,0.7); font-size: 14.5px; line-height: 2; }
+
+    /* ── Footer ── */
+    footer { background: var(--dark); color: rgba(217,210,196,0.5); padding: 70px 0 46px; border-top: 1px solid var(--line-dark); }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer-links { display: flex; gap: 18px 32px; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; transition: color 0.4s; }
+    .footer-links a:hover { color: var(--dark-text); }
+    .footer-copy { font-size: 12px; letter-spacing: 0.08em; }
+
+    /* ── Reveal ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 1s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .journey, .journey:nth-child(even) { grid-template-columns: 1fr; gap: 34px; }
+      .journey:nth-child(even) .journey-img { order: 0; }
+      .journey-img img { height: clamp(260px, 60vw, 420px); }
+      .private-grid { grid-template-columns: 1fr; gap: 44px; }
+      .founder-grid { grid-template-columns: 1fr; gap: 44px; }
+      .founder-img img { height: clamp(340px, 80vw, 480px); }
+      .enquire-grid { grid-template-columns: 1fr; gap: 56px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="#top"><img src="logo_nav.png" alt="ARKLinks" class="on-hero" id="navLogo" /></a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#journeys"   class="on-hero" data-en="Journeys"   data-ja="旅">Journeys</a></li>
+          <li><a href="#philosophy" class="on-hero" data-en="Philosophy" data-ja="哲学">Philosophy</a></li>
+          <li><a href="#founder"    class="on-hero" data-en="Founder"    data-ja="創業者">Founder</a></li>
+          <li><a href="#enquire"    class="on-hero" data-en="Enquire"    data-ja="お問い合わせ">Enquire</a></li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="lang-btn on-hero active" id="btn-en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn on-hero"        id="btn-ja" onclick="setLang('ja')">JA</button>
+        </div>
+        <button class="hamburger on-hero" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#journeys"   onclick="toggleMenu()" data-en="Journeys"   data-ja="旅">Journeys</a>
+    <a href="#philosophy" onclick="toggleMenu()" data-en="Philosophy" data-ja="哲学">Philosophy</a>
+    <a href="#founder"    onclick="toggleMenu()" data-en="Founder"    data-ja="創業者">Founder</a>
+    <a href="#enquire"    onclick="toggleMenu()" data-en="Enquire"    data-ja="お問い合わせ">Enquire</a>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <header class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <span class="label" data-en="Private &middot; By Introduction" data-ja="完全プライベート・紹介制">Private &middot; By Introduction</span>
+      <h1 data-en="The Unseen Japan.&lt;br /&gt;&lt;span class=&quot;accent&quot;&gt;Composed once, for you.&lt;/span&gt;"
+          data-ja="まだ誰も知らない日本へ。&lt;br /&gt;&lt;span class=&quot;accent&quot;&gt;あなたのためだけに。&lt;/span&gt;">
+        The Unseen Japan.<br /><span class="accent">Composed once, for you.</span>
+      </h1>
+      <p class="hero-sub"
+         data-en="Private journeys to the makers of Japan's finest sake, wine, tea and rice — families who have kept a single craft for generations, in places no itinerary reaches."
+         data-ja="日本最高の酒、ワイン、茶、米。その作り手を訪ねるプライベートな旅。何世代にもわたりひとつの技を守り続ける家族のもとへ、どんな旅程にも載らない場所へ。">
+        Private journeys to the makers of Japan's finest sake, wine, tea and rice — families who have kept a single craft for generations, in places no itinerary reaches.
+      </p>
+      <a href="#journeys" class="quiet-link" data-en="Discover the Journeys" data-ja="旅を見る">Discover the Journeys</a>
+    </div>
+  </header>
+
+  <!-- ══════════ MANIFESTO ══════════ -->
+  <section class="section manifesto" id="philosophy">
+    <div class="container reveal">
+      <span class="kanji" data-en="Musubi" data-ja="結">結</span>
+      <h2 data-en="Japan's finest things are never in shops." data-ja="日本の最良のものは、店頭にはありません。">Japan's finest things are never in shops.</h2>
+      <p data-en="They rest in the hands of the people who make them. Behind every remarkable sake, every bowl of matcha, every grain of heirloom rice, there is a family — one that has refined a single craft for centuries. The deepest way to know Japan is to sit with these makers, walk their fields, and taste their work where it is born. That is what we arrange."
+         data-ja="それは、作り手の手の中にあります。素晴らしい日本酒、抹茶の一杯、伝統の米の一粒。その背後には必ず、ひとつの技を何百年も磨き続けてきた家族がいます。日本を最も深く知る方法は、その作り手と語らい、畑を歩き、生まれた場所でその味に触れること。それを実現するのが、私たちの仕事です。">
+        They rest in the hands of the people who make them. Behind every remarkable sake, every bowl of matcha, every grain of heirloom rice, there is a family — one that has refined a single craft for centuries. The deepest way to know Japan is to sit with these makers, walk their fields, and taste their work where it is born. That is what we arrange.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════ JOURNEYS ══════════ -->
+  <section class="section" id="journeys" style="padding-top: 0;">
+    <div class="container">
+      <div class="journeys-head text-center reveal">
+        <span class="label" data-en="The Journeys" data-ja="旅">The Journeys</span>
+        <h2 data-en="Four crafts. One door." data-ja="四つの技へ、ひとつの扉。">Four crafts. One door.</h2>
+      </div>
+
+      <!-- 01 Sake -->
+      <div class="journey reveal">
+        <div class="journey-img"><img src="sake_brewery.webp" alt="Private sake brewery journey" loading="lazy" decoding="async" /></div>
+        <div class="journey-body">
+          <span class="journey-num">01</span>
+          <span class="label" data-en="Sake &middot; The Brewery" data-ja="日本酒・蔵">Sake &middot; The Brewery</span>
+          <h3 data-en="Where sake is still made by hand" data-ja="今も手で醸される、酒の生まれる場所">Where sake is still made by hand</h3>
+          <p data-en="Enter a working brewery closed to the public. Walk the koji room beside the brewmaster, and taste unreleased sake drawn from the tank — a quiet apprenticeship of a single morning."
+             data-ja="一般には開かれていない現役の蔵へ。杜氏とともに麹室を歩き、タンクから汲んだ未発売の酒を味わう。ひと朝だけの、静かな弟子入りを。">
+            Enter a working brewery closed to the public. Walk the koji room beside the brewmaster, and taste unreleased sake drawn from the tank — a quiet apprenticeship of a single morning.
+          </p>
+          <span class="journey-note" data-en="Arranged privately &middot; Details upon enquiry" data-ja="完全プライベート・詳細はお問い合わせにて">Arranged privately &middot; Details upon enquiry</span>
+          <a href="#enquire" class="quiet-link" data-en="Enquire" data-ja="お問い合わせ">Enquire</a>
+        </div>
+      </div>
+
+      <!-- 02 Wine -->
+      <div class="journey reveal">
+        <div class="journey-img"><img src="winery.webp" alt="Private Japanese winery journey" loading="lazy" decoding="async" /></div>
+        <div class="journey-body">
+          <span class="journey-num">02</span>
+          <span class="label" data-en="Wine &middot; The Vineyard" data-ja="ワイン・葡萄畑">Wine &middot; The Vineyard</span>
+          <h3 data-en="A wine culture the world hasn't touched" data-ja="世界がまだ知らない、日本のワイン">A wine culture the world hasn't touched</h3>
+          <p data-en="In mountain vineyards, meet the growers behind Japan's quietly celebrated wines. Walk the rows with the winemaker and taste through the cellar, glass by unhurried glass."
+             data-ja="山あいの葡萄畑で、静かに世界の注目を集める日本ワインの作り手に出会う。醸造家とともに畑を歩き、セラーで一杯ずつ、急がずに味わう。">
+            In mountain vineyards, meet the growers behind Japan's quietly celebrated wines. Walk the rows with the winemaker and taste through the cellar, glass by unhurried glass.
+          </p>
+          <span class="journey-note" data-en="Arranged privately &middot; Details upon enquiry" data-ja="完全プライベート・詳細はお問い合わせにて">Arranged privately &middot; Details upon enquiry</span>
+          <a href="#enquire" class="quiet-link" data-en="Enquire" data-ja="お問い合わせ">Enquire</a>
+        </div>
+      </div>
+
+      <!-- 03 Tea -->
+      <div class="journey reveal">
+        <div class="journey-img"><img src="tea.webp" alt="Private tea and matcha farm journey" loading="lazy" decoding="async" /></div>
+        <div class="journey-body">
+          <span class="journey-num">03</span>
+          <span class="label" data-en="Tea &middot; The Farm" data-ja="茶・茶園">Tea &middot; The Farm</span>
+          <h3 data-en="A hillside kept by one family for centuries" data-ja="一つの家族が何百年も守る、茶の山">A hillside kept by one family for centuries</h3>
+          <p data-en="On terraced slopes worked since the Edo period, pick leaves with the family, learn how true matcha is made, and taste a pairing guided by the farmer — an hour no tea house can offer."
+             data-ja="江戸時代から耕され続ける段々の茶畑で、家族とともに茶葉を摘み、本物の抹茶の作られ方を知り、農家自らが導くペアリングを味わう。どんな茶店にもない一刻を。">
+            On terraced slopes worked since the Edo period, pick leaves with the family, learn how true matcha is made, and taste a pairing guided by the farmer — an hour no tea house can offer.
+          </p>
+          <span class="journey-note" data-en="Arranged privately &middot; Details upon enquiry" data-ja="完全プライベート・詳細はお問い合わせにて">Arranged privately &middot; Details upon enquiry</span>
+          <a href="#enquire" class="quiet-link" data-en="Enquire" data-ja="お問い合わせ">Enquire</a>
+        </div>
+      </div>
+
+      <!-- 04 Rice -->
+      <div class="journey reveal">
+        <div class="journey-img"><img src="rice.webp" alt="Heritage rice farm journey" loading="lazy" decoding="async" /></div>
+        <div class="journey-body">
+          <span class="journey-num">04</span>
+          <span class="label" data-en="Rice &middot; The Paddies" data-ja="米・田">Rice &middot; The Paddies</span>
+          <h3 data-en="The grain beneath it all" data-ja="すべての礎にある、一粒の米">The grain beneath it all</h3>
+          <p data-en="Rice is the soul of Japanese food culture — and of sake itself. Among heritage growers in snow country, walk the paddies and taste rice as connoisseurs do: freshly milled, freshly cooked."
+             data-ja="米は日本の食文化の魂であり、日本酒の原点。雪国の伝統農家を訪ね、田を歩き、食通だけが知る味を。精米したて、炊きたての一膳を。">
+            Rice is the soul of Japanese food culture — and of sake itself. Among heritage growers in snow country, walk the paddies and taste rice as connoisseurs do: freshly milled, freshly cooked.
+          </p>
+          <span class="journey-note" data-en="Arranged privately &middot; Details upon enquiry" data-ja="完全プライベート・詳細はお問い合わせにて">Arranged privately &middot; Details upon enquiry</span>
+          <a href="#enquire" class="quiet-link" data-en="Enquire" data-ja="お問い合わせ">Enquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PRIVATE (dark) ══════════ -->
+  <section class="section private">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="label" data-en="The Manner" data-ja="流儀">The Manner</span>
+        <h2 data-en="Doors open on trust, not tickets." data-ja="扉を開くのは、チケットではなく信頼。">Doors open on trust, not tickets.</h2>
+      </div>
+      <div class="private-grid">
+        <div class="private-item reveal">
+          <h3 data-en="By introduction" data-ja="紹介という形で">By introduction</h3>
+          <p data-en="Every maker we visit is someone we know personally — families whose trust we have earned over years, not listings from a catalogue. You arrive as a friend of the house."
+             data-ja="訪れる作り手はすべて、私たちが直接信頼を築いてきた相手です。カタログからの予約ではありません。あなたはその家の友人として迎えられます。">
+            Every maker we visit is someone we know personally — families whose trust we have earned over years, not listings from a catalogue. You arrive as a friend of the house.
+          </p>
+        </div>
+        <div class="private-item reveal">
+          <h3 data-en="Composed once" data-ja="一度きりの設計">Composed once</h3>
+          <p data-en="No groups, no fixed routes. Each journey is designed from a single conversation — your interests, your pace — and accompanied by a licensed bilingual guide."
+             data-ja="団体も、決まったルートもありません。一度の対話から、あなたの興味と歩調に合わせて旅を設計し、国家資格を持つバイリンガルガイドが同行します。">
+            No groups, no fixed routes. Each journey is designed from a single conversation — your interests, your pace — and accompanied by a licensed bilingual guide.
+          </p>
+        </div>
+        <div class="private-item reveal">
+          <h3 data-en="Beyond the visit" data-ja="旅の、その先へ">Beyond the visit</h3>
+          <p data-en="What you fall in love with follows you home. We arrange shipments directly from your makers, and seasonal releases reserved for past guests — a relationship, not a souvenir."
+             data-ja="心を奪われた味は、帰国後もあなたのもとへ。作り手からの直送や、過去のゲストだけに届く季節の限定品を。お土産ではなく、続いていく関係を。">
+            What you fall in love with follows you home. We arrange shipments directly from your makers, and seasonal releases reserved for past guests — a relationship, not a souvenir.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOUNDER ══════════ -->
+  <section class="section" id="founder">
+    <div class="container founder-grid">
+      <div class="founder-img reveal"><img src="founder.webp" alt="Tomoya Iwamae, Founder of ARKLinks" loading="lazy" decoding="async" /></div>
+      <div class="founder-body reveal">
+        <span class="label" data-en="The Founder" data-ja="創業者">The Founder</span>
+        <h2 data-en="Why ARKLinks exists" data-ja="ARKLinksが在る理由">Why ARKLinks exists</h2>
+        <p data-en="Travelling through Japan's countryside, I kept meeting extraordinary people: a tea farmer whose family has worked the same hillside since the Edo period, brewers and winemakers producing world-class craft in near anonymity. The travellers who found them were moved to tears — yet the world has almost no way to reach them."
+           data-ja="日本の地方を旅する中で、私は素晴らしい人々に出会い続けました。江戸時代から同じ山の斜面を耕し続ける茶農家。世界水準の酒やワインを、ほとんど知られることなく造り続ける醸造家。彼らにたどり着いた旅人は涙を流すほど感動するのに、世界には彼らへの道がほとんどありません。">
+          Travelling through Japan's countryside, I kept meeting extraordinary people: a tea farmer whose family has worked the same hillside since the Edo period, brewers and winemakers producing world-class craft in near anonymity. The travellers who found them were moved to tears — yet the world has almost no way to reach them.
+        </p>
+        <p data-en="At the same time, these makers — the very foundation of Japanese culture — are quietly disappearing. Successors are scarce, and centuries of craft risk ending in a single generation. I founded ARKLinks on one conviction: that genuine encounters between the world's most curious travellers and Japan's finest makers can carry this heritage forward — not through charity, but through lasting relationships."
+           data-ja="その一方で、日本文化の土台であるこれらの作り手は静かに姿を消しつつあります。後継者は少なく、数百年の技が一世代で途絶えかねません。世界で最も好奇心にあふれた旅人と日本最高の作り手との本物の出会いこそが、この遺産を未来へ運ぶ。施しではなく、長く続く関係によって。その確信からARKLinksを創業しました。">
+          At the same time, these makers — the very foundation of Japanese culture — are quietly disappearing. Successors are scarce, and centuries of craft risk ending in a single generation. I founded ARKLinks on one conviction: that genuine encounters between the world's most curious travellers and Japan's finest makers can carry this heritage forward — not through charity, but through lasting relationships.
+        </p>
+        <p data-en="My work is simple: I open the doors, translate the stories, and let Japan speak for itself."
+           data-ja="私の仕事はシンプルです。扉を開き、物語を翻訳し、日本自身に語らせること。">
+          My work is simple: I open the doors, translate the stories, and let Japan speak for itself.
+        </p>
+        <div class="founder-sig" data-en="Tomoya Iwamae &mdash; Founder" data-ja="岩前 智也 &mdash; 創業者">Tomoya Iwamae &mdash; Founder</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FAQ ══════════ -->
+  <section class="section" style="padding-top: 0;" id="faq">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="label" data-en="Notes for Guests" data-ja="ゲストの皆さまへ">Notes for Guests</span>
+        <h2 data-en="Quiet answers" data-ja="よくあるご質問">Quiet answers</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h3 data-en="How is a journey priced?" data-ja="料金はどのように決まりますか？">How is a journey priced?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-en="Each journey is composed once and quoted privately, reflecting the makers involved, the season, and the length of your day. Share your interests and we will respond with a proposal."
+               data-ja="すべての旅は一度きりの設計のため、お見積りも個別にご案内します。訪れる作り手、季節、旅の長さによって変わります。ご興味をお聞かせいただければ、ご提案とともにお返事いたします。">
+              Each journey is composed once and quoted privately, reflecting the makers involved, the season, and the length of your day. Share your interests and we will respond with a proposal.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h3 data-en="Do I need to speak Japanese?" data-ja="日本語が話せなくても大丈夫ですか？">Do I need to speak Japanese?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-en="Not at all. A licensed bilingual guide-interpreter accompanies every journey, and all correspondence is in English."
+               data-ja="まったく問題ありません。国家資格を持つバイリンガル通訳ガイドが全行程に同行し、旅の前後のやり取りもすべて英語で行えます。">
+              Not at all. A licensed bilingual guide-interpreter accompanies every journey, and all correspondence is in English.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h3 data-en="May we combine several crafts?" data-ja="複数の体験を組み合わせられますか？">May we combine several crafts?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-en="Most guests do. A tea farm in the morning, a vineyard in the afternoon — or several days across sake country. Tell us what moves you, and we will compose around it."
+               data-ja="ほとんどのゲストが組み合わせを選ばれます。午前に茶園、午後に葡萄畑。あるいは酒どころを巡る数日間の旅も。心が動くものをお聞かせください。それを軸に設計します。">
+              Most guests do. A tea farm in the morning, a vineyard in the afternoon — or several days across sake country. Tell us what moves you, and we will compose around it.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h3 data-en="Can what we taste follow us home?" data-ja="気に入ったものを自宅に送れますか？">Can what we taste follow us home?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-en="Yes. We arrange purchases and international shipping directly from the makers, and can continue seasonal deliveries long after you return."
+               data-ja="はい。作り手から直接のご購入と国際配送を手配します。ご帰国後も、季節ごとのお届けを長く続けることができます。">
+              Yes. We arrange purchases and international shipping directly from the makers, and can continue seasonal deliveries long after you return.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h3 data-en="How far ahead should we write?" data-ja="どのくらい前に連絡すべきですか？">How far ahead should we write?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-en="Four weeks or more is ideal — harvests, brewing periods and picking seasons shape what is possible. Shorter notice is sometimes possible; please ask."
+               data-ja="収穫、仕込み、茶摘みの季節が旅の可能性を左右するため、4週間以上前が理想です。直前のご相談も可能な場合がありますので、お問い合わせください。">
+              Four weeks or more is ideal — harvests, brewing periods and picking seasons shape what is possible. Shorter notice is sometimes possible; please ask.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h3 data-en="Do you work with hotels and travel designers?" data-ja="ホテルや旅行会社との提携はありますか？">Do you work with hotels and travel designers?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-en="Yes. We partner with hotel concierge teams and luxury travel designers to compose maker journeys for their guests. Please write to us for partnership details."
+               data-ja="はい。ホテルのコンシェルジュチームやラグジュアリー旅行会社と提携し、ゲストのための旅を設計しています。提携の詳細はお問い合わせください。">
+              Yes. We partner with hotel concierge teams and luxury travel designers to compose maker journeys for their guests. Please write to us for partnership details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ENQUIRE ══════════ -->
+  <section class="section enquire" id="enquire">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="label" data-en="Enquire" data-ja="お問い合わせ">Enquire</span>
+        <h2 data-en="A limited number of journeys each season." data-ja="お受けする旅は、季節ごとに限られています。">A limited number of journeys each season.</h2>
+        <p class="enquire-lede"
+           data-en="Tell us what moves you — a craft, a season, a curiosity. We reply personally, usually within two days, with first thoughts on your journey."
+           data-ja="心が動くものをお聞かせください。技でも、季節でも、ささやかな好奇心でも。通常2日以内に、旅の最初の構想とともに直接ご返信します。">
+          Tell us what moves you — a craft, a season, a curiosity. We reply personally, usually within two days, with first thoughts on your journey.
+        </p>
+      </div>
+      <div class="enquire-grid">
+        <div class="enquire-info reveal">
+          <div class="contact-method">
+            <span class="contact-method-label" data-en="Correspondence" data-ja="メール">Correspondence</span>
+            <div class="contact-method-value"><a href="mailto:info@ark-links.com">info@ark-links.com</a></div>
+          </div>
+          <div class="contact-method">
+            <span class="contact-method-label" data-en="Instagram" data-ja="インスタグラム">Instagram</span>
+            <div class="contact-method-value"><a href="https://www.instagram.com/ark.links" target="_blank" rel="noopener">@ark.links</a></div>
+          </div>
+          <div class="contact-method">
+            <span class="contact-method-label" data-en="Based in" data-ja="拠点">Based in</span>
+            <div class="contact-method-value" data-en="Tokyo, Japan" data-ja="東京">Tokyo, Japan</div>
+          </div>
+          <p class="enquire-note"
+             data-en="For hotels and travel designers: we compose private maker journeys for your guests. Write to us for partnership terms."
+             data-ja="ホテル・旅行会社の皆さまへ: ゲストのためのプライベートな旅を設計いたします。提携条件はお問い合わせください。">
+            For hotels and travel designers: we compose private maker journeys for your guests. Write to us for partnership terms.
+          </p>
+        </div>
+
+        <div class="reveal">
+          <form id="contactForm">
+            <div class="form-group">
+              <label data-en="I am enquiring as" data-ja="お立場">I am enquiring as</label>
+              <div class="form-check-group">
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Individual guest" checked /><span data-en="Individual guest" data-ja="個人のお客様">Individual guest</span></label>
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Hotel / Concierge" /><span data-en="Hotel &amp; concierge" data-ja="ホテル・コンシェルジュ">Hotel &amp; concierge</span></label>
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Travel agency / designer" /><span data-en="Travel agency &amp; designer" data-ja="旅行会社・旅行デザイナー">Travel agency &amp; designer</span></label>
+                <label class="form-check-option"><input type="radio" name="enquiry_type" value="Corporate / other" /><span data-en="Corporate &amp; other" data-ja="法人・その他">Corporate &amp; other</span></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-en="Which crafts call to you?" data-ja="心惹かれるものは？">Which crafts call to you?</label>
+              <div class="form-check-group">
+                <label class="form-check-option"><input type="checkbox" name="interest" value="Sake" /><span data-en="Sake" data-ja="日本酒">Sake</span></label>
+                <label class="form-check-option"><input type="checkbox" name="interest" value="Wine" /><span data-en="Wine" data-ja="ワイン">Wine</span></label>
+                <label class="form-check-option"><input type="checkbox" name="interest" value="Tea" /><span data-en="Tea &amp; Matcha" data-ja="茶・抹茶">Tea &amp; Matcha</span></label>
+                <label class="form-check-option"><input type="checkbox" name="interest" value="Rice" /><span data-en="Rice" data-ja="米">Rice</span></label>
+                <label class="form-check-option"><input type="checkbox" name="interest" value="Guide me" /><span data-en="Guide me" data-ja="相談したい">Guide me</span></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name" data-en="Name" data-ja="お名前">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-en="Email" data-ja="メールアドレス">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="dates" data-en="Dates &amp; party, if known" data-ja="日程・人数（未定でも可）">Dates &amp; party, if known</label>
+              <input type="text" id="dates" name="dates" />
+            </div>
+            <div class="form-group">
+              <label for="message" data-en="Anything else" data-ja="その他ご要望など">Anything else</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <p class="form-privacy"
+               data-en="Your details are used only to respond to your enquiry, and are never shared."
+               data-ja="ご入力いただいた情報はお問い合わせへの返信のみに使用し、第三者に共有されることはありません。">
+              Your details are used only to respond to your enquiry, and are never shared.
+            </p>
+            <button type="submit" class="form-submit" data-en="Send" data-ja="送信する">Send</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <h3 data-en="Thank you." data-ja="ありがとうございます。">Thank you.</h3>
+            <p data-en="We have received your enquiry, and will reply personally within two days."
+               data-ja="お問い合わせを受け付けました。2日以内に直接ご返信いたします。">
+              We have received your enquiry, and will reply personally within two days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 ARKLinks</span>
+      <div class="footer-links">
+        <a href="#journeys" data-en="Journeys" data-ja="旅">Journeys</a>
+        <a href="#founder"  data-en="Founder"  data-ja="創業者">Founder</a>
+        <a href="mailto:info@ark-links.com" data-en="Correspondence" data-ja="メール">Correspondence</a>
+        <a href="https://www.instagram.com/ark.links" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <span class="footer-copy" data-en="Tokyo, Japan" data-ja="東京">Tokyo, Japan</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Language toggle ──
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+      document.querySelectorAll('[data-en]').forEach(function(el) {
+        var text = el.getAttribute(lang === 'en' ? 'data-en' : 'data-ja');
+        if (text !== null) el.innerHTML = text;
+      });
+      try { localStorage.setItem('arklinks-lang', lang); } catch (e) {}
+    }
+    (function() {
+      var saved = null;
+      try { saved = localStorage.getItem('arklinks-lang'); } catch (e) {}
+      if (saved === 'ja') setLang('ja');
+    })();
+
+    // ── Mobile menu ──
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    // ── Nav appearance on scroll ──
+    window.addEventListener('scroll', function() {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // ── FAQ accordion ──
+    function toggleFaq(el) {
+      var item = el.parentElement;
+      var answer = item.querySelector('.faq-answer');
+      var wasActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(function(i) {
+        i.classList.remove('active');
+        i.querySelector('.faq-answer').style.maxHeight = null;
+      });
+      if (!wasActive) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+
+    // ── Reveal on scroll (staggered) ──
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry, idx) {
+        if (entry.isIntersecting) {
+          setTimeout(function() { entry.target.classList.add('in'); }, idx * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+    // ── Contact form → Formspree ──
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var data = new FormData(form);
+      fetch('https://formspree.io/f/xlgzdowd', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        } else {
+          alert('Something went wrong. Please email us directly at info@ark-links.com');
+        }
+      }).catch(function() {
+        alert('Something went wrong. Please email us directly at info@ark-links.com');
+      });
+    });
+  </script>
+</body>
+</html>

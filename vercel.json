@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/farm", "destination": "/#farm", "permanent": false }
+  ]
+}
