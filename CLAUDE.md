@@ -4,7 +4,7 @@ ARKLinks（ark-links.com）のランディングページ（静的HTML、`index.
 
 - `#farm` アンカーは店頭QRカードの着地点。`vercel.json` で `/farm` → `/#farm` にリダイレクト（QR印刷後は差し替え不能のため恒久維持）
 - Foundingフォームは暫定でFormspree送信。9月のIG発信開始前にESP（Klaviyo/Shopify Email）直結へ差し替える
-- 現在の茶畑画像はストック写真。森内茶農園の実写が届き次第、Hero・#farm・OG画像を差し替える
+- 茶畑画像は代表撮影の実写に差し替え済み（2026-07-19）: Hero/OG=`hero_tea_hills`（7/18和束撮影）、`farm_shizuoka`（7/12森内訪問）、`sencha_fields`・`tea_rows_sky`（7/12静岡）。マスターは同名`.jpg`。旧ストック画像（`tea_fields`・`tea`等）はHTML未参照だがマスターとして残置。農園名と人物写真は8月末の森内面談（覚書）後に掲載
 
 ## 起動方法
 `index.html` をブラウザで直接開くか、簡易サーバーで確認する（例: `python3 -m http.server`）。
