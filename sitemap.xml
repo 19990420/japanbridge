@@ -6,4 +6,6 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+<!-- /farms/moriuchi/ is intentionally absent: the page is noindex until the Moriuchi
+     memorandum is signed (end of Aug 2026). Add it back when robots is flipped. -->
 </urlset>

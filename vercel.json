@@ -1,5 +1,7 @@
 {
   "redirects": [
-    { "source": "/farm", "destination": "/#farm", "permanent": false }
+    { "source": "/farm", "destination": "/farms/moriuchi/", "permanent": true },
+    { "source": "/farm/", "destination": "/farms/moriuchi/", "permanent": true },
+    { "source": "/farms", "destination": "/farms/moriuchi/", "permanent": false }
   ]
 }
