@@ -1,7 +1,9 @@
 {
   "redirects": [
-    { "source": "/farm", "destination": "/farms/moriuchi/", "permanent": true },
-    { "source": "/farm/", "destination": "/farms/moriuchi/", "permanent": true },
-    { "source": "/farms", "destination": "/farms/moriuchi/", "permanent": false }
+    { "source": "/farm", "destination": "/#farm", "permanent": true },
+    { "source": "/farm/", "destination": "/#farm", "permanent": true },
+    { "source": "/farms", "destination": "/#farm", "permanent": true },
+    { "source": "/farms/moriuchi", "destination": "/#farm", "permanent": true },
+    { "source": "/farms/moriuchi/", "destination": "/#farm", "permanent": true }
   ]
 }

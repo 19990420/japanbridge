@@ -12,6 +12,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-<!-- /farms/moriuchi/ is intentionally absent: the page is noindex until the Moriuchi
-     memorandum is signed (end of Aug 2026). Add it back when robots is flipped. -->
+<!-- /farms/moriuchi/ was deleted on 2026-08-25. It was written under the old positioning
+     (named farm, farm-visit promises, QR cards handed out at the farm) — all of which have
+     since been dropped. /farm, /farms and the old page paths now 301 to /#farm.
+     If a producer page is ever wanted again, write it fresh; do not restore that file. -->
 </urlset>
