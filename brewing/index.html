@@ -44,7 +44,7 @@
       { "@type": "HowToStep", "name": "Choose your water", "text": "Japanese tea is built around soft water, under about 80 mg/L of dissolved minerals. Hard water pales the colour and pushes the cup toward bitterness. Filtered or bottled soft water fixes it." },
       { "@type": "HowToStep", "name": "Bring the temperature down without a thermometer", "text": "Boil the water, pour it into your cups first, then pour from the cups into the empty pot. Water loses roughly 5 to 10 degrees Celsius each time it is poured between vessels, so two transfers reaches about 80 degrees Celsius." },
       { "@type": "HowToStep", "name": "Measure the leaf", "text": "About 4 grams for 200 ml. An American teaspoon holds closer to 2 grams of Japanese tea, not 4, so start at two heaped teaspoons per cup if you have no scale." },
-      { "@type": "HowToStep", "name": "Steep", "text": "Steamed green tea: 70 to 90 degrees Celsius for 30 to 90 seconds. Roasted tea such as hojicha or genmaicha: straight off the boil for 30 seconds, because these are drunk for aroma." },
+      { "@type": "HowToStep", "name": "Steep", "text": "Steamed green tea: 70 to 90 degrees Celsius for 30 to 90 seconds. Roasted tea such as hojicha: straight off the boil for 30 seconds, because it is drunk for aroma. Japanese black tea: 95 degrees Celsius for 2 to 3 minutes." },
       { "@type": "HowToStep", "name": "Pour the second cup", "text": "Hotter and shorter. The leaf has already opened, so ten to fifteen seconds is often enough." }
     ]
   }
@@ -341,35 +341,37 @@
               <td data-en="30&ndash;60 sec" data-ja="30〜60秒">30&ndash;60&nbsp;sec</td>
             </tr>
             <tr>
-              <td data-en="Roasted &mdash; leaf, or with rice" data-ja="火入れ &mdash; 茶葉／玄米">Roasted &mdash; leaf, or with rice</td>
+              <td data-en="Roasted" data-ja="ほうじ茶">Roasted</td>
               <td>2&ndash;3&nbsp;g <span style="color:var(--ink-faint)" data-en="per 100 ml" data-ja="／100ml">per 100&nbsp;ml</span></td>
               <td>200&nbsp;ml <span style="color:var(--ink-faint)">(7&nbsp;oz)</span></td>
               <td data-en="Straight off the boil" data-ja="沸かしたての熱湯">Straight off the boil</td>
               <td data-en="30 sec" data-ja="30秒">30&nbsp;sec</td>
             </tr>
             <tr>
-              <td data-en="Stem tea" data-ja="茎茶">Stem tea</td>
-              <td>5&nbsp;g</td>
+              <td data-en="Black tea" data-ja="和紅茶">Black tea</td>
+              <td>3&nbsp;g</td>
               <td>200&nbsp;ml <span style="color:var(--ink-faint)">(7&nbsp;oz)</span></td>
-              <td>80&ndash;90&deg;C <span style="color:var(--ink-faint)">(176&ndash;194&deg;F)</span></td>
-              <td data-en="45&ndash;60 sec" data-ja="45〜60秒">45&ndash;60&nbsp;sec</td>
+              <td>95&deg;C <span style="color:var(--ink-faint)">(203&deg;F)</span></td>
+              <td data-en="2&ndash;3 min" data-ja="2〜3分">2&ndash;3&nbsp;min</td>
             </tr>
-            <tr>
-              <td data-en="Pan-fired" data-ja="釜炒り">Pan-fired</td>
-              <td>5&nbsp;g</td>
-              <td>200&nbsp;ml <span style="color:var(--ink-faint)">(7&nbsp;oz)</span></td>
-              <td>90&deg;C <span style="color:var(--ink-faint)">(194&deg;F)</span></td>
-              <td data-en="45 sec" data-ja="45秒">45&nbsp;sec</td>
-            </tr>
+            <!-- ⚠️ 2026-09-02 削除：茎茶（5g／80-90℃／45-60秒）と釜炒り（5g／90℃／45秒）。
+                 「おまかせ枠」を廃止し箱の中身を 和紅茶・ほうじ茶・煎茶 に固定したため、
+                 この2つが箱に入る経路が無くなった。⚠️ 袋には GREEN TEA としか書かれないので、
+                 該当しない緑茶の行が並んでいると「自分のはどれか」が分からなくなる。
+                 ⭐ おまかせ枠を戻すか、上位帯を扱い始めたら、この数値をそのまま復活させること。 -->
           </tbody>
         </table>
       </div>
       <p class="table-scroll-hint" data-en="Scroll the table sideways on a narrow screen." data-ja="画面が狭いときは、表を横にスクロールしてください。">Scroll the table sideways on a narrow screen.</p>
 
-      <h3 data-en="Why the roasted one takes boiling water" data-ja="火を入れたお茶に、熱湯を使う理由">Why the roasted one takes boiling water</h3>
-      <p data-en="This one is not really a matter of taste. Roasted teas are drunk for aroma &mdash; the roast itself, the toasted rice &mdash; and aroma needs boiling water to lift. Cool it down and you lose the very thing you opened the bag for."
-         data-ja="これは、あまり好みの問題ではありません。火を入れたお茶は、香りを楽しむお茶だからです。焙じた香り、玄米の香ばしさ。その香りを立たせるには熱湯が要ります。ぬるくすれば、袋を開けた理由そのものが失われます。">
-        This one is not really a matter of taste. Roasted teas are drunk for aroma &mdash; the roast itself, the toasted rice &mdash; and aroma needs boiling water to lift. Cool it down and you lose the very thing you opened the bag for.
+      <h3 data-en="Why two of them take near-boiling water" data-ja="二つのお茶に、熱湯を使う理由">Why two of them take near-boiling water</h3>
+      <p data-en="The roasted one is drunk for aroma &mdash; the roast itself &mdash; and aroma needs boiling water to lift. Cool it down and you lose the very thing you opened the bag for."
+         data-ja="ほうじ茶は、香りを楽しむお茶です。焙じた香りを立たせるには熱湯が要ります。ぬるくすれば、袋を開けた理由そのものが失われます。">
+        The roasted one is drunk for aroma &mdash; the roast itself &mdash; and aroma needs boiling water to lift. Cool it down and you lose the very thing you opened the bag for.
+      </p>
+      <p data-en="The black tea needs the heat for a different reason: it is fully oxidised, and below boiling it never quite opens. Give it two to three minutes. It is made from the same plant as the sencha, on the same hillside, and it tends to come out softer and rounder than the black tea most people are used to &mdash; so it takes milk less kindly, and needs no sugar to be drinkable."
+         data-ja="和紅茶に熱が要るのは、別の理由です。完全に酸化させたお茶なので、熱湯でなければ開ききりません。二〜三分おいてください。煎茶と同じ木から、同じ斜面で作られたお茶です。一般的な紅茶よりもやわらかく、丸く出ることが多いので、ミルクにはあまり向かず、砂糖がなくても飲めます。">
+        The black tea needs the heat for a different reason: it is fully oxidised, and below boiling it never quite opens. Give it two to three minutes. It is made from the same plant as the sencha, on the same hillside, and it tends to come out softer and rounder than the black tea most people are used to &mdash; so it takes milk less kindly, and needs no sugar to be drinkable.
       </p>
 
       <h3 data-en="The second cup" data-ja="二煎目">The second cup</h3>

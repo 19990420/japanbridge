@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Single-Origin Japanese Tea, Shipped Duty-Paid | ARKLinks</title>
   <meta name="description" content="ARKLinks sends Japanese tea from one small family farm in the mountains of Shizuoka. Tell us what you like, and we choose three teas for you at the farm — shipped to the United States with the duties paid. The shop opens this autumn." />
-  <meta name="keywords" content="single-origin sencha, single farm Japanese tea, hojicha genmaicha kukicha, buy Japanese green tea USA, duty paid Japanese tea, small-batch sencha online, small lot Japanese tea" />
+  <meta name="keywords" content="single-origin sencha, single farm Japanese tea, hojicha wakocha Japanese black tea, buy Japanese green tea USA, duty paid Japanese tea, small-batch sencha online, small lot Japanese tea" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
   <meta name="google-site-verification" content="RHl0MhOwFr08JJTwx42EEGGuYOEPCdHslGpAdcvsVR0" />
@@ -58,7 +58,7 @@
     "mainEntity": [
       { "@type": "Question", "name": "When can I buy the tea?", "acceptedAnswer": { "@type": "Answer", "text": "The shop opens this autumn, with a small first run from leaf already picked and finished this year. Nothing is charged today and there are no pre-orders — the founding list is simply first in line when the shop opens." } },
       { "@type": "Question", "name": "Where do you ship?", "acceptedAnswer": { "@type": "Answer", "text": "We open with the United States first, with duties included in the price — no surprises at customs, delivered to your door. Further countries follow as we grow." } },
-      { "@type": "Question", "name": "What will you offer?", "acceptedAnswer": { "@type": "Answer", "text": "One family farm in the Shizuoka mountains, and around thirty teas grown across its fields — sencha, hojicha, genmaicha and kukicha among them. We don't publish a fixed lineup. You tell us what you are looking for, and we choose from the shelf at the farm, together with the grower." } },
+      { "@type": "Question", "name": "What will you offer?", "acceptedAnswer": { "@type": "Answer", "text": "One family farm in the Shizuoka mountains, and around thirty teas grown across its fields. The box holds three of them: a black tea, a roasted tea and a sencha. Which particular tea fills each bag is chosen at the farm, together with the grower — and for the sencha, in the direction you ask for." } },
       { "@type": "Question", "name": "How is this different from tea I can already buy?", "acceptedAnswer": { "@type": "Answer", "text": "Every bag comes off one farm, and we can tell you which hillside, which cultivar and which week it was picked. And we tell you why that particular tea was chosen for you, in your own terms — because you told us what you were after before anything was picked out." } },
       { "@type": "Question", "name": "The water where I live is hard. Will it still taste right?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — with a small adjustment. Japanese tea assumes soft water, so hard water flattens it. Our brewing page explains what to use, how to get the temperature right without a thermometer, and gives the grams, temperature and seconds for every kind of tea we send." } }
     ]
@@ -371,15 +371,26 @@
     .slot { border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); padding: clamp(28px, 3vw, 40px) clamp(22px, 2.4vw, 32px); }
     .slot:last-child { border-right: none; }
     .slot-num { font-family: var(--serif); font-size: 14px; color: var(--accent); letter-spacing: 0.3em; display: block; margin-bottom: 16px; }
-    .slot-name { font-family: var(--sans); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--ink); display: block; margin-bottom: 22px; }
+    .slot-name { font-family: var(--sans); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--ink); display: block; margin-bottom: 7px; }
+    .slot-qty { font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; color: var(--ink-faint); display: block; margin-bottom: 21px; }
     .slot-opts { list-style: none; margin: 0 0 20px; }
+    /* ⚠️ 選択肢の数が枠ごとに違う（01・02は1行／03は3行）。3列表示のときだけ高さを
+       揃えないと、下の説明文の開始位置が枠ごとにずれて見える。実測127.4px＝3行分。
+       ⭐ 1列に畳む幅（900px以下）では逆に空白になるので、ここでは掛けない。 */
+    @media (min-width: 901px) { .slot-opts { min-height: 128px; } }
     .slot-opts li { font-size: 14px; line-height: 1.7; color: var(--ink-soft); padding: 9px 0 9px 22px; position: relative; border-bottom: 1px solid rgba(31,29,26,.07); }
     .slot-opts li:last-child { border-bottom: none; }
     .slot-opts li::before { content: "\25CB"; position: absolute; left: 0; top: 9px; color: var(--accent); font-size: 11px; }
     .slot-note { font-size: 13px; line-height: 1.95; color: var(--ink-faint); }
-    .slot.slot-his { background: var(--bg-alt); }
-    .slot.slot-his .slot-note { color: var(--ink-soft); }
+    /* ⚠️ 2026-09-02: 旧 .slot-his（＝農家が選ぶ枠）から改名。強調するのは「客が選ぶ枠」になった */
+    .slot.slot-pick { background: var(--bg-alt); }
+    .slot.slot-pick .slot-note { color: var(--ink-soft); }
     .slots-copy { max-width: 620px; margin: clamp(44px, 6vh, 70px) auto 0; }
+    /* ⭐ 「まだ扱っていないものを頼んでいい」という誘い。本文とは別の話なので枠で切り分ける */
+    .slots-ask { max-width: 620px; margin: clamp(30px, 4vh, 44px) auto 0; padding: clamp(24px, 3vw, 32px); background: var(--bg-alt); border-left: 2px solid var(--accent); }
+    .slots-ask p { font-size: 14.5px; line-height: 2.0; color: var(--ink-soft); margin: 0; }
+    .ask-k { display: block; font-family: var(--sans); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+    html[data-lang="ja"] .ask-k { letter-spacing: 0.08em; text-transform: none; font-size: 12px; }
     .slots-copy p { font-size: 15px; line-height: 2.05; margin-bottom: 22px; }
     .slots-copy p:last-child { margin-bottom: 0; }
     .slots-copy em { font-style: normal; color: var(--ink); }
@@ -481,7 +492,7 @@
         One family in the mountains of Shizuoka, still working the hillsides their family always has, still doing it by hand. Tell us what you like, and we pick three of their teas for you at the farm &mdash; sent from Japan, with the duties paid.
       </p>
       <div class="hero-ctas">
-        <a href="#tea" class="hero-btn" data-en="Choose your three" data-ja="三種を選ぶ">Choose your three</a>
+        <a href="#tea" class="hero-btn" data-en="Choose your tea" data-ja="お茶を選ぶ">Choose your tea</a>
         <a href="#fields" class="quiet-link" data-en="See the fields &rarr;" data-ja="畑を見る &rarr;">See the fields &rarr;</a>
       </div>
     </div>
@@ -515,7 +526,7 @@
              data-ja="あなたの三種は、農園で、二人で一緒に選びます。今季どの畑が良く出たか、今月それぞれがどんな状態かを知っているのは作り手です。あなたが何をお探しかを聞いているのは私たちです。どちらか片方では選べません。だからご注文ごとに、隣り合って選んでいます。">
             Your three are chosen at the farm, by the two of us together. The grower knows which of the fields came in best this season and what each one is doing this month; we know what you told us you were looking for. Neither half works on its own &mdash; which is why we sit down and do it side by side, order by order.
           </p>
-          <a href="#tea" class="quiet-link" data-en="Choose your three &rarr;" data-ja="三種を選ぶ &rarr;">Choose your three &rarr;</a>
+          <a href="#tea" class="quiet-link" data-en="Choose your tea &rarr;" data-ja="お茶を選ぶ &rarr;">Choose your tea &rarr;</a>
         </div>
       </div>
     </div>
@@ -600,13 +611,13 @@
     <div class="container">
       <div class="journeys-head text-center reveal">
         <span class="label" data-en="The Tea" data-ja="お茶">The Tea</span>
-        <h2 data-en="Choose your three." data-ja="三種、選んでください。">Choose your three.</h2>
+        <h2 data-en="Three teas. One of them is your call." data-ja="三種のお茶。ひとつは、あなたが決めます。">Three teas. One of them is your call.</h2>
       </div>
 
       <div class="slots-lead reveal">
-        <p data-en="Only you know what you like the taste of. Only someone who has been in those fields all season knows which of them came in best this year. So we choose together, at the farm, from everything it grows."
-           data-ja="どんな味がお好きかは、あなたにしかわかりません。今年はどの畑が良い出来だったかは、ひと季節ずっと畑を見てきた人にしかわかりません。数ある茶葉の中から、農園で、育てた本人と一緒に選びます。">
-          Only you know what you like the taste of. Only someone who has been in those fields all season knows which of them came in best this year. So we choose together, at the farm, from everything it grows.
+        <p data-en="The kinds are settled: a black tea, a roasted tea, and a sencha. Which tea actually goes into each bag is not. The farm grows around thirty of them, and we choose from its shelf together with the grower &mdash; for the sencha, in whichever direction you point us."
+           data-ja="内訳は決まっています。和紅茶、ほうじ茶、そして煎茶。けれど、それぞれの袋に何が入るかまでは決まっていません。農園には三十種ほどのお茶があり、その棚から、育てた本人と一緒に選びます。煎茶については、あなたが示してくださった方向に沿って。">
+          The kinds are settled: a black tea, a roasted tea, and a sencha. Which tea actually goes into each bag is not. The farm grows around thirty of them, and we choose from its shelf together with the grower &mdash; for the sencha, in whichever direction you point us.
         </p>
       </div>
 
@@ -617,41 +628,42 @@
       <div class="slots reveal">
         <div class="slot">
           <span class="slot-num">01</span>
-          <span class="slot-name" data-en="Steamed" data-ja="蒸し製">Steamed</span>
+          <span class="slot-name" data-en="Black tea" data-ja="和紅茶">Black tea</span>
+          <span class="slot-qty" data-en="30 g" data-ja="30g">30 g</span>
           <ul class="slot-opts">
-            <li data-en="Savory" data-ja="旨みの深いもの">Savory</li>
-            <li data-en="Bright" data-ja="香りの高いもの">Bright</li>
-            <li data-en="Let us choose" data-ja="おまかせ">Let us choose</li>
+            <li data-en="Chosen at the farm" data-ja="農園で選びます">Chosen at the farm</li>
           </ul>
-          <p class="slot-note" data-en="Green tea, steamed the way it has been done in Shizuoka for generations. Which of the farm's fields it comes from depends on how the year went."
-             data-ja="静岡で代々続いてきた蒸し製の緑茶。どの畑のものになるかは、その年の出来で決まります。">
-            Green tea, steamed the way it has been done in Shizuoka for generations. Which of the farm's fields it comes from depends on how the year went.
+          <p class="slot-note" data-en="Japan makes black tea too, from the same plant the sencha comes from. Almost nobody outside Japan has had one. This farm makes several, and which of them you get depends on how the year went."
+             data-ja="日本でも紅茶は作られています。煎茶と同じ木から。海外で飲んだことのある方は、ほとんどいません。この農園にも何種類かあり、どれになるかはその年の出来で決まります。">
+            Japan makes black tea too, from the same plant the sencha comes from. Almost nobody outside Japan has had one. This farm makes several, and which of them you get depends on how the year went.
           </p>
         </div>
 
         <div class="slot">
           <span class="slot-num">02</span>
-          <span class="slot-name" data-en="Roasted" data-ja="火を入れたもの">Roasted</span>
+          <span class="slot-name" data-en="Roasted" data-ja="ほうじ茶">Roasted</span>
+          <span class="slot-qty" data-en="100 g" data-ja="100g">100 g</span>
           <ul class="slot-opts">
-            <li data-en="Leaf only" data-ja="茶葉だけ">Leaf only</li>
-            <li data-en="With roasted rice" data-ja="炒り玄米を合わせて">With roasted rice</li>
-            <li data-en="Let us choose" data-ja="おまかせ">Let us choose</li>
+            <li data-en="Chosen at the farm" data-ja="農園で選びます">Chosen at the farm</li>
           </ul>
-          <p class="slot-note" data-en="Ours is made from first-flush leaf — the same leaf that goes into the sencha, roasted instead. And when rice goes in, nothing else does, so the taste has to carry it on its own."
-             data-ja="私たちのほうじ茶と玄米茶は、一番茶で作られています。煎茶になるのと同じ葉を、焙じたものです。玄米茶にも余計なものを入れていないので、味だけで勝負することになります。">
-            Ours is made from first-flush leaf &mdash; the same leaf that goes into the sencha, roasted instead. And when rice goes in, nothing else does, so the taste has to carry it on its own.
+          <p class="slot-note" data-en="Ours is made from first-flush leaf &mdash; the same leaf that goes into the sencha, roasted instead. Nothing else goes in, so the taste has to carry it on its own."
+             data-ja="私たちのほうじ茶は、一番茶で作られています。煎茶になるのと同じ葉を、焙じたもの。ほかには何も入っていないので、味だけで勝負することになります。">
+            Ours is made from first-flush leaf &mdash; the same leaf that goes into the sencha, roasted instead. Nothing else goes in, so the taste has to carry it on its own.
           </p>
         </div>
 
-        <div class="slot slot-his">
+        <div class="slot slot-pick">
           <span class="slot-num">03</span>
-          <span class="slot-name" data-en="Our pick" data-ja="私たちが選ぶ一本">Our pick</span>
+          <span class="slot-name" data-en="Sencha" data-ja="煎茶">Sencha</span>
+          <span class="slot-qty" data-en="100 g &middot; you choose" data-ja="100g・お選びいただけます">100 g &middot; you choose</span>
           <ul class="slot-opts">
-            <li data-en="Leave it to us." data-ja="おまかせください。">Leave it to us.</li>
+            <li data-en="Savory and full" data-ja="旨みの深いもの">Savory and full</li>
+            <li data-en="Bright and grassy" data-ja="香りの高いもの">Bright and grassy</li>
+            <li data-en="Let us choose" data-ja="おまかせ">Let us choose</li>
           </ul>
-          <p class="slot-note" data-en="No options here. This is the bag you would not have ordered &mdash; a stem tea, something pan-fired, or whichever field is drinking best the week your order comes in. We pick it at the farm, together, and tell you why when it ships."
-             data-ja="ここに選択肢はありません。あなたなら注文しなかったであろう一袋です。茎茶かもしれませんし、釜炒りのものかもしれません。あるいは、ご注文の週にいちばん美味しく飲めている畑のもの。農園で、二人で選び、その理由は発送のときにお伝えします。">
-            No options here. This is the bag you would not have ordered &mdash; a stem tea, something pan-fired, or whichever field is drinking best the week your order comes in. We pick it at the farm, together, and tell you why when it ships.
+          <p class="slot-note" data-en="This is the one you steer. Tell us which way you lean and we pick the field to match. Leave it to us and we send whichever is drinking best the week your order comes in &mdash; and tell you why when it ships."
+             data-ja="ここだけは、あなたが方向を決めます。どちらに寄せたいかを教えていただければ、それに合う畑を選びます。おまかせであれば、ご注文の週にいちばん美味しく飲めているものを。その理由は発送のときにお伝えします。">
+            This is the one you steer. Tell us which way you lean and we pick the field to match. Leave it to us and we send whichever is drinking best the week your order comes in &mdash; and tell you why when it ships.
           </p>
         </div>
       </div>
@@ -661,9 +673,9 @@
            data-ja="私たちは、あなたが答えられる問いだけをお尋ねします。答えようのない問いは、お尋ねしません。どんな味がお好きかはあなたがご存じで、今年どの畑が良く出たかは私たちが引き受けます。">
           We ask you the questions you can answer, and we don't ask you the ones you can't. You know what you like the taste of. Which field came in best this year is ours to work out.
         </p>
-        <p data-en="And if you'd like: tell us what you eat, and what you usually drink alongside your tea. There is a box for it at checkout, and we read it before anything is packed."
-           data-ja="よろしければ、普段どんなものを召し上がるか、何と一緒にお茶を飲まれるかもお書きください。お会計の画面にご記入欄があります。荷造りの前に、必ず読みます。">
-          And if you'd like: tell us what you eat, and what you usually drink alongside your tea. There is a box for it at checkout, and we read it before anything is packed.
+        <p data-en="Since we are the ones choosing, please don't be polite about it. Strong and grassy, or soft and sweet? Morning, or late at night? What do you eat, and what do you usually drink alongside your tea? Is there a tea you had once and have been looking for ever since? Nothing is too specific. There is a box for it at checkout, we read it before anything is packed, and the more you write the less we have to guess."
+           data-ja="選ぶのは私たちのほうですから、どうか遠慮なさらないでください。しっかりと青いものか、やわらかく甘いものか。朝に召し上がるのか、夜遅くなのか。普段どんなものを召し上がり、何と一緒にお茶を飲まれるのか。一度きり飲んで、それから探し続けているお茶はありますか。細かすぎるということはありません。お会計の画面にご記入欄があります。荷造りの前に必ず読みますし、書いていただくほど、こちらが当て推量をせずに済みます。">
+          Since we are the ones choosing, please don't be polite about it. Strong and grassy, or soft and sweet? Morning, or late at night? What do you eat, and what do you usually drink alongside your tea? Is there a tea you had once and have been looking for ever since? Nothing is too specific. There is a box for it at checkout, we read it before anything is packed, and the more you write the less we have to guess.
         </p>
         <!-- After the Moriuchi memorandum: add the credential here, directly under the point
              where the customer hands the decision over. Wording is fixed in 経営目標 v5.1(5):
@@ -682,6 +694,14 @@
         </p>
       </div>
 
+      <div class="slots-ask reveal">
+        <span class="ask-k" data-en="Ask for something we don't have" data-ja="まだ無いものも、ご要望ください">Ask for something we don't have</span>
+        <p data-en="&ldquo;Make something like ___&rdquo; is a message we want to get. The farm grows more than we can put on this site, and what we add next will come from what people ask for. This shop is at the beginning of its life &mdash; we would rather build it with you than guess at what to stock."
+           data-ja="「◯◯のようなお茶も作ってほしい」というご連絡こそ、いただきたいものです。農園には、このサイトに載せきれないだけのお茶があります。次に何を加えるかは、寄せられたご要望から決めます。始まったばかりの店です。何を置くべきかを推し量るより、皆さまと一緒に育てていきたいと思っています。">
+          &ldquo;Make something like ___&rdquo; is a message we want to get. The farm grows more than we can put on this site, and what we add next will come from what people ask for. This shop is at the beginning of its life &mdash; we would rather build it with you than guess at what to stock.
+        </p>
+      </div>
+
       <!-- ⚠️ CHECKOUT: everything from here goes to Shopify. The destination is set in ONE
            place — the SHOP_URL constant in the script at the bottom of this file.
            While SHOP_URL is null the button falls back to the founding-list form and the
@@ -690,7 +710,7 @@
       <div class="checkout reveal">
         <div class="checkout-price">
           <span class="checkout-amount">$120</span>
-          <span class="checkout-unit" data-en="Three bags, 100 g each &middot; duties and shipping included" data-ja="100g×3袋・関税・送料込み">Three bags, 100&nbsp;g each &middot; duties and shipping included</span>
+          <span class="checkout-unit" data-en="Three bags, 230 g in all &middot; about 55 cups &middot; duties and shipping included" data-ja="3袋・合計230g・およそ55杯・関税・送料込み">Three bags, 230&nbsp;g in all &middot; about 55 cups &middot; duties and shipping included</span>
         </div>
 
         <!-- ⚠️ These three facts stay visible whether or not the shop is open. Lead time in
@@ -711,7 +731,7 @@
             <span class="fact-v" data-en="If a bag arrives damaged, or the parcel does not arrive at all, we replace it or refund you. Send us a photo and we will sort it out — you do not need to ship anything back." data-ja="袋が破れて届いた場合や、荷物が届かなかった場合は、再送または返金いたします。写真をお送りいただければ対応します。返送していただく必要はありません。">If a bag arrives damaged, or the parcel does not arrive at all, we replace it or refund you. Send us a photo and we will sort it out &mdash; you do not need to ship anything back.</span>
           </li>
         </ul>
-        <a href="#founding" id="shopCta" class="hero-btn" data-en="Choose your three" data-ja="三種を選ぶ">Choose your three</a>
+        <a href="#founding" id="shopCta" class="hero-btn" data-en="Choose your tea" data-ja="お茶を選ぶ">Choose your tea</a>
         <p class="checkout-note" id="shopNote"
            data-en="The shop opens this autumn. Join the founding list and you will be first through the door — the first thirty pay $95, and keep that price for good."
            data-ja="ご購入は今秋からとなります。ファウンディングにご登録いただいた方が、最初にご案内を受け取ります。先着三十名様は$95、その価格はその後もずっと変わりません。">
@@ -864,9 +884,9 @@
             <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
-            <p data-en="One family farm in the Shizuoka mountains, and around thirty teas grown across its fields — sencha, hojicha, genmaicha and kukicha among them. We don't publish a fixed lineup. You tell us what you are looking for, and we choose from the shelf at the farm, together with the grower."
-               data-ja="静岡の山あいにある家族経営の茶農園が一軒。その畑から採れるお茶が三十種類ほどあり、煎茶のほか、ほうじ茶・玄米茶・茎茶などが含まれます。決まった品揃えは掲げません。お探しのものをお聞かせいただければ、農園の棚から、育てた本人と一緒に選びます。">
-              One family farm in the Shizuoka mountains, and around thirty teas grown across its fields — sencha, hojicha, genmaicha and kukicha among them. We don't publish a fixed lineup. You tell us what you are looking for, and we choose from the shelf at the farm, together with the grower.
+            <p data-en="One family farm in the Shizuoka mountains, and around thirty teas grown across its fields. The box holds three of them: a black tea, a roasted tea and a sencha. Which particular tea fills each bag is chosen at the farm, together with the grower — and for the sencha, in the direction you ask for."
+               data-ja="静岡の山あいにある家族経営の茶農園が一軒。その畑から採れるお茶が三十種類ほどあります。箱に入るのは、そのうちの三種。和紅茶、ほうじ茶、そして煎茶です。どの茶葉になるかは、農園で、育てた本人と一緒に選びます。煎茶については、ご希望の方向に沿って。">
+              One family farm in the Shizuoka mountains, and around thirty teas grown across its fields. The box holds three of them: a black tea, a roasted tea and a sencha. Which particular tea fills each bag is chosen at the farm, together with the grower &mdash; and for the sencha, in the direction you ask for.
             </p>
           </div>
         </div>
