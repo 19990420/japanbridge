@@ -82,6 +82,9 @@
       --dark:      #14120F;
       --dark-text: #D9D2C4;
       --accent:    #9A7B4F;
+      /* ⚠️ --accent はクリーム地に13pxの文字を載せると3.50:1しかなく、AA(4.5:1)に届かない。
+         ⭐ ボタンの塗りだけ暗い版を使う。4.75:1。色相は同じなので見た目は揃う。 */
+      --accent-dk: #82663F;
       --line:      rgba(31,29,26,.15);
       --line-dark: rgba(217,210,196,.18);
       --serif:     'Cormorant Garamond', 'Shippori Mincho', Georgia, serif;
@@ -228,8 +231,8 @@
     .shop-btn {
       display: inline-block; font-family: var(--sans);
       font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
-      color: var(--bg); background: var(--accent);
-      border: 1px solid var(--accent); padding: 18px 54px;
+      color: var(--bg); background: var(--accent-dk);
+      border: 1px solid var(--accent-dk); padding: 18px 54px;
       transition: background .35s ease, border-color .35s ease;
     }
     .shop-btn:hover { background: var(--ink); border-color: var(--ink); }
