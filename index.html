@@ -222,6 +222,19 @@
     }
     .hero-btn:hover { background: rgba(255,255,255,0.12); border-color: #D9CBAA; color: #D9CBAA; }
 
+    /* ⚠️ 決済ボタンに .hero-btn を使ってはいけない。あれは白文字で、ヒーロー写真の上でしか
+       読めない。クリーム地の決済ブロックに置くと文字が消える。
+       ⭐ Shopify側のボタンと同じ #9A7B4F にして、遷移の前後で色を揃える。 */
+    .shop-btn {
+      display: inline-block; font-family: var(--sans);
+      font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--bg); background: var(--accent);
+      border: 1px solid var(--accent); padding: 18px 54px;
+      transition: background .35s ease, border-color .35s ease;
+    }
+    .shop-btn:hover { background: var(--ink); border-color: var(--ink); }
+    html[data-lang="ja"] .shop-btn { font-size: 14px; letter-spacing: 0.1em; text-transform: none; }
+
     /* ── Manifesto ── */
     .manifesto { text-align: center; }
     .manifesto h2 { margin-bottom: 36px; }
@@ -731,7 +744,7 @@
             <span class="fact-v" data-en="If a bag arrives damaged, or the parcel does not arrive at all, we replace it or refund you. Send us a photo and we will sort it out — you do not need to ship anything back." data-ja="袋が破れて届いた場合や、荷物が届かなかった場合は、再送または返金いたします。写真をお送りいただければ対応します。返送していただく必要はありません。">If a bag arrives damaged, or the parcel does not arrive at all, we replace it or refund you. Send us a photo and we will sort it out &mdash; you do not need to ship anything back.</span>
           </li>
         </ul>
-        <a href="#founding" id="shopCta" class="hero-btn" data-en="Choose your tea" data-ja="お茶を選ぶ">Choose your tea</a>
+        <a href="#founding" id="shopCta" class="shop-btn" data-en="Choose your tea" data-ja="お茶を選ぶ">Choose your tea</a>
         <p class="checkout-note" id="shopNote"
            data-en="The shop opens this autumn. Join the founding list and you will be first through the door — the first thirty pay $95, and keep that price for good."
            data-ja="ご購入は今秋からとなります。ファウンディングにご登録いただいた方が、最初にご案内を受け取ります。先着三十名様は$95、その価格はその後もずっと変わりません。">
