@@ -17,6 +17,16 @@ ARKLinks（ark-links.com）のランディングページ（静的HTML、`index.
 
 ## 起動方法
 `index.html` をブラウザで直接開くか、簡易サーバーで確認する（例: `python3 -m http.server`）。
+⭐ **本番と同じ応答ヘッダー（CSP等）付きで確認するには `python3 tools/serve.py`（8932）。** vercel.json の headers を読んで付けるので、CSP違反はpush前にコンソールで分かる。
+
+## ⚠️ 2026-09-13：外部監査への対応で入れた構造（壊さないこと）
+- **JSはすべて `site.js`**（`/` と `/brewing/` で共用）。⚠️ **インライン `<script>` と `onclick=` は禁止**——CSPが `script-src 'self'` なので動かない。イベントは `data-lang-set` のような data属性＋`addEventListener` で付ける。**`SHOP_URL` も site.js の先頭に移した**（index.html にはもう無い）
+- **デプロイは `node build.js` → `dist/`**（vercel.json の buildCommand / outputDirectory）。⚠️ **HTMLの `<!-- -->` は本番から全部剥がされる**ので、ソースには今までどおり判断メモを残してよい。⭐ **逆に、コメント以外の場所（本文・alt・JSON-LD・sitemap）に内部事情を書くと本番に出る。** build.js は `dist/` に `Moriuchi`／`森内`／`<!--` が残っていたら失敗するガード付き
+- **公開しないもの**（build.js の EXCLUDE）：`*.md` `tools/` `legacy/` `.claude/` `build.js` `vercel.json`。⚠️ legacy/ は9/13から非公開になった（アーカイブは残る）
+- **応答ヘッダー**（vercel.json）：CSP（`script-src 'self'`／`style-src 'self' 'unsafe-inline' fonts.googleapis.com`／`connect-src` と `form-action` に formspree.io／`frame-ancestors 'none'`）・nosniff・X-Frame-Options DENY・Referrer-Policy・Permissions-Policy。⚠️ **外部スクリプト（計測ツール等）を足すときは CSP の script-src / connect-src に追加しないと黙って止まる**
+- **FAQ は `<h3 class="faq-question"><button class="faq-btn" aria-expanded>`**。キーボード操作・スクリーンリーダー対応。旧 `div onclick` に戻さない
+- **言語切替は `lang` 属性も更新する**（`data-lang` だけでは翻訳ツール・読み上げが英語のまま）
+- **登録フォーム**：`fetch` 中は送信ボタンを無効化（連打防止）、失敗は `#formError` に表示（`alert` 廃止）。⚠️ Formspree を使っている旨をフォーム直下に明記済み——ESPに替えたら文言も替える
 
 ## 画像命名規則
 新規に追加する画像は英語のスネークケース（例: `sake_brewery.jpg`）で統一する。日本語ファイル名（`お米.jpg` 等）と英語ファイル名の重複が既存であるため、新規追加時は増やさない。

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Single-Origin Japanese Tea, Shipped Duty-Paid | ARKLinks</title>
-  <meta name="description" content="ARKLinks sends Japanese tea from one small family farm in the mountains of Shizuoka. Tell us what you like, and we choose three teas for you at the farm — shipped to the United States with the duties paid. The shop opens this autumn." />
+  <meta name="description" content="ARKLinks sends Japanese tea from one small family farm in the mountains of Shizuoka. Tell us what you like, and we choose three teas for you at the farm — shipped to the United States with the duties paid. The shop is open." />
   <meta name="keywords" content="single-origin sencha, single farm Japanese tea, hojicha wakocha Japanese black tea, buy Japanese green tea USA, duty paid Japanese tea, small-batch sencha online, small lot Japanese tea" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
@@ -19,7 +19,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ARKLinks" />
   <meta property="og:title" content="Single-Origin Japanese Tea, Shipped Duty-Paid | ARKLinks" />
-  <meta property="og:description" content="Made here for generations, and for many more to come. One family in the mountains of Shizuoka, three teas chosen for you at the farm, sent from Japan with the duties paid. The shop opens this autumn." />
+  <meta property="og:description" content="Made here for generations, and for many more to come. One family in the mountains of Shizuoka, three teas chosen for you at the farm, sent from Japan with the duties paid. The shop is open." />
   <meta property="og:url" content="https://ark-links.com/" />
   <meta property="og:image" content="https://ark-links.com/og_image.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -28,7 +28,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Single-Origin Japanese Tea, Shipped Duty-Paid | ARKLinks" />
-  <meta name="twitter:description" content="Made here for generations, and for many more to come. Three teas, chosen for you at the farm. Duties paid. Opening this autumn." />
+  <meta name="twitter:description" content="Made here for generations, and for many more to come. Three teas, chosen for you at the farm. Duties paid. Open now." />
   <meta name="twitter:image" content="https://ark-links.com/og_image.jpg" />
 
   <!-- Schema.org : Organization only until the shop opens (no Product/Offer before purchasable goods exist) -->
@@ -56,7 +56,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "When can I buy the tea?", "acceptedAnswer": { "@type": "Answer", "text": "The shop opens this autumn, with a small first run from leaf already picked and finished this year. Nothing is charged today and there are no pre-orders — the founding list is simply first in line when the shop opens." } },
+      { "@type": "Question", "name": "When can I buy the tea?", "acceptedAnswer": { "@type": "Answer", "text": "Now — the shop is open. The first run comes from leaf picked and finished this year. The first thirty orders pay $95 instead of $120 and keep that price: leave your email on the founding list and we will write back with the link that applies it." } },
       { "@type": "Question", "name": "Where do you ship?", "acceptedAnswer": { "@type": "Answer", "text": "We open with the United States first, with duties included in the price — no surprises at customs, delivered to your door. Further countries follow as we grow." } },
       { "@type": "Question", "name": "What will you offer?", "acceptedAnswer": { "@type": "Answer", "text": "One family farm in the Shizuoka mountains, and around thirty teas grown across its fields. The box holds three of them: a black tea, a roasted tea and a sencha. Which particular tea fills each bag is chosen at the farm, together with the grower — and for the sencha, in the direction you ask for." } },
       { "@type": "Question", "name": "How is this different from tea I can already buy?", "acceptedAnswer": { "@type": "Answer", "text": "Every bag comes off one farm. And we tell you why that particular tea was chosen for you, in your own terms — because you told us what we should be looking for before anything was picked out. If you want to know more about what is in the bag — which field it came from, when it was picked — write and ask, and we will put the question to the grower." } },
@@ -290,11 +290,15 @@
     /* ── FAQ ── */
     .faq-list { max-width: 720px; margin: clamp(56px, 8vh, 90px) auto 0; }
     .faq-item { border-bottom: 1px solid var(--line); }
-    .faq-question {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 30px 4px; cursor: pointer; gap: 24px;
+    /* ⚠️ 2026-09-13: 質問は <h3><button> に変更（キーボード操作・スクリーンリーダー対応、
+       インライン onclick の廃止＝CSP対応）。見た目は旧 div 版と同じ */
+    .faq-question { font-size: 19px; font-weight: 400; margin: 0; }
+    .faq-btn {
+      display: flex; justify-content: space-between; align-items: center; width: 100%;
+      padding: 30px 4px; gap: 24px; background: none; border: none; cursor: pointer;
+      text-align: left; font: inherit; color: inherit; line-height: inherit;
     }
-    .faq-question h3 { font-size: 19px; font-weight: 400; }
+    .faq-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
     .faq-toggle { font-family: var(--serif); font-size: 22px; color: var(--accent); transition: transform 0.5s ease; flex-shrink: 0; font-weight: 300; }
     .faq-item.active .faq-toggle { transform: rotate(45deg); }
     .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
@@ -327,6 +331,8 @@
     .form-consent input { accent-color: var(--accent); width: 14px; height: 14px; margin-top: 6px; flex-shrink: 0; }
     .form-consent span { font-size: 13px; color: rgba(217,210,196,0.78); line-height: 1.9; }
     .form-privacy { font-size: 12px; color: rgba(217,210,196,0.4); margin: 6px 0 36px; line-height: 1.9; }
+    .form-error { font-size: 13px; color: #E8B4A0; margin: 0 0 16px; line-height: 1.8; }
+    .form-submit[disabled] { opacity: 0.55; cursor: wait; }
     .form-region {
       border: 1px solid var(--line-dark); padding: 20px 22px; margin: 4px 0 4px;
       display: flex; gap: 14px; align-items: flex-start;
@@ -442,6 +448,11 @@
 
     /* ── Responsive ── */
     @media (max-width: 900px) {
+      /* ⚠️ 2026-09-13: 狭い画面では写真の被せを強め、主ボタンを塗りつぶす（細い枠線が背景に埋もれるため） */
+      .hero::after { background: linear-gradient(to bottom, rgba(20,18,15,0.64) 0%, rgba(20,18,15,0.56) 45%, rgba(20,18,15,0.92) 100%); }
+      .hero-sub { text-shadow: 0 1px 14px rgba(20,18,15,0.6); }
+      .hero-ctas .hero-btn { background: rgba(245,241,232,0.96); color: var(--ink); border-color: transparent; }
+      .hero-ctas .hero-btn:hover { background: #fff; color: var(--ink); }
       .slots { grid-template-columns: 1fr; }
       .slot { border-right: none; }
       .nav-links { display: none; }
@@ -475,10 +486,10 @@
           <li><a href="#founding" class="on-hero" data-en="Founding" data-ja="ファウンディング">Founding</a></li>
         </ul>
         <div class="lang-toggle">
-          <button class="lang-btn on-hero active" id="btn-en" onclick="setLang('en')">EN</button>
-          <button class="lang-btn on-hero"        id="btn-ja" onclick="setLang('ja')">JA</button>
+          <button type="button" class="lang-btn on-hero active" id="btn-en" data-lang-set="en" aria-label="English">EN</button>
+          <button type="button" class="lang-btn on-hero"        id="btn-ja" data-lang-set="ja" aria-label="日本語">JA</button>
         </div>
-        <button class="hamburger on-hero" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <button type="button" class="hamburger on-hero" id="hamburger" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
           <span></span><span></span>
         </button>
       </div>
@@ -486,12 +497,12 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#farm"     onclick="toggleMenu()" data-en="The Farm"   data-ja="農園">The Farm</a>
-    <a href="#fields"   onclick="toggleMenu()" data-en="The Fields" data-ja="畑">The Fields</a>
-    <a href="#tea"      onclick="toggleMenu()" data-en="The Tea"    data-ja="お茶">The Tea</a>
-    <a href="brewing/" onclick="toggleMenu()" data-en="Brewing"    data-ja="淹れ方">Brewing</a>
-    <a href="#story"    onclick="toggleMenu()" data-en="Story"    data-ja="物語">Story</a>
-    <a href="#founding" onclick="toggleMenu()" data-en="Founding" data-ja="ファウンディング">Founding</a>
+    <a href="#farm" data-en="The Farm"   data-ja="農園">The Farm</a>
+    <a href="#fields" data-en="The Fields" data-ja="畑">The Fields</a>
+    <a href="#tea" data-en="The Tea"    data-ja="お茶">The Tea</a>
+    <a href="brewing/" data-en="Brewing"    data-ja="淹れ方">Brewing</a>
+    <a href="#story" data-en="Story"    data-ja="物語">Story</a>
+    <a href="#founding" data-en="Founding" data-ja="ファウンディング">Founding</a>
   </div>
 
   <!-- ══════════ HERO ══════════ -->
@@ -503,9 +514,9 @@
         Made here for generations.<br /><span class="accent">And for many more to come.</span>
       </h1>
       <p class="hero-sub"
-         data-en="One family in the mountains of Shizuoka, still working the hillsides their family always has, still doing it by hand. Tell us what you like, and we pick three of their teas for you at the farm — sent from Japan, with the duties paid."
-         data-ja="静岡の山あいで、代々受け継いできた斜面を、いまも手をかけて守っている一軒の農家。お好みをお聞かせいただければ、その中から三種を農園で選び、お送りします。日本から、関税込みで。">
-        One family in the mountains of Shizuoka, still working the hillsides their family always has, still doing it by hand. Tell us what you like, and we pick three of their teas for you at the farm &mdash; sent from Japan, with the duties paid.
+         data-en="One family farm in the mountains of Shizuoka, still working its hillsides by hand. Three of its teas — a Japanese black tea, a hojicha, and a sencha chosen to your taste — 230 g in all, delivered to the United States for $120 with shipping and duties included. Allow 14 to 21 days: nothing is chosen until you order."
+         data-ja="静岡の山あいで、いまも斜面を手で守っている一軒の農家。その農園の三種——和紅茶、ほうじ茶、お好みに合わせた煎茶——合わせて230gを、送料・関税込み$120で米国へ。お届けは14〜21日。ご注文をいただくまで、何も選びません。">
+        One family farm in the mountains of Shizuoka, still working its hillsides by hand. Three of its teas &mdash; a Japanese black tea, a hojicha, and a sencha chosen to your taste &mdash; 230&nbsp;g in all, delivered to the United States for $120 with shipping and duties included. Allow 14 to 21 days: nothing is chosen until you order.
       </p>
       <div class="hero-ctas">
         <a href="#tea" class="hero-btn" data-en="See the tea" data-ja="お茶を見る">See the tea</a>
@@ -746,12 +757,16 @@
             <span class="fact-k" data-en="If something goes wrong" data-ja="万一のとき">If something goes wrong</span>
             <span class="fact-v" data-en="If a bag arrives damaged, or the parcel does not arrive at all, we replace it or refund you. Send us a photo and we will sort it out — you do not need to ship anything back." data-ja="袋が破れて届いた場合や、荷物が届かなかった場合は、再送または返金いたします。写真をお送りいただければ対応します。返送していただく必要はありません。">If a bag arrives damaged, or the parcel does not arrive at all, we replace it or refund you. Send us a photo and we will sort it out &mdash; you do not need to ship anything back.</span>
           </li>
+          <li>
+            <span class="fact-k" data-en="If the sencha isn't right" data-ja="煎茶が合わなかったら">If the sencha isn't right</span>
+            <span class="fact-v" data-en="Choosing is our job. Tell us what was wrong with it and we send a replacement bag at no charge — once, on a first order. Keep the first one." data-ja="選ぶのは私たちの仕事です。どこが違ったかを教えていただければ、代わりの一袋を無償でお送りします。初回のご注文につき一度。最初の袋はそのままお手元に。">Choosing is our job. Tell us what was wrong with it and we send a replacement bag at no charge &mdash; once, on a first order. Keep the first one.</span>
+          </li>
         </ul>
         <a href="#founding" id="shopCta" class="shop-btn" data-en="Choose your tea" data-ja="お茶を選ぶ">Choose your tea</a>
         <p class="checkout-note" id="shopNote"
-           data-en="The shop opens this autumn. Join the founding list and you will be first through the door — the first thirty pay $95, and keep that price for good."
-           data-ja="ご購入は今秋からとなります。ファウンディングにご登録いただいた方が、最初にご案内を受け取ります。先着三十名様は$95、その価格はその後もずっと変わりません。">
-          The shop opens this autumn. Join the founding list and you will be first through the door &mdash; the first thirty pay $95, and keep that price for good.
+           data-en="Duties, taxes and shipping are included. The first thirty orders pay $95 — join the founding list below and we will send you the link."
+           data-ja="関税・税金・送料込み。先着三十件は$95。下のファウンディングにご登録いただければ、リンクをお送りします。">
+          Duties, taxes and shipping are included. The first thirty orders pay $95 &mdash; join the founding list below and we will send you the link.
         </p>
         <a href="brewing/" class="quiet-link" data-en="How to brew it &rarr;" data-ja="淹れ方を見る &rarr;">How to brew it &rarr;</a>
       </div>
@@ -765,9 +780,9 @@
         <span class="label" data-en="The Founding 30" data-ja="ファウンディング30">The Founding 30</span>
         <h2 data-en="Be first through the door." data-ja="最初の一箱を、あなたに。">Be first through the door.</h2>
         <p class="enquire-lede"
-           data-en="We open this autumn. The first thirty orders pay $95 instead of $120 — and keep that price for good. Thirty is not a marketing number: it is how many boxes we can choose, write and pack by hand before the year turns. No charge today, no noise. Leave your email and we will write when the door opens."
-           data-ja="開店は今秋です。先着三十件のご注文は、$120ではなく$95。その価格は、その後もずっと変わりません。三十という数字に演出はありません。年内に、一箱ずつ選び、手で書き、詰めきれる数がそれだけなのです。本日のお支払いはありません。お知らせも控えめに。メールアドレスだけ残していただければ、開店のときにご連絡します。">
-          We open this autumn. The first thirty orders pay $95 instead of $120 &mdash; and keep that price for good. Thirty is not a marketing number: it is how many boxes we can choose, write and pack by hand before the year turns. No charge today, no noise. Leave your email and we will write when the door opens.
+           data-en="The shop is open. The first thirty orders pay $95 instead of $120 — and keep that price for good. Thirty is not a marketing number: it is how many boxes we can choose, write and pack by hand before the year turns. Leave your email and we will write back with the link that applies the price. It goes to the first thirty orders that use it."
+           data-ja="販売を始めました。先着三十件のご注文は、$120ではなく$95。その価格は、その後もずっと変わりません。三十という数字に演出はありません。年内に、一箱ずつ選び、手で書き、詰めきれる数がそれだけなのです。メールアドレスを残していただければ、その価格が適用されるリンクをお送りします。先にそのリンクでご注文いただいた三十件までが対象です。">
+          The shop is open. The first thirty orders pay $95 instead of $120 &mdash; and keep that price for good. Thirty is not a marketing number: it is how many boxes we can choose, write and pack by hand before the year turns. Leave your email and we will write back with the link that applies the price. It goes to the first thirty orders that use it.
         </p>
       </div>
       <div class="enquire-grid">
@@ -785,9 +800,9 @@
             <div class="contact-method-value" data-en="Tokyo, Japan" data-ja="東京">Tokyo, Japan</div>
           </div>
           <p class="enquire-note"
-             data-en="We write rarely and only when there is something worth reading — a harvest, a letter from the farm, an opening. Unsubscribe anytime, with one click."
-             data-ja="お送りするのは、読む価値のあるときだけ——収穫のこと、農園からの便り、開店のお知らせ。配信はいつでもワンクリックで停止できます。">
-            We write rarely and only when there is something worth reading — a harvest, a letter from the farm, an opening. Unsubscribe anytime, with one click.
+             data-en="We write rarely and only when there is something worth reading — a harvest, a letter from the farm, a new tea. Unsubscribe anytime, with one click."
+             data-ja="お送りするのは、読む価値のあるときだけ——収穫のこと、農園からの便り、新しいお茶のこと。配信はいつでもワンクリックで停止できます。">
+            We write rarely and only when there is something worth reading — a harvest, a letter from the farm, a new tea. Unsubscribe anytime, with one click.
           </p>
         </div>
 
@@ -820,17 +835,22 @@
                     data-ja="農園からのお便りと、開店・ファウンディングのご案内を受け取ります。">Yes, write to me from the farm, and about the founding release.</span>
             </label>
             <p class="form-privacy"
-               data-en="Your email is used only for the letters you have agreed to receive, and is never shared."
-               data-ja="メールアドレスは、ご同意いただいたお便りの送付のみに使用し、第三者に共有されることはありません。">
-              Your email is used only for the letters you have agreed to receive, and is never shared.
+               data-en="Your email is used only for the letters you have agreed to receive. This form is delivered to us by Formspree, which stores the submission so we can read it — it goes nowhere else, and you can ask us to delete it at any time."
+               data-ja="メールアドレスは、ご同意いただいたお便りの送付のみに使用します。このフォームはFormspreeを通じて当社に届き、当社が読むために送信内容が保存されます。それ以外の用途には使われず、いつでも削除をご依頼いただけます。">
+              Your email is used only for the letters you have agreed to receive. This form is delivered to us by Formspree, which stores the submission so we can read it &mdash; it goes nowhere else, and you can ask us to delete it at any time.
+            </p>
+            <p class="form-error" id="formError" hidden tabindex="-1" role="alert"
+               data-en="That didn't go through. Please try again, or email us at info@ark-links.com."
+               data-ja="送信できませんでした。もう一度お試しいただくか、info@ark-links.com へメールをお送りください。">
+              That didn't go through. Please try again, or email us at info@ark-links.com.
             </p>
             <button type="submit" class="form-submit" data-en="Save my place" data-ja="登録する">Save my place</button>
           </form>
           <div class="form-success" id="formSuccess">
             <h3 data-en="You're on the founding list." data-ja="ご登録ありがとうございます。">You're on the founding list.</h3>
-            <p data-en="We'll write from the farm soon — and you'll be the first to know when the shop opens."
-               data-ja="まもなく農園からのお便りをお送りします。開店のときは、真っ先にお知らせします。">
-              We'll write from the farm soon &mdash; and you'll be the first to know when the shop opens.
+            <p data-en="We'll write back with the link that applies the founding price — from a person, within two business days."
+               data-ja="ファウンディング価格が適用されるリンクを、2営業日以内に人の手でお送りします。">
+              We'll write back with the link that applies the founding price &mdash; from a person, within two business days.
             </p>
           </div>
         </div>
@@ -871,23 +891,27 @@
       </div>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <h3 data-en="When can I buy the tea?" data-ja="いつ購入できますか？">When can I buy the tea?</h3>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p data-en="The shop opens this autumn, with a small first run from leaf already picked and finished this year. Nothing is charged today and there are no pre-orders — the founding list is simply first in line when the shop opens."
-               data-ja="今秋、少量のロットで販売を開始します。茶葉は今年すでに摘まれ、仕上げられたものです。現時点でのお支払いや予約課金は一切ありません。ファウンディングリストにご登録いただいた方から順に、開店をご案内します。">
-              The shop opens this autumn, with a small first run from leaf already picked and finished this year. Nothing is charged today and there are no pre-orders — the founding list is simply first in line when the shop opens.
+          <h3 class="faq-question">
+            <button type="button" class="faq-btn" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
+              <span class="faq-q-text" data-en="When can I buy the tea?" data-ja="いつ購入できますか？">When can I buy the tea?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+            <p data-en="Now — the shop is open. The first run comes from leaf picked and finished this year. The first thirty orders pay $95 instead of $120 and keep that price: leave your email on the founding list and we will write back with the link that applies it."
+               data-ja="いま、販売中です。最初のロットは今年摘んで仕上げた茶葉です。先着三十件のご注文は$120ではなく$95で、その価格はその後も変わりません。ファウンディングリストにメールアドレスを残していただければ、その価格が適用されるリンクをお送りします。">
+              Now — the shop is open. The first run comes from leaf picked and finished this year. The first thirty orders pay $95 instead of $120 and keep that price: leave your email on the founding list and we will write back with the link that applies it.
             </p>
           </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <h3 data-en="Where do you ship?" data-ja="どこへ配送しますか？">Where do you ship?</h3>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
+          <h3 class="faq-question">
+            <button type="button" class="faq-btn" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
+              <span class="faq-q-text" data-en="Where do you ship?" data-ja="どこへ配送しますか？">Where do you ship?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
             <p data-en="We open with the United States first, with duties included in the price — no surprises at customs, delivered to your door. Further countries follow as we grow."
                data-ja="まずアメリカからスタートします。価格は関税込み表示のため、受け取り時の追加請求はありません。他の国へも順次拡大していきます。">
               We open with the United States first, with duties included in the price — no surprises at customs, delivered to your door. Further countries follow as we grow.
@@ -895,11 +919,13 @@
           </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <h3 data-en="What will you offer?" data-ja="どんなお茶を扱いますか？">What will you offer?</h3>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
+          <h3 class="faq-question">
+            <button type="button" class="faq-btn" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
+              <span class="faq-q-text" data-en="What will you offer?" data-ja="どんなお茶を扱いますか？">What will you offer?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
             <p data-en="One family farm in the Shizuoka mountains, and around thirty teas grown across its fields. The box holds three of them: a black tea, a roasted tea and a sencha. Which particular tea fills each bag is chosen at the farm, together with the grower — and for the sencha, in the direction you ask for."
                data-ja="静岡の山あいにある家族経営の茶農園が一軒。その畑から採れるお茶が三十種類ほどあります。箱に入るのは、そのうちの三種。和紅茶、ほうじ茶、そして煎茶です。どの茶葉になるかは、農園で、育てた本人と一緒に選びます。煎茶については、ご希望の方向に沿って。">
               One family farm in the Shizuoka mountains, and around thirty teas grown across its fields. The box holds three of them: a black tea, a roasted tea and a sencha. Which particular tea fills each bag is chosen at the farm, together with the grower &mdash; and for the sencha, in the direction you ask for.
@@ -907,11 +933,13 @@
           </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <h3 data-en="How is this different from tea I can already buy?" data-ja="市販のお茶と何が違うのですか？">How is this different from tea I can already buy?</h3>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
+          <h3 class="faq-question">
+            <button type="button" class="faq-btn" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
+              <span class="faq-q-text" data-en="How is this different from tea I can already buy?" data-ja="市販のお茶と何が違うのですか？">How is this different from tea I can already buy?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
             <!-- ⚠️ 2026-09-02：「どの斜面・どの品種・どの週に摘まれたか」を必ず伝えられる、と
                  断言していたのを弱めた。森内さんへの確認（一番茶か／10以上の畑の中身）が
                  未了で、いま守れる保証がないため。⭐約束ではなく「尋ねてお返しする」という
@@ -923,11 +951,13 @@
           </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <h3 data-en="The water where I live is hard. Will it still taste right?" data-ja="硬水の地域でも、おいしく淹れられますか？">The water where I live is hard. Will it still taste right?</h3>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
+          <h3 class="faq-question">
+            <button type="button" class="faq-btn" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
+              <span class="faq-q-text" data-en="The water where I live is hard. Will it still taste right?" data-ja="硬水の地域でも、おいしく淹れられますか？">The water where I live is hard. Will it still taste right?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
             <p data-en="Yes — with a small adjustment. Japanese tea assumes soft water, so hard water flattens it. Our brewing page explains what to use, how to get the temperature right without a thermometer, and gives the grams, temperature and seconds for every kind of tea we send."
                data-ja="はい、少しの工夫で大丈夫です。日本茶は軟水を前提に作られているので、硬水では味が平板になります。どんな水を使えばよいか、温度計なしで湯温をどう作るか、そしてお送りするお茶それぞれのグラム数・湯温・秒数は、すべて淹れ方のページに記載しています。">
               Yes — with a small adjustment. Japanese tea assumes soft water, so hard water flattens it. Our brewing page explains what to use, how to get the temperature right without a thermometer, and gives the grams, temperature and seconds for every kind of tea we send.
@@ -966,101 +996,6 @@
     </div>
   </footer>
 
-  <script>
-    // ── Language toggle ──
-    /* ══════════ CHECKOUT DESTINATION ══════════
-       ⭐ THIS IS THE ONLY LINE TO EDIT WHEN THE SHOPIFY STORE GOES LIVE.
-       Set SHOP_URL to the Shopify product URL, e.g.
-           var SHOP_URL = 'https://arklinks.myshopify.com/products/three-teas';
-       While it is null, the button goes to the founding-list form instead and the note
-       under it explains that the shop is not open yet. Payment is handled entirely by
-       Shopify — this site never touches card details. */
-    var SHOP_URL = 'https://shop.ark-links.com/products/three-japanese-teas';
-
-    (function applyShopUrl() {
-      if (!SHOP_URL) return;
-      var cta = document.getElementById('shopCta');
-      cta.setAttribute('href', SHOP_URL);
-      cta.setAttribute('rel', 'noopener');
-      var note = document.getElementById('shopNote');
-      note.setAttribute('data-en', 'Duties, taxes and shipping are paid before it leaves Japan, so nothing is owed on arrival. Payment is handled by Shopify. Allow 14–21 days — nothing is sitting in a warehouse.');
-      note.setAttribute('data-ja', '関税・税金・送料は日本を出る前に当社がお支払いしますので、お受け取り時のご負担はありません。お支払いはShopifyが承ります。お届けまでは14〜21日ほど。在庫を置いていないためです。');
-      note.innerHTML = note.getAttribute(
-        document.documentElement.getAttribute('data-lang') === 'ja' ? 'data-ja' : 'data-en');
-    })();
-
-    function setLang(lang) {
-      document.documentElement.setAttribute('data-lang', lang);
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        var text = el.getAttribute(lang === 'en' ? 'data-en' : 'data-ja');
-        if (text !== null) el.innerHTML = text;
-      });
-      try { localStorage.setItem('arklinks-lang', lang); } catch (e) {}
-    }
-    (function() {
-      var saved = null;
-      try { saved = localStorage.getItem('arklinks-lang'); } catch (e) {}
-      if (saved === 'ja') setLang('ja');
-    })();
-
-    // ── Mobile menu ──
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
-    }
-
-    // ── Nav appearance on scroll ──
-    window.addEventListener('scroll', function() {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    // ── FAQ accordion ──
-    function toggleFaq(el) {
-      var item = el.parentElement;
-      var answer = item.querySelector('.faq-answer');
-      var wasActive = item.classList.contains('active');
-      document.querySelectorAll('.faq-item').forEach(function(i) {
-        i.classList.remove('active');
-        i.querySelector('.faq-answer').style.maxHeight = null;
-      });
-      if (!wasActive) {
-        item.classList.add('active');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      }
-    }
-
-    // ── Reveal on scroll (staggered) ──
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry, idx) {
-        if (entry.isIntersecting) {
-          setTimeout(function() { entry.target.classList.add('in'); }, idx * 120);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
-
-    // ── Founding list form → Formspree (interim; swap action to ESP embed before Sept IG launch) ──
-    document.getElementById('foundingForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var form = e.target;
-      var data = new FormData(form);
-      fetch('https://formspree.io/f/xlgzdowd', {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      }).then(function(res) {
-        if (res.ok) {
-          form.style.display = 'none';
-          document.getElementById('formSuccess').style.display = 'block';
-        } else {
-          alert('Something went wrong. Please email us directly at info@ark-links.com');
-        }
-      }).catch(function() {
-        alert('Something went wrong. Please email us directly at info@ark-links.com');
-      });
-    });
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>

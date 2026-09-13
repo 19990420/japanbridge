@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "8931"],
       "port": 8931
+    },
+    {
+      "name": "japanbridge-headers",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["tools/serve.py", "8932"],
+      "port": 8932
     }
   ]
 }
